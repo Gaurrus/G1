@@ -2,9 +2,10 @@ body
      { background-color: blanchedalmond;
          text-align: left;
     margin: 20px 500px 20px 600px;}
-img 
-    {width: 150px;
-    height: 200px;}
+.scale
+    {width: 15%;
+    transition: 500ms;}
+.scale:hover {transform: scale(2);}
 main 
     {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 aside 
