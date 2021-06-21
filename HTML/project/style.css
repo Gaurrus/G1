@@ -5,9 +5,8 @@ body {
 	font-family: Monsteral;
 	background-color: #ffebcd;
 	text-align: left;
-	margin: 0px 200px 0px 300px;
 	width: 1300px;
-	height: 1300px;
+	
 }
 header {
 	background-image: url(images/header-back.gif);
@@ -32,7 +31,6 @@ header {
 
 main {
 	height: 1000px;
-	height: 1200px;
 }
 
 aside {
@@ -40,12 +38,12 @@ aside {
 	text-align: unset;
 	background: #dddc8b;
 	width: 200px;
-	height: 1200px;
 }
 
 .right {
 	margin-left: 40px;
 	float: right;
+	
 }
 
 .menu {
@@ -86,7 +84,6 @@ article {
 	background-color: aliceblue;
 	border-radius: 10px;
 	width: 170px;
-	height: 170px;
 	margin-left: 15px;
 	padding-top: 20px;
 }
