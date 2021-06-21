@@ -1,13 +1,15 @@
 @font-face {
-	font-family: Monsteral;src: url(fonts/montserrat-alternates.ttf);
+	font-family: Monsteral;src: url(fonts/montserrat-alternates.ttf); /*подключаю шрифт из папки*/
 }
+
 body {
 	font-family: Monsteral;
-	background-color: #ffebcd;
+	background-color: #ffebcc;
 	text-align: left;
 	width: 1300px;
-	
+	margin-left: 12%;	
 }
+
 header {
 	background-image: url(images/header-back.gif);
 	background-position: center;
@@ -15,22 +17,22 @@ header {
 	font-family: Monsteral;
 	font-size: 50px;
 	text-align: center;
-	color: rgb(218, 233, 218);
+	color: #dae9da;
 	height: 140px;
-	background-color: gainsboro;
+	background-color: #dcdcdc;
 }
 
 .scale {
 	width: 15%;
-	transition: 500ms;
+	transition: 0.5s; /*задание времени увеличения картинки при наведении*/
 }
 
 .scale:hover {
-	transform: scale(2);
+	transform: scale(2); /*наведение на картинку дает увеличение*/
 }
 
 main {
-	height: 1000px;
+	margin: 0px 250px 0px 250px;
 }
 
 aside {
@@ -52,8 +54,8 @@ aside {
 }
 
 a {
-	color: #000 !important;
-	text-decoration: none;
+	color: #000000; /*ссылки черного цвета*/
+	text-decoration: none; /*убираем подчеркивание с ссылок*/
 }
 
 ul {
@@ -81,7 +83,7 @@ img {
 article {
 	font-family: 'Times New Roman', Times, serif;
 	text-align: center;
-	background-color: aliceblue;
+	background-color: #f0f8ff;
 	border-radius: 10px;
 	width: 170px;
 	margin-left: 15px;
