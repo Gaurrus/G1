@@ -113,3 +113,44 @@ button:hover {
 	font-style: italic;
 	color: #6200ff;
 }
+
+.mot {
+	font-size: 24px;
+	color: #dae9da;
+	background-image: url(images/mot-img1.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	margin: 5px 5px 5px 5px;
+}
+.bez {
+	font-size: 24px;
+	color: #dae9da;
+	background-image: url(images/bez-img1.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	margin: 5px 5px 5px 5px;
+}
+.mur {
+	font-size: 24px;
+	color: #dae9da;
+	background-image: url(images/mur-img1.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	margin: 5px 5px 5px 5px;
+}
+.gla {
+	font-size: 24px;
+	color: #dae9da;
+	background-image: url(images/gla-img1.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	margin: 5px 5px 5px 5px;
+}
