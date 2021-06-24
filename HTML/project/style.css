@@ -120,3 +120,7 @@ figcaption {
 .podr {
 	text-align: justify;
 }
+
+fieldset {
+  border: #dbe921 solid 2px;
+}

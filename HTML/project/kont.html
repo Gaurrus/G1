@@ -75,47 +75,49 @@
                 Телефон для справок <font color="red">103</font>. Спросить главного психиатра.
             </h3>
             <hr color="black">
-            <h3>Напишите нам</h3>
             <form id="kont" action="mailto:pod_dok@mail.ru" enctype="text/plain">
-            Имя: 
-            <br> 
-            <input placeholder="Имя" name="user" form="kont">
-            <br>
-            e-mail: 
-            <br>
-            <input placeholder="e-mail" name="email" form="kont">
-            <br>
-            Тема: 
-            <br>  
-            <input type="text" form="kont">
-            <br>
-            Письмо писать здесь:
-            <br>
-            <textarea name="comment" cols="70" rows="8" form="kont"></textarea>
-            <br>
-            Выберите кота: 
-            <br>
-            <select name="Товары" id="tov" width="150px">
-                <option value="Мотор">Мотор</option>
-                <option value="Мурзик">Мурзик</option>
-                <option value="Глаша">Глаша</option>
-                <option value="Бездомный">Бездомный</option>
-            </select>
-            <p>
-                Способ оплаты: (котикам на вкусняшки)
-                 <br>
-                <input type="radio" name="answer" value="VISA">VISA
-                <input type="radio" name="answer" value="100500 мышиных хвостов">100500 мышиных хвостов
-            </p>
-            <p>
-                Контантный телефон для обратной связи:
-                <br>
-                <input type="tel">
-            </p>
-            <p>
-                <input type="submit" name="Отправить">
-            </p>
-        </form>
+              <fieldset>
+                <legend><b>Напишите нам</b></legend>
+                  Имя: 
+                  <br> 
+                  <input placeholder="Имя" name="user" form="kont">
+                  <br>
+                  e-mail: 
+                  <br>
+                  <input placeholder="e-mail" name="email" form="kont">
+                  <br>
+                  Тема: 
+                  <br>  
+                  <input placeholder="Тема" type="text" form="kont">
+                  <br>
+                  Письмо писать здесь:
+                  <br>
+                  <textarea placeholder="Особые пожелания" name="comment" cols="70" rows="5" form="kont"></textarea>
+                  <br>
+                  Выберите кота: 
+                  <br>
+                  <select name="Товары" id="tov" width="150px">
+                      <option value="Мотор">Мотор</option>
+                      <option value="Мурзик">Мурзик</option>
+                      <option value="Глаша">Глаша</option>
+                      <option value="Бездомный">Бездомный</option>
+                  </select>
+                  <p>
+                      Способ оплаты: (котикам на вкусняшки)
+                      <br>
+                      <input type="radio" name="answer" value="VISA">VISA
+                      <input type="radio" name="answer" value="100500 мышиных хвостов">100500 мышиных хвостов
+                  </p>
+                  <p>
+                      Контантный телефон для обратной связи:
+                      <br>
+                      <input type="tel">
+                  </p>
+                  <p>
+                      <input type="submit" name="Отправить">
+                  </p>
+              </fieldset>   
+            </form>
         <hr color="black">
         <h3>
             Наши контакты:
