@@ -76,22 +76,22 @@
             </h3>
             <hr color="black">
             <h3>Напишите нам</h3>
-            <form action="" method="POST">
+            <form id="kont" action="mailto:pod_dok@mail.ru" enctype="text/plain">
             Имя: 
             <br> 
-            <input type="text">
+            <input placeholder="Имя" name="user" form="kont">
             <br>
             e-mail: 
             <br>
-            <input type="email">
+            <input placeholder="e-mail" name="email" form="kont">
             <br>
             Тема: 
             <br>  
-            <input type="text">
+            <input type="text" form="kont">
             <br>
             Письмо писать здесь:
             <br>
-            <textarea name="comment" cols="40" rows="3"></textarea>
+            <textarea name="comment" cols="70" rows="8" form="kont"></textarea>
             <br>
             Выберите кота: 
             <br>
@@ -104,8 +104,8 @@
             <p>
                 Способ оплаты: (котикам на вкусняшки)
                  <br>
-                <input type="radio" name="answer" value="a2">VISA
-                <input type="radio" name="answer" value="a3">100500 мышиных хвостов
+                <input type="radio" name="answer" value="VISA">VISA
+                <input type="radio" name="answer" value="100500 мышиных хвостов">100500 мышиных хвостов
             </p>
             <p>
                 Контантный телефон для обратной связи:
@@ -113,7 +113,7 @@
                 <input type="tel">
             </p>
             <p>
-                <button formaction="#!" formmethod="post">
+                <button formaction="#!" formmethod="post" form="kont">
                     Отправить
                 </button>
             </p>
