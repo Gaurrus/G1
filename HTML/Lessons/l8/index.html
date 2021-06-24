@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Формы</title>
+  <style>
+    h1 {
+      font-size: 50px;
+      color: #6E76F1;
+    }
+
+    div {
+      margin: 0 auto;
+    }
+
+    .form-container {
+      width: 400px;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 align="center">Cleverland</h1>
+  <h2 align="center">Формы. Элементы форм</h2>
+  <div class="form-container">
+    <form name="user-form" action="send.php" autocomplete="off" enctype="multipart/form-data" method="post">
+      <fieldset>
+        <legend>Данные пользователя</legend>
+        <p> Логин:
+          <input type="text" value=""  name="user" placeholder="Login">
+        </p>
+        <p> Пароль:
+          <input type="password" name="password" placeholder="password">
+        </p>
+        <p>
+          <input type="submit" value="Вход">
+        </p>
+      </fieldset>
+    </form>
+  </div>
+  <!----------------------------------------->
+  <div class="form-container">
+    <form name="user-form-2" action="send.php" enctype="text/plain">
+      <fieldset>
+        <legend>Пожелания</legend>
+        <p>
+          <select size="1" name="city">
+            <option disabled>Выберите город</option>
+            <option value="Orsha">Орша</option>
+            <option value="Vitebsk">Витебск</option>
+            <option value="Minsk">Минск</option>
+            <option value="Moscow">Москва</option>
+          </select>
+        </p>
+        <p>
+          <select size="4" multiple name="dreams">
+            <option disabled>Выберете что бы вы хотели иметь</option>
+            <option value="car">Машина</option>
+            <option value="house">Свой дом</option>
+            <option value="flat">Квартира</option>
+            <option selected value="garden">Сад</option>
+            <option value="ten-children">10 детей</option>
+            <option value="whife">Жена</option>
+          </select>
+        </p>
+        <p>
+          <label for="hey">Просите что хотите</label>
+          <input id="hey" type="text" name="personal">
+          <p>
+            <label><input type="checkbox" name="lll" value="значение"> Текст</label>
+          </p>
+        </p>
+        <p>
+          <textarea name="aboutMe" id="resume" cols="30" rows="10" placeholder="Много текста"></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Отправить">
+        </p>
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+
+</html>
