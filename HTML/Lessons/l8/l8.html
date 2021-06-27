@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Lesson 8</title>
+	<link rel="stylesheet" href="style3.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
     <form action="#" id="1">
@@ -10,22 +12,22 @@
         	<legend>Многострочные текстовые поля</legend> 
 					<textarea placeholder="Ведите текст" id="" cols="40" rows="5"></textarea>
 					<br>
-					<textarea placeholder="" id="" cols="40" rows="5"></textarea>
+					<textarea placeholder="Или не вводите его" id="" cols="40" rows="5"></textarea>
 					</fieldset>
      <br>
 		 <fieldset>
-			<legend>Выпадающие списки</legend> 
-			<select size="1">
+			<legend>Авто - Выпадающие списки</legend> 
+			<select size="1" name="town" id="town">
 				<option disabled>Выберите пункт</option>
-				<option value="1">111111</option>
-				<option value="2">222222</option>
-				<option value="3">333333</option>
-				<option value="4">444444</option>
+				<option value="min" selected>Минск</option>
+				<option value="vit">Витебск</option>
+				<option value="gro">Гродно</option>
+				<option value="bre">Брест</option>
+				<option value="gom">Гомель</option>
+				<option value="mog">Могилёв</option>
 			</select>
 			<br>
-			<select>
-				<option value=""></option>
-			</select>
+			<select name="distr" id="distr"></select>
 			</fieldset>
     </fieldset>
     </form>
