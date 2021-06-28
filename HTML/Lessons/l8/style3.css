@@ -1,4 +1,6 @@
 body {
+  background: linear-gradient(90deg,black, white, lightblue, black);
+  background-position: center;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
@@ -23,5 +25,14 @@ select {
 }
 
 textarea {
+  font-size: 18px;
+}
+
+#text-1 {
+  resize: none;
+}
+
+#form-3 {
+  text-align: justify;
   font-size: 18px;
 }
