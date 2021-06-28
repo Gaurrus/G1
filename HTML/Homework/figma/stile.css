@@ -1,0 +1,56 @@
+@font-face {
+	font-family: Poppins; src:url(fonts/Poppins-Bold.ttf);
+}
+
+body {
+    background: #E5E5E5;
+}
+
+h1 {
+    position: absolute;
+    width: 613px;
+    height: 171px;
+    left: 180px;
+    top: 218px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 120px;
+    color: #170C04;
+}
+
+#pug {
+    /* Pug */
+    position: absolute;
+    width: 916px;
+    height: 611px;
+    left: 528px;
+    top: 82px;
+    background: url(images/pug.png);
+    mix-blend-mode: darken;
+    z-index: 2;
+    
+}
+
+#rectang {
+    /* Rectangle 71 */
+    position: absolute;
+    width: 525px;
+    height: 693px;
+    left: 985px;
+    top: 0px;
+    z-index: 1;
+}
+
+#rover {
+    /* rover*/
+    font-family: Poppins;
+    text-align: right;
+position: absolute;
+width: 36px;
+height: 39px;
+left: 176px;
+top: 31px;
+background: url(images/rover.png);
+}

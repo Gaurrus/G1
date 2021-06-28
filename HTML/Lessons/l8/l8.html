@@ -3,23 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Lesson 8</title>
+	<link rel="stylesheet" href="style3.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
     <form action="#" id="1">
         <fieldset>
-        <label for="1">Многострочные текстовые поля
-            <p>
-                <textarea form="Ведите текст" name="Введите текст" id="" cols="80" rows="10"></textarea>
-            </p>
-        </label>
-    </fieldset><br>
-    <fieldset>
-        <label for="1">Form 2
-            <p>
-                <input type="text">
-            </p>
-        </label>
-    </fieldset>
+        	<legend>Многострочные текстовые поля</legend> 
+					<textarea neme="text-1" placeholder="Ведите текст" id="text-1" cols="40" rows="5"></textarea>
+					<br>
+					<textarea name="text-2" placeholder="Или не вводите его" id="" cols="40" rows="5"></textarea>
+					</fieldset>
+     <br>
+		 <fieldset>
+			<legend align="right">Авто - Выпадающие списки</legend> 
+			<select size="1" name="town" id="town">
+				<option disabled>Выберите пункт</option>
+				<option value="min" selected>Минск</option>
+				<option value="vit">Витебск</option>
+				<option value="gro">Гродно</option>
+				<option value="bre">Брест</option>
+				<option value="gom">Гомель</option>
+				<option value="mog">Могилёв</option>
+			</select>
+			<br>
+			<select name="distr" id="distr"></select>
+			<br>
+			<input type="radio" name="radio" id="m"><label for="m">Мальчик?</label>
+			<input type="radio" name="radio" id="g"><label for="g">Девочка?</label>
+			<br>
+			<input type="file">
+			</fieldset>
+	</fieldset>
+	<br>
+	<fieldset id="form-3">
+		<legend>Легенда входа</legend>
+		<label for="login">Логин</label>
+		<input name="login" type="login" placeholder="Введите логин" id="login">
+		<br>
+		<label for="password">Пароль</label>
+		<input name="password" type="password" placeholder="Введите пароль" id="password">
+		<br>
+		<input type="submit" value="Войти">
+	</fieldset>
     </form>
 </body>
 </html>
