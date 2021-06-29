@@ -197,7 +197,7 @@ color: #000000;
     top: 0;
     right: 0;
     cursor: pointer;
-    background-image: url(images/search.png);
+    background-image: url(images/search2.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -207,6 +207,27 @@ color: #000000;
     font-family: FontAwesome;
     font-size: 0px;
     color: #F9F0DA;
+    
   }
 
+#korz {
+  /* корзина */
+  position: absolute;
+  width: 18.64px;
+  height: 17.18px;
+  left: 1239px;
+  top: 41px;
+  z-index: 1;
+
+}
+
+#polos {
+  /* полоски */
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  left: 1297px;
+  top: 41px;
+  z-index: 1;
+}
   
