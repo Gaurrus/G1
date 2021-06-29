@@ -49,6 +49,7 @@ h1 {
 
 #rover {
     /* rover*/
+    vertical-align: middle;
     background-position: left;
     background: no-repeat;
     font-family: Poppins;
@@ -57,9 +58,11 @@ h1 {
     width: 72px;
     height: 39px;
     left: 176px;
-    top: 31px;
-    background: url(images/rover.png);
+    top: 23px;
+    background-image: url(images/rover.png);
 }
+
+
 
 /*ссылки вверху header*/
 
@@ -160,3 +163,47 @@ text-decoration: none;
 color: #000000;
 }
 
+#s {
+    position: absolute;
+    width: 270px;
+    height: 16px;
+    left: 950px;
+    top: 42px;
+  }
+  input {
+    height: 16px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+  input:focus {
+    width: 270px;
+    z-index: 1;
+    border-bottom: 2px solid #F9F0DA;
+  }
+  button {
+    background: #E5E5E5;
+    border: solid 2px;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 0px;
+    color: #F9F0DA;
+  }
