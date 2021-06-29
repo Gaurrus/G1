@@ -49,17 +49,41 @@ h1 {
 
 #rover {
     /* rover*/
+    background-position: left;
+    background: no-repeat;
     font-family: Poppins;
     text-align: right;
-position: absolute;
-width: 36px;
-height: 39px;
-left: 176px;
-top: 31px;
-background: url(images/rover.png);
+    position: absolute;
+    width: 72px;
+    height: 39px;
+    left: 176px;
+    top: 31px;
+    background: url(images/rover.png);
 }
 
 /*ссылки вверху header*/
+
+#lin0 {
+    /* DOG */
+
+
+position: absolute;
+width: 45px;
+height: 26px;
+left: 217px;
+top: 37px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
 
 #lin1 {
     /* Products */
@@ -68,7 +92,7 @@ width: 65px;
 height: 19px;
 left: 553px;
 top: 41px;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -82,7 +106,7 @@ color: #170C04;
 
 
 position: absolute;
-width: 66px;
+width: 100px;
 height: 19px;
 left: 673px;
 top: 41px;
@@ -105,16 +129,13 @@ width: 43px;
 height: 19px;
 left: 794px;
 top: 41px;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 19px;
 /* identical to box height */
-
-
 color: #170C04;
-
 }
 
 #lin4 {
@@ -126,16 +147,16 @@ width: 55px;
 height: 19px;
 left: 892px;
 top: 41px;
-
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
-line-height: 19px;
 /* identical to box height */
-
-
 color: #000000;
+}
 
+a {
+text-decoration: none;
+color: #000000;
 }
 
