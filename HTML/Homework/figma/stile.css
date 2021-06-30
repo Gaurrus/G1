@@ -7,7 +7,9 @@
 }
 
 body {
-    background: #E5E5E5;
+  position: absolute;
+    margin-left: 7%;
+  background: #E5E5E5;
 }
 
 #h1 {
@@ -145,17 +147,17 @@ color: #170C04;
 /* Popular */
 
 
-position: absolute;
-width: 55px;
-height: 19px;
-left: 892px;
-top: 41px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-/* identical to box height */
-color: #000000;
+  position: absolute;
+  width: 55px;
+  height: 19px;
+  left: 892px;
+  top: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  /* identical to box height */
+  color: #000000;
 }
 
 a {
@@ -269,4 +271,80 @@ color: #000000;
   border: 1px solid #E27B3A;
   box-sizing: border-box;
   border-radius: 24px;
+}
+
+footer {
+  /* footer */
+  position: absolute; 
+  width: 1500px;
+  height: 363.5px;
+  left: 0px;
+  top: 5511px;
+  background-image: url(images/footer.png);
+}
+
+#foot-rover {
+  position: absolute;
+  width: 48px;
+  height: 51px;
+  left: 726px;
+  top: 58.5px;
+  background: url(images/rover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#foot-left-1 {
+  position: absolute;
+  width: 140px;
+  height: 19px;
+  left: 179px;
+  top: 127.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-left-2 {
+/* Privacy & About */
+  position: absolute;
+  width: 140px;
+  height: 19px;
+  left: 179px;
+  top: 183.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-left-3 {
+/* Contact: alaminhossen.75bd@gmail.com */
+  position: absolute;
+  width: 320px;
+  height: 19px;
+  left: 179px;
+  top: 239.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#contact {
+  text-decoration: none;
+  color: #fa7720;
 }
