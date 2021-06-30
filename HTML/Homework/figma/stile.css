@@ -10,7 +10,7 @@ body {
     background: #E5E5E5;
 }
 
-h1 {
+#h1 {
     position: absolute;
     width: 613px;
     height: 171px;
@@ -163,6 +163,7 @@ text-decoration: none;
 color: #000000;
 }
 
+/*выпадающий поиск*/
 #s {
     position: absolute;
     width: 270px;
@@ -190,8 +191,9 @@ color: #000000;
     z-index: 1;
     border-bottom: 2px solid #F9F0DA;
   }
-  button {
-    
+
+  
+  #search {
     width: 20px;
     position: absolute;
     top: 0;
@@ -200,9 +202,10 @@ color: #000000;
     background-image: url(images/search2.png);
     background-size: contain;
     background-repeat: no-repeat;
+    border: unset;
   }
 
-  button:before {
+  #search:before {
     content: "\f002";
     font-family: FontAwesome;
     font-size: 0px;
@@ -215,8 +218,8 @@ color: #000000;
   position: absolute;
   width: 18.64px;
   height: 17.18px;
-  left: 1239px;
-  top: 41px;
+  left: 1289px;
+  top: 42px;
   z-index: 1;
 
 }
@@ -226,8 +229,44 @@ color: #000000;
   position: absolute;
   width: 23px;
   height: 16px;
-  left: 1297px;
-  top: 41px;
+  left: 1347px;
+  top: 42px;
   z-index: 1;
 }
+
+#bn {
+/* buy-now*/
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  position: absolute;
+  width: 123px;
+  height: 48px;
+  left: 180px;
+  top: 508px;
+  background: #E27B3A;
+  border-radius: 24px;
+  border: unset;
+}
+
+#sd {
+  /* see-details */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+  position: absolute;
+  width: 139px;
+  height: 48px;
+  left: 323px;
+  top: 508px;
   
+  border: 1px solid #E27B3A;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
