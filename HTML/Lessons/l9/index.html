@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section><h2>Задание 1</h2>
+    <form action="#!">
+        <fieldset>
+            <legend>Регистрационная форма пользователя</legend>
+            <p>
+                <label>
+                    Name:
+                    <input type="user" placeholder="input your name" name="Name">
+                </label>
+            </p>
+            <p>
+                Your age:
+                <select name="Age" id="age">
+                    <option value="0-1">0-1</option>
+                    <option value="2-3">2-3</option>
+                    <option value="4-5">4-5</option>
+                    <option value="6-7">6-7</option>
+                </select>
+            </p>
+            <p>
+                Contry:
+                <select name="contry" id="con">
+                    <option value="Bel">Belarus</option>
+                    <option value="Rus">Russia</option>
+                    <option value="Other">Other</option>
+                    </select>
+            </p>
+            <p>
+                Lang:  
+                <label>English <input type="radio" value="eng" name="lang"></label>
+                <label>Belorussian <input type="radio" value="bel" name="lang"></label>
+                <label>Russian <input type="radio" value="rus" name="lang"></label>
+            </p>
+            <p>
+                Upload photo:
+                <input type="file" accept=".png, .jpg, .jpeg" name="photo" >
+            </p>
+            <p>
+                <label>
+                Login:
+                <input type="user" name="login">
+                </label>
+            </p>
+            <p>
+                <label>
+                Password:
+                <input type="password" name="password">
+                </label>
+            </p>
+            <p>
+                <label>
+                Pass-check:
+                <input type="password" name="password">
+                </label>
+            </p>
+        </fieldset>
+        <br>
+        <input type="reset" value="Clean">
+        <input type="submit" value="Push">
+    </form>
+    </section>
+    <hr size="2" color="black">
+    <section><h2>Задание 2.1</h2>
+    <form action="#!">
+        <fieldset>
+            <legend><h1>Запись на курсы</h1></legend>
+            <hr>
+            <label>
+            Имя:
+            <input type="user" name="username" placeholder="Имя">
+            </label>
+            <hr>
+            Язык программирования: 
+            <br> 
+            <label>C++
+                <input type="radio" name="lang" value="C++">
+            </label>
+            <br>
+            <label>
+                PHP <input type="radio" name="lang" value="PHP">
+            </label>
+            <br>
+            <label>
+                Python <input type="radio" name="lang" value="Python">
+            </label>
+            <hr>
+            Дополнительная информация:
+            <br>
+            <textarea name="info" id="inf" cols="40" rows="8"></textarea>
+            <hr>
+            <label>
+            Password: <br>
+            <input type="password" name="password">
+            </label>
+            <hr>
+            <input type="submit" value="Го на учебу!">
+            <input type="reset" value="Да ну его!">
+        </fieldset>
+    </form>
+    </section>
+    <hr size="2" color="black">
+    <section><h2>Задание 2.2</h2>
+        <fieldset>
+            <legend>
+                Параметры автомобиля
+            </legend>
+            <p>
+                <label>
+                Марка автомобиля: <input type="text" name="brend">
+                </label>
+            </p>
+            <p>
+                <label>
+                Объём двигателя, cm <sup>3</sup>: <input type="number" name="kubs" placeholder="3000">
+                </label>
+            </p> 
+            <p>
+                Тип КПП: <br>
+                <label>
+                    Автомат <input type="radio" name="gear-box">
+                </label>
+                <br>
+                <label>
+                    Механика <input type="radio" name="gear-box">
+                </label>
+            </p>
+            <p>
+               <label><input type="checkbox" name="engine">Электро</label><br>
+                <label><input type="checkbox" name="engine">Бензин</label><br>
+                <label><input checked type="checkbox" name="engine">Дизель</label><br>
+                <label><input type="checkbox" name="engine">Пропан-бутан</label><br>
+                <label><input type="checkbox" name="engine">Метан</label><br>
+            </p>
+            <p>
+                Описание <br>
+                <textarea name="op" cols="40" rows="15"></textarea>
+            </p>
+            <p>
+                <input type="reset">
+                <input type="submit">
+            </p>
+        </fieldset>
+    </form>
+    </section>
+</body>
+</html>
