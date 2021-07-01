@@ -249,6 +249,7 @@ color: #000000;
   height: 48px;
   left: 180px;
   top: 508px;
+  cursor: pointer;
   background: #E27B3A;
   border-radius: 24px;
   border: unset;
@@ -267,7 +268,7 @@ color: #000000;
   height: 48px;
   left: 323px;
   top: 508px;
-  
+  cursor: pointer;
   border: 1px solid #E27B3A;
   box-sizing: border-box;
   border-radius: 24px;
@@ -344,7 +345,121 @@ footer {
   opacity: 0.8;
 }
 
+#foot-left-4 {
+  /*  Dog Care  */
+  text-align: right;
+  position: absolute;
+  width: 320px;
+  height: 19px;
+  right:  180px;
+  top: 127.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-left-5 {
+  /* Privacy & Policy */
+  text-align: right;
+  position: absolute;
+  width: 320px;
+  height: 19px;
+  right: 180px;
+  top: 183.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-left-6 {
+  /* Popular Product */
+  text-align: right;
+  position: absolute;
+  width: 320px;
+  height: 19px;
+  right: 180px;
+  top: 239.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
 #contact {
   text-decoration: none;
   color: #fa7720;
 }
+
+.foot-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-cent-1 {
+  /*facebook*/
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 665px;
+  top: 218.5px;
+}
+
+#foot-cent-2 {
+  /*world*/
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 730px;
+  top: 218.5px;
+}
+
+#foot-cent-3 {
+  /*tweet*/
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 795px;
+  top: 218.5px;
+}
+
+#foot-cent-4 {
+  /*DOG-PRODUCT*/
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 661px;
+  top: 122px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  }
+
+  .foot-link-1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  }
