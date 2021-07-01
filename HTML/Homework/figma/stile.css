@@ -1,14 +1,14 @@
 @font-face {
-	font-family: Poppins; src:url(fonts/Poppins-Bold.ttf);
+	font-family: Poppins; src:url(fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
-	font-family: Roboto; src:url(fonts/Roboto-Black.ttf);
+	font-family: Roboto; src:url(fonts/Roboto-Light.ttf);
 }
 
 body {
   position: absolute;
-    margin-left: 7%;
+  margin-left: 7%;
   background: #E5E5E5;
 }
 
@@ -273,6 +273,83 @@ color: #000000;
   box-sizing: border-box;
   border-radius: 24px;
 }
+
+#first-1 {
+  /*левая колонка верху main*/
+  /* Best Quality Products Pen Foods */
+  position: absolute;
+  width: 360px;
+  height: 241px;
+  left: 205px;
+  top: 892px;
+  background: #FFFFFF;
+  padding: 40px 25px 0px 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #170C04;
+}
+
+#first-2 {
+  /*Dogs leave paw prints forever on our hearts. A dog shade the.*/
+  position: absolute;
+  margin-left: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+}
+
+#first-3 {
+  margin-top: 79px;
+  margin-left: -40px;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+  text-align: center;
+}
+
+#first-img {
+  background-image: url(images/Vector.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: unset;
+  margin-top: -135px;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   /* footer */
