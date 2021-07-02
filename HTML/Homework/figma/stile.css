@@ -281,8 +281,8 @@ color: #000000;
   height: 241px;
   left: 180px;
   top: 892px;
-  background: #FFFFFF;
   padding: 40px 25px 0px 25px;
+  background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 8px;
@@ -293,6 +293,12 @@ color: #000000;
   line-height: 37px;
   text-align: center;
   color: #170C04;
+  cursor: pointer;
+}
+
+#first-1:hover {
+  box-shadow: 0px 0px 25px #ffb485;
+  transition: .5s;
 }
 
 #first-2 {
@@ -324,7 +330,7 @@ color: #000000;
 }
 
 #first-img {
-  background-image: url(images/Vector.png);
+  background-image: url(images/Vector-1.png);
   background-position: center;
   background-repeat: no-repeat;
   border: unset;
@@ -340,8 +346,8 @@ color: #000000;
   height: 241px;
   left: 960px;
   top: 892px;
-  background: #FFFFFF;
   padding: 40px 25px 0px 25px;
+  background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 8px;
@@ -352,6 +358,12 @@ color: #000000;
   line-height: 37px;
   text-align: center;
   color: #170C04;
+  cursor: pointer;
+}
+
+#second-1:hover {
+  box-shadow: 0px 0px 25px #ffb485;
+  transition: .5s;
 }
 
 #second-2 {
@@ -383,7 +395,7 @@ color: #000000;
 }
 
 #second-img {
-  background-image: url(images/Vector.png);
+  background-image: url(images/Vector-2.png);
   background-position: center;
   background-repeat: no-repeat;
   border: unset;
@@ -404,7 +416,6 @@ color: #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 8px;
-  box-shadow: 0px 0px 25px #ffb485;;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -413,6 +424,12 @@ color: #000000;
   text-align: center;
   color: #170C04;
   z-index: 1;
+  cursor: pointer;
+}
+
+#third-1:hover {
+  box-shadow: 0px 0px 25px #ffb485;
+  transition: .5s;
 }
 
 #third-2 {
@@ -446,13 +463,304 @@ color: #000000;
 }
 
 #third-img {
-  background-image: url(images/Vector.png);
+  background-image: url(images/Vector-3.png);
   background-position: center;
   background-repeat: no-repeat;
   border: unset;
-  margin-top: -135px;
+  margin-top: -145px;
   z-index: 1;
 }
+
+#pop-prod {
+  /* Popular Products */
+  position: absolute;
+  width: 505px;
+  height: 42px;
+  left: 499px;
+  top: 1211px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 48px;
+  text-align: center;
+  color: #170C04;
+}
+
+.reg-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+}
+
+#big-left {
+  position: absolute;
+  width: 555px;
+  height: 420px;
+  left: 182px;
+  top: 1361px;
+  background: #FCF2EB;  
+  background-image: url(images/Harness-removebg-preview.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#big-right {
+  position: absolute;
+  width: 555px;
+  height: 420px;
+  left: 767px;
+  top: 1361px;
+  background: #FCF2EB;
+  background-image: url(images/Reflective-removebg-preview.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#mauris-left {
+  /* Mauris blandit aliquet */
+  position: absolute;
+  width: 555px;
+  height: 40px;
+  left: 182px;
+  top: 1806px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #170C04;
+}
+
+#mauris-view-left {
+  /* View Details */
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#mauris-right {
+  /* Mauris blandit aliquet */
+  position: absolute;
+  width: 555px;
+  height: 40px;
+  left: 767px;
+  top: 1806px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #170C04;
+}
+
+#mauris-view-right {
+  /* View Details */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#small-left {
+  position: absolute;
+  width: 360px;
+  height: 273px;
+  left: 182px;
+  top: 1940px;
+  background: #FCF2EB;
+  background-image:url(images/SLTFR.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#small-mauris-left {
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: 182px;
+  top: 2236px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #170C04;
+}
+
+#small-mauris-view-left {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#small-mid {
+  position: absolute;
+  width: 360px;
+  height: 273px;
+  left: 572px;
+  top: 1940px;
+  background: #FCF2EB;
+  background-image:url(images/small-mid.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#small-mauris-mid {
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: 572px;
+  top: 2236px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #170C04;
+}
+
+#small-mauris-view-mid{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#small-right {
+  position: absolute;
+  width: 360px;
+  height: 273px;
+  left: 962px;
+  top: 1940px;
+  background: #FCF2EB;
+  background-image:url(images/small-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#small-mauris-right {
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: 962px;
+  top: 2236px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #170C04;
+}
+
+#small-mauris-view-right{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#all-prod {
+  position: absolute;
+  width: 185px;
+  height: 48px;
+  left: 659px;
+  top: 2339px;
+  border: 1px solid #E27B3A;
+  box-sizing: border-box;
+  border-radius: 4px;
+  opacity: .15;
+  text-align: center;
+  vertical-align: middle;
+  }
+
+  #view-all-prod {
+  position: absolute;
+  width: 126px;
+  height: 24px;
+  left: 689px;
+  top: 2351px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+  }
+
+  #dog-care {
+    position: absolute;
+    width: 1248.35px;
+    height: 640.96px;
+    left: 73.65px;
+    top: 2445px;
+    border: 1px solid;
+  }
+
+  #dog-care-img {
+    float: left;
+    margin-top: 72px;
+    margin-left: 17.35px;
+  }
+
+  #dog-care-text {
+    float: left;
+    margin-left: 761.35px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   /* footer */
