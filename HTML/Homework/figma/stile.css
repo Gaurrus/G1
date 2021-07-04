@@ -1,9 +1,11 @@
 @font-face {
-	font-family: Poppins; src:url(fonts/Poppins-Medium.ttf);
+  font-family: Poppins;
+  src: url(fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
-	font-family: Roboto; src:url(fonts/Roboto-Light.ttf);
+  font-family: Roboto;
+  src: url(fonts/Roboto-Light.ttf);
 }
 
 body {
@@ -11,141 +13,139 @@ body {
   margin: auto;
   width: 1510px;
   background: #E5E5E5;
+  }
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
 }
 
 #h1 {
-    position: absolute;
-    width: 613px;
-    height: 171px;
-    left: 180px;
-    top: 218px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 120px;
-    color: #170C04;
+  position: absolute;
+  width: 613px;
+  height: 171px;
+  left: 180px;
+  top: 218px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120px;
+  color: #170C04;
 }
 
 #pug {
-    /* Pug */
-    position: absolute;
-    width: 916px;
-    height: 611px;
-    left: 528px;
-    top: 82px;
-    background: url(images/pug.png);
-    mix-blend-mode: darken;
-    z-index: 2;
-    
+  /* Pug */
+  position: absolute;
+  width: 916px;
+  height: 611px;
+  left: 528px;
+  top: 82px;
+  background: url(images/pug.png);
+  mix-blend-mode: darken;
+  z-index: 2;
 }
 
 #rectang {
-    /* Rectangle 71 */
-    position: absolute;
-    width: 525px;
-    height: 693px;
-    left: 985px;
-    top: 0px;
-    z-index: 1;
+  /* Rectangle 71 */
+  position: absolute;
+  width: 525px;
+  height: 693px;
+  left: 985px;
+  top: 0px;
+  z-index: 1;
 }
 
 #rover {
-    /* rover*/
-    vertical-align: middle;
-    background-position: left;
-    background: no-repeat;
-    font-family: Poppins;
-    text-align: right;
-    position: absolute;
-    width: 72px;
-    height: 39px;
-    left: 176px;
-    top: 23px;
-    background-image: url(images/rover.png);
+  /* rover*/
+  vertical-align: middle;
+  background-position: left;
+  background: no-repeat;
+  font-family: Poppins;
+  text-align: right;
+  position: absolute;
+  width: 72px;
+  height: 39px;
+  left: 176px;
+  top: 23px;
+  background-image: url(images/rover.png);
 }
-
 
 
 /*ссылки вверху header*/
 
 #lin0 {
-    /* DOG */
-
-
-position: absolute;
-width: 45px;
-height: 26px;
-left: 217px;
-top: 37px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 26px;
-/* identical to box height */
-
-
-color: #000000;
-
+  /* DOG */
+  position: absolute;
+  width: 45px;
+  height: 26px;
+  left: 217px;
+  top: 37px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  color: #000000;
 }
 
 #lin1 {
-    /* Products */
-position: absolute;
-width: 65px;
-height: 19px;
-left: 553px;
-top: 41px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-color: #170C04;  
+  /* Products */
+  position: absolute;
+  width: 65px;
+  height: 19px;
+  left: 553px;
+  top: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #170C04;
 }
 
 #lin2 {
-/* Dog Care */
-position: absolute;
-width: 100px;
-height: 19px;
-left: 673px;
-top: 41px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
-
-color: #170C04;  
+  /* Dog Care */
+  position: absolute;
+  width: 100px;
+  height: 19px;
+  left: 673px;
+  top: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #170C04;
 }
 
 #lin3 {
-    /* About */
-position: absolute;
-width: 43px;
-height: 19px;
-left: 794px;
-top: 41px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-color: #170C04;
+  /* About */
+  position: absolute;
+  width: 43px;
+  height: 19px;
+  left: 794px;
+  top: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #170C04;
 }
 
 #lin4 {
-/* Popular */
-
-
+  /* Popular */
   position: absolute;
   width: 55px;
   height: 19px;
@@ -160,59 +160,61 @@ color: #170C04;
 }
 
 a {
-text-decoration: none;
-color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
+
 /*выпадающий поиск*/
+
 #s {
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 980px;
-    top: 42px;
-  }
-  input {
-    height: 20px;
-    width: 0;
-    padding: 0 42px 0 15px;
-    border: none;
-    border-bottom: 2px solid transparent;
-    outline: none;
-    background: transparent;
-    transition: .4s cubic-bezier(0, 0.8, 0, 1);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-  }
-  input:focus {
-    width: 270px;
-    z-index: 1;
-    border-bottom: 2px solid #F9F0DA;
-  }
+  position: absolute;
+  width: 270px;
+  height: 16px;
+  left: 980px;
+  top: 42px;
+}
 
-  
-  #search {
-    width: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    background-image: url(images/search2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: unset;
-  }
+input {
+  height: 20px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+}
 
-  #search:before {
-    content: "\f002";
-    font-family: FontAwesome;
-    font-size: 0px;
-    color: #F9F0DA;
-    
-  }
+input:focus {
+  width: 270px;
+  z-index: 1;
+  border-bottom: 2px solid #F9F0DA;
+}
+
+#search {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background-image: url(images/search2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: unset;
+}
+
+#search:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 0px;
+  color: #F9F0DA;
+}
 
 #korz {
   /* корзина */
@@ -222,7 +224,6 @@ color: #000000;
   left: 1289px;
   top: 42px;
   z-index: 1;
-
 }
 
 #polos {
@@ -236,7 +237,9 @@ color: #000000;
 }
 
 #bn {
-/* buy-now*/
+  /* buy-now*/
+  display: block;
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -244,8 +247,7 @@ color: #000000;
   line-height: 24px;
   color: #FFFFFF;
   position: absolute;
-  width: 123px;
-  height: 48px;
+  padding: 0.75rem 1.8rem;
   left: 180px;
   top: 508px;
   cursor: pointer;
@@ -255,16 +257,16 @@ color: #000000;
 }
 
 #sd {
-  /* see-details */
+  display: block;
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #E27B3A;
   position: absolute;
-  width: 139px;
-  height: 48px;
+  padding: 0.75rem 1.8rem;
+  color: #E27B3A;
   left: 323px;
   top: 508px;
   cursor: pointer;
@@ -504,7 +506,7 @@ color: #000000;
   height: 420px;
   left: 182px;
   top: 1361px;
-  background: #FCF2EB;  
+  background: #FCF2EB;
   background-image: url(images/Harness-removebg-preview.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -544,7 +546,6 @@ color: #000000;
 
 #mauris-view-left {
   /* View Details */
-  
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -588,7 +589,7 @@ color: #000000;
   left: 182px;
   top: 1940px;
   background: #FCF2EB;
-  background-image:url(images/SLTFR.png);
+  background-image: url(images/SLTFR.png);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -626,7 +627,7 @@ color: #000000;
   left: 572px;
   top: 1940px;
   background: #FCF2EB;
-  background-image:url(images/small-mid.png);
+  background-image: url(images/small-mid.png);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -647,7 +648,7 @@ color: #000000;
   color: #170C04;
 }
 
-#small-mauris-view-mid{
+#small-mauris-view-mid {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -664,7 +665,7 @@ color: #000000;
   left: 962px;
   top: 1940px;
   background: #FCF2EB;
-  background-image:url(images/small-right.png);
+  background-image: url(images/small-right.png);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -685,7 +686,7 @@ color: #000000;
   color: #170C04;
 }
 
-#small-mauris-view-right{
+#small-mauris-view-right {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -706,10 +707,9 @@ color: #000000;
   border-radius: 4px;
   opacity: .15;
   text-align: center;
-  vertical-align: middle;
-  }
+}
 
-  #view-all-prod {
+#view-all-prod {
   position: absolute;
   width: 126px;
   height: 24px;
@@ -721,50 +721,242 @@ color: #000000;
   font-size: 16px;
   line-height: 24px;
   color: #E27B3A;
-  }
+}
 
-  #dog-care {
-    position: absolute;
-    width: 1248.35px;
-    height: 640.96px;
-    left: 73.65px;
-    top: 2445px;
-    border: 1px solid;
-  }
+#dog-care {
+  position: absolute;
+  width: 1248.35px;
+  height: 640.96px;
+  left: 73.65px;
+  top: 2445px;
+}
 
-  #dog-care-img {
-    float: left;
-    margin-top: 72px;
-    margin-left: 17.35px;
-  }
+#dog-care-text {
+  position: absolute;
+  width: 487px;
+  height: 19px;
+  left: 761.35px;
+  top: 197px;
+  text-align: left;
+}
 
-  #dog-care-text {
-    float: left;
-    margin-left: 761.35px;
-  }
+#d-c-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #E27B3A;
+  opacity: 0.8;
+}
 
+#d-c-h {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  color: #170C04;
+}
 
+#d-c-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #170C04;
+  opacity: 0.6;
+  text-align: justify;
+}
 
+#an {
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  padding: 0.75rem 1.8rem;
+  position: absolute;
+  color: #FFFFFF;
+  top: 434px;
+  left: 761.35px;
+  cursor: pointer;
+  background: #E27B3A;
+  border-radius: 24px;
+  border: unset;
+}
 
+#see-det {
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  padding: 0.75rem 1.8rem;
+  color: #E27B3A;
+  top: 434px;
+  left: 980.35px;
+  cursor: pointer;
+  border: 1px solid #E27B3A;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
 
+#h2 {
+  position: absolute;
+  width: 505px;
+  height: 93px;
+  left: 499px;
+  top: 3172px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  text-align: center;
+  color: #170C04;
+}
 
+#dog-left {
+  position: absolute;
+  width: 307px;
+  height: 307px;
+  left: 208px;
+  top: 3301px;
+  background-image: url(images/dog-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+#dog-t-left {
+  position: absolute;
+  width: 360px;
+  height: 49px;
+  left: 182px;
+  top: 3616px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #170C04;
+}
 
+#dog-v-left {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
 
+#dog-mid {
+  position: absolute;
+  width: 307px;
+  height: 307px;
+  left: 598px;
+  top: 3301px;
+  background-image: url(images/dog-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+#dog-t-mid {
+  position: absolute;
+  width: 360px;
+  height: 49px;
+  left: 572px;
+  top: 3616px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #170C04;
+}
 
+#dog-v-mid {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
 
+#dog-right {
+  position: absolute;
+  width: 307px;
+  height: 307px;
+  left: 988px;
+  top: 3301px;
+  background-image: url(images/dog-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+#dog-t-right {
+  position: absolute;
+  width: 360px;
+  height: 49px;
+  left: 962px;
+  top: 3616px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #170C04;
+}
 
+#dog-v-right {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
 
-
-
-
-
+#sub {
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  padding: 0.75rem 1.8rem;
+  left: 686px;
+  top: 3832px;
+  color: #FFFFFF;
+  ;
+  background: #E27B3A;
+  border-radius: 24px;
+  border: unset;
+  cursor: pointer;
+}
 
 footer {
   /* footer */
-  position: absolute; 
+  position: absolute;
   width: 1500px;
   height: 363.5px;
   left: 0px;
@@ -800,7 +992,7 @@ footer {
 }
 
 #foot-left-2 {
-/* Privacy & About */
+  /* Privacy & About */
   position: absolute;
   width: 140px;
   height: 19px;
@@ -817,7 +1009,7 @@ footer {
 }
 
 #foot-left-3 {
-/* Contact: alaminhossen.75bd@gmail.com */
+  /* Contact: alaminhossen.75bd@gmail.com */
   position: absolute;
   width: 320px;
   height: 19px;
@@ -839,7 +1031,7 @@ footer {
   position: absolute;
   width: 320px;
   height: 19px;
-  right:  180px;
+  right: 180px;
   top: 127.5px;
   font-family: Roboto;
   font-style: normal;
@@ -864,7 +1056,6 @@ footer {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  
   /* identical to box height */
   color: #FFFFFF;
   opacity: 0.8;
@@ -940,9 +1131,9 @@ footer {
   font-weight: 500;
   font-size: 26px;
   line-height: 30px;
-  }
+}
 
-  .foot-link-1 {
+.foot-link-1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -950,4 +1141,4 @@ footer {
   line-height: 30px;
   color: #FFFFFF;
   opacity: 0.8;
-  }
+}
