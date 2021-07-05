@@ -3,7 +3,7 @@
     src: url(fonts/Roboto.ttf);
   }
 body { 
-    margin-left: auto;
+    margin: auto;
     width: 1920px;    
     }
 
@@ -13,7 +13,7 @@ header {
     background-image: url(images/header-back.png);
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: #ffffff;
 }
 
 h1 {
@@ -39,4 +39,42 @@ header img {
     display: block;
     left: 80px;
     top: 40px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Roboto;
+    color: #FFFFFF;
+}
+
+.kab {
+    /* main-screen__button */
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 183px;
+    height: 44px;
+    right: 80px;
+    top: 38px;
+    /* grad2 */
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    /* white */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
 }
