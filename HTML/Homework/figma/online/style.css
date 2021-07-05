@@ -128,15 +128,12 @@ header>div.bot {
     background-image: url(images/main-screen-last-line-bgc.png);
     }
 
-table {
+.t1 {
     position: absolute;
-width: 251px;
-height: 58px;
-left: 562px;
-top: 36px;
-}
-
-table {
+    width: 251px;
+    height: 58px;
+    left: 562px;
+    top: 36px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -157,4 +154,28 @@ table strong {
     /* white */
     color: #FFFFFF;
     opacity: 0.4;
+}
+
+.t2 {
+    position: absolute;
+    width: 714px;
+    height: 67px;
+    left: 894px;
+    top: 35px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+  
+    /* identical to box height, or 24px */
+    /* white */
+    color: #FFFFFF;
+}
+
+td {
+    height: 6px;
+}
+
+.td-back {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
 }
