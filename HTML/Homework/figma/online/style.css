@@ -2,10 +2,14 @@
     font-family: Roboto;
     src: url(fonts/Roboto.ttf);
   }
-body { 
+body, html { 
     margin: auto;
-    width: 1920px;    
-    }
+    position: relative;
+    width: 1920px;
+    height: 6599px;
+    background: #333333;
+    background-image: url(images/bgc.png);
+}
 
 header {
     position: relative;
@@ -43,6 +47,7 @@ header img {
 
 a {
     display: inline-block;
+    margin-left: 56px;
     text-decoration: none;
     font-family: Roboto;
     color: #FFFFFF;
@@ -77,4 +82,79 @@ a {
     order: 0;
     flex-grow: 0;
     margin: 0px 10px;
+}
+
+header>div.big {
+    padding-top: 48px;
+    text-align: center;
+}
+
+header>div>a.bye {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 169px;
+    height: 44px;
+    left: 312px;
+    top: 43px;
+    /* grad1 */
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    /* white */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    }
+
+header>div.bot {
+    position: absolute;
+    width: 1920px;
+    height: 130px;
+    left: 0px;
+    top: 830px;
+    background: #121212;
+    background-image: url(images/main-screen-last-line-bgc.png);
+    }
+
+table {
+    position: absolute;
+width: 251px;
+height: 58px;
+left: 562px;
+top: 36px;
+}
+
+table {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    /* white */
+    color: #FFFFFF;
+}
+
+table strong {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    /* white */
+    color: #FFFFFF;
+    opacity: 0.4;
 }
