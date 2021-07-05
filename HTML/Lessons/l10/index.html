@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <title>Lesson 10</title>
     <link rel="stylesheet" href="style.css">
-    <script src="form3.js" defer></script>
     <script src="form2.js" defer></script>
 </head>
 <body>
     <h1>Анкета</h1>
-    <form action="" name="anket">
+    <form action="" name="anket" autocomplete="off">
     <table>
         <tr>
             <td><label for="fam">Фамилия:</label></td>
@@ -29,8 +28,8 @@
         <tr>
             <td>Пол:</td>
             <td>
-                <label><input type="radio" name="sex" value="man">Мужской</label> <br>
-                <label><input type="radio" name="sex" value="wman">Женский</label>
+                <label><input type="radio" name="sex" value="1">Мужской</label> <br>
+                <label><input type="radio" name="sex" value="2">Женский</label>
             </td>
         </tr>
         <tr>
@@ -39,11 +38,11 @@
         </tr>
         <tr>
             <td>Количество полных лет:</td>
-            <td><input type="number" size="3" value="18" name="age"></td>
+            <td><input type="number" min="18" max="63" name="age"></td>
         </tr>
         <tr>
             <td><label for="adress">Адрес места жительства:</label></td>
-            <td><input type="text" name="adress" id="adress"></td>
+            <td><input type="text" name="adress" id="address"></td>
         </tr>
         <tr>
             <td><label for="tel">Номер контактного телефона:</label></td>
@@ -56,10 +55,10 @@
         <tr>
             <td>Образование:</td>
             <td>
-                <input type="radio" name="education">-основное общее средне профессиональное <br>
-                <input type="radio" name="education">-среднее(полное) общее высшее профессиональное <br>
-                <input type="radio" name="education">-начальное профессиональное <br>
-                <input type="radio" name="education">-иное
+                <input type="radio" name="education" value="1">-основное общее средне профессиональное <br>
+                <input type="radio" name="education" value="2">-среднее(полное) общее высшее профессиональное <br>
+                <input type="radio" name="education" value="3">-начальное профессиональное <br>
+                <input type="radio" name="education" value="4">-иное
             </td>
         </tr>
         <tr>
@@ -69,14 +68,13 @@
         <tr>
             <td>Стаж работы по специальности:</td>
             <td>
-                <select name="experience" id="">
-                    <option value="Менее года">Менее года</option>
-                    <option value="1-3">1-3</option>
-                    <option value="4-5">4-5</option>
-                    <option value="6-15">6-15</option>
-                    <option value="Более 15">Более 15</option>
+                <select name="experience" id="sel">
+                    <option value="1">Менее года</option>
+                    <option value="2">1-3</option>
+                    <option value="3">4-5</option>
+                    <option value="4">6-15</option>
+                    <option value="5">Более 15</option>
                 </select>
-                
             </td>
         </tr>
         <tr>
@@ -85,11 +83,15 @@
         </tr>
         <tr>
             <td>Период работы на предыдущем месте с:</td>
-            <td><input type="date" name="data1"> по <input type="date" name="data2"></td>
+            <td><input type="date" name="data1"> 
+            по <input type="date" name="data2"></td>
         </tr>
         <tr>
-            <td><input type="submit"> <input type="reset"></td>
-            <td></td>
+            <td colspan="2">
+                <input type="reset">
+                <input type="button" onclick="checkForm()" value="Отправить">
+            </td>
+            
   
     </table>
 </form>
