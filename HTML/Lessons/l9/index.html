@@ -7,7 +7,7 @@
 </head>
 <body>
     <section><h2>Задание 1</h2>
-    <form action="#!">
+    <form action="#!" name="Задание 1">
         <fieldset>
             <legend>Регистрационная форма пользователя</legend>
             <p>
@@ -69,13 +69,13 @@
     </section>
     <hr size="2" color="black">
     <section><h2>Задание 2.1</h2>
-    <form action="#!">
+    <form action="#!" name="Задание 2.1">
         <fieldset>
             <legend><h1>Запись на курсы</h1></legend>
             <hr>
             <label>
             Имя:
-            <input type="user" name="username" placeholder="Имя">
+            <input type="user" name="username" placeholder="Имя" value="Алесей">
             </label>
             <hr>
             Язык программирования: 
@@ -85,7 +85,7 @@
             </label>
             <br>
             <label>
-                PHP <input type="radio" name="lang" value="PHP">
+                PHP <input type="radio" name="lang" value="PHP" checked>
             </label>
             <br>
             <label>
@@ -94,7 +94,7 @@
             <hr>
             Дополнительная информация:
             <br>
-            <textarea name="info" id="inf" cols="40" rows="8"></textarea>
+            <textarea name="info" id="inf" cols="40" rows="8">Текст внутри</textarea>
             <hr>
             <label>
             Password: <br>
@@ -108,7 +108,7 @@
     </section>
     <hr size="2" color="black">
     <section><h2>Задание 2.2</h2>
-        <form>
+        <form name="Задание 2.2">
         <fieldset>
             <legend>
                 Параметры автомобиля
@@ -120,7 +120,7 @@
             </p>
             <p>
                 <label>
-                Объём двигателя, cm <sup>3</sup>: <input type="number" name="kubs" placeholder="3000">
+                Объём двигателя, cm <sup>3</sup>: <input type="number" name="kubs" placeholder="3000" value="3000" disabled>
                 </label>
             </p> 
             <p>
@@ -135,10 +135,10 @@
             </p>
             <p>
                <label><input type="checkbox" name="engine">Электро</label><br>
-                <label><input type="checkbox" name="engine">Бензин</label><br>
-                <label><input checked type="checkbox" name="engine">Дизель</label><br>
-                <label><input type="checkbox" name="engine">Пропан-бутан</label><br>
-                <label><input type="checkbox" name="engine">Метан</label><br>
+                <label><input type="checkbox" name="pet">Бензин</label><br>
+                <label><input checked type="checkbox" name="dis">Дизель</label><br>
+                <label><input type="checkbox" name="but">Пропан-бутан</label><br>
+                <label><input type="checkbox" name="met">Метан</label><br>
             </p>
             <p>
                 Описание <br>
