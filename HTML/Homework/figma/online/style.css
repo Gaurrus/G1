@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto.ttf);
+  }
+body { 
+    margin-left: auto;
+    width: 1920px;    
+    }
+
+header {
+    position: relative;
+    height: 960px;
+    background-image: url(images/header-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h1 {
+    /*Первый курс по компьютерной сборке*/
+    position: absolute;
+    display: block;
+    top: 270px;
+    left: 312px;
+    width: 920px;
+    height: 180px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 90px;
+    /* or 90px */
+    /* white */
+    color: #FFFFFF;
+}
+
+header img {
+    position: absolute;
+    display: block;
+    left: 80px;
+    top: 40px;
+}
