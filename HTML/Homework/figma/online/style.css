@@ -269,5 +269,24 @@ main>table {
 
 .back {
     height: 80px;
+    width: 324px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+
+
+
+
+.text {
+    padding-top: 35px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+    /* white */
+    color: #FFFFFF;
+    opacity: 0.5;
+    text-align: left;
 }
