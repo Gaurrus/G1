@@ -11,6 +11,14 @@ body, html {
     background-image: url(images/bgc.png);
 }
 
+
+
+
+/*header*/
+
+
+
+
 header {
     position: relative;
     height: 960px;
@@ -178,4 +186,88 @@ td {
 
 .td-back {
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+
+
+
+/*main*/
+
+
+
+main>img {
+    position: absolute;
+    padding-top: 96px;
+    width: 526px;
+    height: 499px;
+    left: 312px;
+    top: 1160px;
+    background-image: url(images/main-left-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main>div {
+    position: absolute;
+    width: 636px;
+    height: 67px;
+    left: 972px;
+    top: 1229px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 140%;
+    /* or 67px */
+    /* white */
+    color: #FFFFFF;
+}
+
+main>div>p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+    /* white */
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+main>div.fast {
+    position: absolute;
+    width: 1315px;
+    height: 45.15px;
+    left: 356.15px;
+    top: 1902px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+    /* white */
+    color: #FFFFFF;
+}
+
+main>div.fast>p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+    /* white */
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+main>table {
+    width: 1315px;
+}
+
+.back {
+    height: 80px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
 }
