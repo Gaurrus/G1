@@ -1,8 +1,9 @@
 @font-face {
     font-family: Roboto;
     src: url(fonts/Roboto.ttf);
-  }
-body, html { 
+}
+body,
+html {
     margin: auto;
     position: relative;
     width: 1920px;
@@ -11,13 +12,7 @@ body, html {
     background-image: url(images/bgc.png);
 }
 
-
-
-
 /*header*/
-
-
-
 
 header {
     position: relative;
@@ -43,7 +38,7 @@ h1 {
     line-height: 90px;
     /* or 90px */
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 header img {
@@ -58,7 +53,7 @@ a {
     margin-left: 56px;
     text-decoration: none;
     font-family: Roboto;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .kab {
@@ -74,7 +69,7 @@ a {
     right: 80px;
     top: 38px;
     /* grad2 */
-    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
     border-radius: 50px;
     font-family: Roboto;
     font-style: normal;
@@ -84,7 +79,7 @@ a {
     /* identical to box height, or 24px */
     text-align: center;
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
     /* Inside Auto Layout */
     flex: none;
     order: 0;
@@ -92,12 +87,15 @@ a {
     margin: 0px 10px;
 }
 
-header>div.big {
+header > nav {
+		position: fixed;
+		left: 624px;
     padding-top: 48px;
     text-align: center;
 }
 
-header>div>a.bye {
+
+header > div > a.bye {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -108,7 +106,7 @@ header>div>a.bye {
     left: 312px;
     top: 43px;
     /* grad1 */
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     border-radius: 50px;
     font-family: Roboto;
     font-style: normal;
@@ -118,15 +116,15 @@ header>div>a.bye {
     /* identical to box height, or 24px */
     text-align: center;
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
     /* Inside Auto Layout */
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 0px 10px;
-    }
+}
 
-header>div.bot {
+header > div.bot {
     position: absolute;
     width: 1920px;
     height: 130px;
@@ -134,7 +132,7 @@ header>div.bot {
     top: 830px;
     background: #121212;
     background-image: url(images/main-screen-last-line-bgc.png);
-    }
+}
 
 .t1 {
     position: absolute;
@@ -149,7 +147,7 @@ header>div.bot {
     line-height: 150%;
     /* identical to box height, or 24px */
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 table strong {
@@ -160,7 +158,7 @@ table strong {
     line-height: 150%;
     /* identical to box height, or 24px */
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.4;
 }
 
@@ -174,28 +172,33 @@ table strong {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-  
+
     /* identical to box height, or 24px */
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 td {
     height: 6px;
 }
 
-.td-back {
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+header progress {
+	width: 714px;
+	height: 6px;
+	border-radius: 0px;
 }
 
+header progress::-webkit-progress-bar {
+	background-color: #ffffff;
+}
 
-
+header progress::-webkit-progress-value {
+	background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
 
 /*main*/
 
-
-
-main>img {
+main > img {
     position: absolute;
     padding-top: 96px;
     width: 526px;
@@ -207,7 +210,7 @@ main>img {
     background-repeat: no-repeat;
 }
 
-main>div {
+main > div {
     position: absolute;
     width: 636px;
     height: 67px;
@@ -220,10 +223,10 @@ main>div {
     line-height: 140%;
     /* or 67px */
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-main>div>p {
+main > div > p {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -231,11 +234,11 @@ main>div>p {
     line-height: 160%;
     /* or 26px */
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: justify;
 }
 
-main>div.fast {
+main > div.fast {
     position: absolute;
     width: 1315px;
     height: 45.15px;
@@ -248,10 +251,10 @@ main>div.fast {
     line-height: 140%;
     /* or 67px */
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-main>div.fast>p {
+main > div.fast > p {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -259,21 +262,20 @@ main>div.fast>p {
     line-height: 160%;
     /* or 26px */
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.5;
 }
 
-main>table {
+main > table {
     width: 1315px;
 }
 
-.back {
-    height: 80px;
-    width: 324px;
-    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+main progress {
+	width: 324px;
+	height: 80px;
+	border-radius: 0px;
+	border: none;
 }
-
-
 
 
 
@@ -286,7 +288,7 @@ main>table {
     line-height: 160%;
     /* or 22px */
     /* white */
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.5;
     text-align: left;
 }
