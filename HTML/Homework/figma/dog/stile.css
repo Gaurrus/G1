@@ -1,0 +1,1312 @@
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Light.ttf);
+}
+
+body {
+  position: relative;
+  margin: auto;
+  width: 1510px;
+  background: #E5E5E5;
+  }
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+}
+
+#h1 {
+  position: absolute;
+  width: 613px;
+  height: 171px;
+  left: 180px;
+  top: 218px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120px;
+  color: #170C04;
+}
+
+#pug {
+  /* Pug */
+  position: absolute;
+  width: 916px;
+  height: 611px;
+  left: 528px;
+  top: 82px;
+  background: url(images/pug.png);
+  mix-blend-mode: darken;
+  z-index: 2;
+}
+
+#rectang {
+  /* Rectangle 71 */
+  position: absolute;
+  width: 525px;
+  height: 693px;
+  left: 985px;
+  top: 0px;
+  z-index: 1;
+}
+
+#rover {
+  /* rover*/
+  vertical-align: middle;
+  background-position: left;
+  background: no-repeat;
+  font-family: Poppins;
+  text-align: right;
+  position: absolute;
+  width: 72px;
+  height: 39px;
+  left: 176px;
+  top: 23px;
+  background-image: url(images/rover.png);
+}
+
+
+/*ссылки вверху header*/
+
+#lin0 {
+  /* DOG */
+  position: absolute;
+  width: 45px;
+  height: 26px;
+  left: 217px;
+  top: 37px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  color: #000000;
+}
+
+#lin1 {
+  /* Products */
+  position: absolute;
+  width: 65px;
+  height: 19px;
+  left: 553px;
+  top: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #170C04;
+}
+
+#lin2 {
+  /* Dog Care */
+  position: absolute;
+  width: 100px;
+  height: 19px;
+  left: 673px;
+  top: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #170C04;
+}
+
+#lin3 {
+  /* About */
+  position: absolute;
+  width: 43px;
+  height: 19px;
+  left: 794px;
+  top: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #170C04;
+}
+
+#lin4 {
+  /* Popular */
+  position: absolute;
+  width: 55px;
+  height: 19px;
+  left: 892px;
+  top: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  /* identical to box height */
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/*выпадающий поиск*/
+
+#s {
+  position: absolute;
+  width: 270px;
+  height: 16px;
+  left: 980px;
+  top: 42px;
+}
+
+input {
+  height: 20px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+input:focus {
+  width: 270px;
+  z-index: 1;
+  border-bottom: 2px solid #F9F0DA;
+}
+
+#search {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background-image: url(images/search2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: unset;
+}
+
+#search:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 0px;
+  color: #F9F0DA;
+}
+
+#korz {
+  /* корзина */
+  position: absolute;
+  width: 18.64px;
+  height: 17.18px;
+  left: 1289px;
+  top: 42px;
+  z-index: 1;
+}
+
+#polos {
+  /* полоски */
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  left: 1347px;
+  top: 42px;
+  z-index: 1;
+}
+
+#bn {
+  /* buy-now*/
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  position: absolute;
+  padding: 0.75rem 1.8rem;
+  left: 180px;
+  top: 508px;
+  cursor: pointer;
+  background: #E27B3A;
+  border-radius: 24px;
+  border: unset;
+}
+
+#sd {
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  padding: 0.75rem 1.8rem;
+  color: #E27B3A;
+  left: 323px;
+  top: 508px;
+  cursor: pointer;
+  border: 1px solid #E27B3A;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+
+#first-1 {
+  /*левая колонка верху main*/
+  /* Best Quality Products Pen Foods */
+  position: absolute;
+  width: 360px;
+  height: 241px;
+  left: 180px;
+  top: 892px;
+  padding: 40px 25px 0px 25px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #170C04;
+  cursor: pointer;
+}
+
+#first-1:hover {
+  box-shadow: 0px 0px 25px #ffb485;
+  transition: .5s;
+}
+
+#first-2 {
+  /*Dogs leave paw prints forever on our hearts. A dog shade the.*/
+  position: absolute;
+  margin-left: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+}
+
+#first-3 {
+  margin-top: 79px;
+  margin-left: -40px;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+  text-align: center;
+}
+
+#first-img {
+  background-image: url(images/Vector-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: unset;
+  margin-top: -135px;
+  z-index: 1;
+}
+
+#second-1 {
+  /*левая колонка верху main*/
+  /* Best Quality Products Pen Foods */
+  position: absolute;
+  width: 360px;
+  height: 241px;
+  left: 960px;
+  top: 892px;
+  padding: 40px 25px 0px 25px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #170C04;
+  cursor: pointer;
+}
+
+#second-1:hover {
+  box-shadow: 0px 0px 25px #ffb485;
+  transition: .5s;
+}
+
+#second-2 {
+  /*Dogs leave paw prints forever on our hearts. A dog shade the.*/
+  position: absolute;
+  margin-left: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+}
+
+#second-3 {
+  margin-top: 79px;
+  margin-left: -40px;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+  text-align: center;
+}
+
+#second-img {
+  background-image: url(images/Vector-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: unset;
+  margin-top: -135px;
+  z-index: 1;
+}
+
+#third-1 {
+  /*левая колонка верху main*/
+  /* Best Quality Products Pen Foods */
+  position: absolute;
+  width: 360px;
+  height: 241px;
+  left: 570px;
+  top: 892px;
+  padding: 40px 25px 0px 25px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #170C04;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#third-1:hover {
+  box-shadow: 0px 0px 25px #ffb485;
+  transition: .5s;
+}
+
+#third-2 {
+  /*Dogs leave paw prints forever on our hearts. A dog shade the.*/
+  position: absolute;
+  margin-left: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+#third-3 {
+  margin-top: 79px;
+  margin-left: -40px;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+  text-align: center;
+  z-index: 1;
+}
+
+#third-img {
+  background-image: url(images/Vector-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: unset;
+  margin-top: -145px;
+  z-index: 1;
+}
+
+#pop-prod {
+  /* Popular Products */
+  position: absolute;
+  width: 505px;
+  height: 42px;
+  left: 499px;
+  top: 1211px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 48px;
+  text-align: center;
+  color: #170C04;
+}
+
+.reg-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+}
+
+#big-left {
+  position: absolute;
+  width: 555px;
+  height: 420px;
+  left: 182px;
+  top: 1361px;
+  background: #FCF2EB;
+  background-image: url(images/Harness-removebg-preview.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#big-right {
+  position: absolute;
+  width: 555px;
+  height: 420px;
+  left: 767px;
+  top: 1361px;
+  background: #FCF2EB;
+  background-image: url(images/Reflective-removebg-preview.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#mauris-left {
+  /* Mauris blandit aliquet */
+  position: absolute;
+  width: 555px;
+  height: 40px;
+  left: 182px;
+  top: 1806px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #170C04;
+}
+
+#mauris-view-left {
+  /* View Details */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#mauris-right {
+  /* Mauris blandit aliquet */
+  position: absolute;
+  width: 555px;
+  height: 40px;
+  left: 767px;
+  top: 1806px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #170C04;
+}
+
+#mauris-view-right {
+  /* View Details */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#small-left {
+  position: absolute;
+  width: 360px;
+  height: 273px;
+  left: 182px;
+  top: 1940px;
+  background: #FCF2EB;
+  background-image: url(images/SLTFR.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#small-mauris-left {
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: 182px;
+  top: 2236px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #170C04;
+}
+
+#small-mauris-view-left {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#small-mid {
+  position: absolute;
+  width: 360px;
+  height: 273px;
+  left: 572px;
+  top: 1940px;
+  background: #FCF2EB;
+  background-image: url(images/small-mid.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#small-mauris-mid {
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: 572px;
+  top: 2236px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #170C04;
+}
+
+#small-mauris-view-mid {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#small-right {
+  position: absolute;
+  width: 360px;
+  height: 273px;
+  left: 962px;
+  top: 1940px;
+  background: #FCF2EB;
+  background-image: url(images/small-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#small-mauris-right {
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  left: 962px;
+  top: 2236px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #170C04;
+}
+
+#small-mauris-view-right {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#all-prod {
+  position: absolute;
+  width: 185px;
+  height: 48px;
+  left: 659px;
+  top: 2339px;
+  border: 1px solid #E27B3A;
+  box-sizing: border-box;
+  border-radius: 4px;
+  opacity: .15;
+  text-align: center;
+}
+
+#view-all-prod {
+  position: absolute;
+  width: 126px;
+  height: 24px;
+  left: 689px;
+  top: 2351px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+}
+
+#dog-care {
+  position: absolute;
+  width: 1248.35px;
+  height: 640.96px;
+  left: 73.65px;
+  top: 2445px;
+}
+
+#dog-care-text {
+  position: absolute;
+  width: 487px;
+  height: 19px;
+  left: 761.35px;
+  top: 197px;
+  text-align: left;
+}
+
+#d-c-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #E27B3A;
+  opacity: 0.8;
+}
+
+#d-c-h {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  color: #170C04;
+}
+
+#d-c-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #170C04;
+  opacity: 0.6;
+  text-align: justify;
+}
+
+#an {
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  padding: 0.75rem 1.8rem;
+  position: absolute;
+  color: #FFFFFF;
+  top: 434px;
+  left: 761.35px;
+  cursor: pointer;
+  background: #E27B3A;
+  border-radius: 24px;
+  border: unset;
+}
+
+#see-det {
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  padding: 0.75rem 1.8rem;
+  color: #E27B3A;
+  top: 434px;
+  left: 980.35px;
+  cursor: pointer;
+  border: 1px solid #E27B3A;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+
+#h2 {
+  position: absolute;
+  width: 505px;
+  height: 93px;
+  left: 499px;
+  top: 3172px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  text-align: center;
+  color: #170C04;
+}
+
+#dog-left {
+  position: absolute;
+  width: 307px;
+  height: 307px;
+  left: 208px;
+  top: 3301px;
+  background-image: url(images/dog-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#dog-t-left {
+  position: absolute;
+  width: 360px;
+  height: 49px;
+  left: 182px;
+  top: 3616px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #170C04;
+}
+
+#dog-v-left {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#dog-mid {
+  position: absolute;
+  width: 307px;
+  height: 307px;
+  left: 598px;
+  top: 3301px;
+  background-image: url(images/dog-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#dog-t-mid {
+  position: absolute;
+  width: 360px;
+  height: 49px;
+  left: 572px;
+  top: 3616px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #170C04;
+}
+
+#dog-v-mid {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#dog-right {
+  position: absolute;
+  width: 307px;
+  height: 307px;
+  left: 988px;
+  top: 3301px;
+  background-image: url(images/dog-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#dog-t-right {
+  position: absolute;
+  width: 360px;
+  height: 49px;
+  left: 962px;
+  top: 3616px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #170C04;
+}
+
+#dog-v-right {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E27B3A;
+}
+
+#sub {
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  padding: 0.75rem 1.8rem;
+  left: 686px;
+  top: 3832px;
+  color: #FFFFFF;
+  ;
+  background: #E27B3A;
+  border-radius: 24px;
+  border: unset;
+  cursor: pointer;
+}
+
+#pop {
+  position: absolute;
+  width: 554px;
+  height: 46px;
+  left: 182px;
+  top: 4000px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  text-align: center;
+  color: #170C04;
+}
+
+#b-img-big {
+  position: absolute;
+  width: 555px;
+  height: 509px;
+  left: 767px;
+  top: 4010px;
+  background: #c4154c1a;
+  border-radius: 10px;
+  background-image: url(images/bottom-img-big.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#b-img-1 {
+  position: absolute;
+  width: 262px;
+  height: 170px;
+  left: 182px;
+  top: 4149px;
+  background: #900a081e;
+  border-radius: 5px;
+  background-image: url(images/bot-img-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#b-img-2 {
+  position: absolute;
+  width: 262px;
+  height: 170px;
+  left: 474px;
+  top: 4149px;
+  background: #243e7e1a;
+  border-radius: 5px;
+  background-image: url(images/bot-img-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#b-img-3 {
+  position: absolute;
+  width: 262px;
+  height: 170px;
+  left: 182px;
+  top: 4349px;
+  background: #80012515;
+  border-radius: 5px;
+  background-image: url(images/bot-img-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#b-img-4 {
+  position: absolute;
+  width: 262px;
+  height: 170px;
+  left: 474px;
+  top: 4349px;
+  background: #c48cae1c;
+  border-radius: 5px;
+  background-image: url(images/bot-img-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#form {
+  position: absolute;
+  width: 1140px;
+  height: 346px;
+  left: 180px;
+  top: 5095px;
+  background-image: url(images/back-form.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#d-form {
+  position: absolute;
+  width: 423px;
+  height: 72.09px;
+  left: 69px;
+  top: 102px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31.25px;
+  line-height: 41px;
+  color: #FFFFFF;
+  text-align: left;
+  }
+
+#t-form {
+  text-align: left;
+  color: #FFFFFF;
+}
+
+#input {
+  position: absolute;
+  width: 372px;
+  height: 70px;
+  left: 588px;
+  top: 138px;
+  background: #FFFFFF;
+  border-radius: 10px 0px 0px 10px;
+  border: unset;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 41px;
+  color: #170c04;
+}
+
+#send {
+  position: absolute;
+  width: 115.44px;
+  height: 70px;
+  left: 960px;
+  top: 138px;
+  background: #E27B3A;
+  border-radius: 0px 10px 10px 0px;
+  z-index: 2;
+  border: unset;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 41px;
+  color: #FFFFFF;
+}
+
+#comments {
+  position: absolute;
+  width: 620px;
+  height: 370px;
+  left: 444px;
+  top: 4639px;
+  border: solid black;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  text-align: center;
+  color: #170C04;
+  border-radius: 10px;
+}
+
+
+
+/*footer*/
+
+footer {
+  /* footer */
+  position: absolute;
+  width: 1500px;
+  height: 363.5px;
+  left: 0px;
+  top: 5511px;
+  background-image: url(images/footer.png);
+}
+
+#foot-rover {
+  position: absolute;
+  width: 48px;
+  height: 51px;
+  left: 726px;
+  top: 58.5px;
+  background: url(images/rover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#foot-left-1 {
+  position: absolute;
+  width: 140px;
+  height: 19px;
+  left: 179px;
+  top: 127.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-left-2 {
+  /* Privacy & About */
+  position: absolute;
+  width: 140px;
+  height: 19px;
+  left: 179px;
+  top: 183.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-left-3 {
+  /* Contact: alaminhossen.75bd@gmail.com */
+  position: absolute;
+  width: 320px;
+  height: 19px;
+  left: 179px;
+  top: 239.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-left-4 {
+  /*  Dog Care  */
+  text-align: right;
+  position: absolute;
+  width: 320px;
+  height: 19px;
+  right: 180px;
+  top: 127.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-left-5 {
+  /* Privacy & Policy */
+  text-align: right;
+  position: absolute;
+  width: 320px;
+  height: 19px;
+  right: 180px;
+  top: 183.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-left-6 {
+  /* Popular Product */
+  text-align: right;
+  position: absolute;
+  width: 320px;
+  height: 19px;
+  right: 180px;
+  top: 239.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#contact {
+  text-decoration: none;
+  color: #fa7720;
+}
+
+.foot-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+#foot-cent-1 {
+  /*facebook*/
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 665px;
+  top: 218.5px;
+}
+
+#foot-cent-2 {
+  /*world*/
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 730px;
+  top: 218.5px;
+}
+
+#foot-cent-3 {
+  /*tweet*/
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 795px;
+  top: 218.5px;
+}
+
+#foot-cent-4 {
+  /*DOG-PRODUCT*/
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 661px;
+  top: 122px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.foot-link-1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
