@@ -90,8 +90,9 @@ a {
 header > nav {
 		position: fixed;
 		left: 624px;
-    padding-top: 48px;
-    text-align: center;
+        padding-top: 48px;
+        text-align: center;
+        z-index: 1;
 }
 
 
