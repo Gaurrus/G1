@@ -26,7 +26,6 @@ header {
 }
 
 h1 {
-  /*Первый курс по компьютерной сборке*/
   position: absolute;
   display: block;
   top: 270px;
@@ -38,8 +37,6 @@ h1 {
   font-weight: bold;
   font-size: 64px;
   line-height: 90px;
-  /* or 90px */
-  /* white */
   color: #ffffff;
 }
 
@@ -59,8 +56,6 @@ a {
 }
 
 .kab {
-  /* main-screen__button */
-  /* Auto Layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -70,7 +65,6 @@ a {
   height: 44px;
   right: 80px;
   top: 38px;
-  /* grad2 */
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
   border-radius: 50px;
   font-family: Roboto;
@@ -78,11 +72,8 @@ a {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
-  /* identical to box height, or 24px */
   text-align: center;
-  /* white */
   color: #ffffff;
-  /* Inside Auto Layout */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -107,7 +98,6 @@ header>div>a.bye {
   height: 44px;
   left: 312px;
   top: 43px;
-  /* grad1 */
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
   border-radius: 50px;
   font-family: Roboto;
@@ -115,11 +105,8 @@ header>div>a.bye {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  /* identical to box height, or 24px */
   text-align: center;
-  /* white */
   color: #ffffff;
-  /* Inside Auto Layout */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -147,8 +134,6 @@ header>div.bot {
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
-  /* identical to box height, or 24px */
-  /* white */
   color: #ffffff;
 }
 
@@ -158,8 +143,6 @@ table strong {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
-  /* identical to box height, or 24px */
-  /* white */
   color: #ffffff;
   opacity: 0.4;
 }
@@ -174,8 +157,6 @@ table strong {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  /* identical to box height, or 24px */
-  /* white */
   color: #ffffff;
 }
 
@@ -223,8 +204,6 @@ main>div {
   font-weight: bold;
   font-size: 30px;
   line-height: 140%;
-  /* or 67px */
-  /* white */
   color: #ffffff;
 }
 
@@ -234,8 +213,6 @@ main>div>p {
   font-weight: normal;
   font-size: 16px;
   line-height: 160%;
-  /* or 26px */
-  /* white */
   color: #ffffff;
   text-align: justify;
 }
@@ -251,8 +228,6 @@ main>div.fast {
   font-weight: bold;
   font-size: 48px;
   line-height: 140%;
-  /* or 67px */
-  /* white */
   color: #ffffff;
 }
 
@@ -262,8 +237,6 @@ main>div.fast>p {
   font-weight: normal;
   font-size: 16px;
   line-height: 160%;
-  /* or 26px */
-  /* white */
   color: #ffffff;
   opacity: 0.5;
 }
@@ -286,8 +259,6 @@ main progress {
   font-weight: normal;
   font-size: 14px;
   line-height: 160%;
-  /* or 22px */
-  /* white */
   color: #ffffff;
   opacity: 0.5;
   text-align: left;
@@ -308,9 +279,7 @@ main progress {
   font-weight: bold;
   font-size: 48px;
   line-height: 140%;
-  /* or 67px */
   text-align: center;
-  /* white */
   color: #ffffff;
 }
 
@@ -320,9 +289,7 @@ main progress {
   font-weight: 500;
   font-size: 24px;
   line-height: 140%;
-  /* or 34px */
   text-align: center;
-  /* white */
   color: #FFFFFF;
 }
 
@@ -332,9 +299,7 @@ main progress {
   font-weight: normal;
   font-size: 16px;
   line-height: 160%;
-  /* or 26px */
   text-align: center;
-  /* white */
   color: #FFFFFF;
   opacity: 0.8;
 }
@@ -397,4 +362,79 @@ main progress {
   width: 337px;
   height: 150px;
   border-right: 1px solid #ffffff21;
+  /*не получилось пока грамотно убрать границу справа*/
+}
+
+.programm {
+  position: absolute;
+  width: 750px;
+  height: 1116.8px;
+  left: 593px;
+  top: 4043.2px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.programm>p {
+  display: inline-block;
+  width: 411px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.kurs {
+  position: absolute;
+  top: 449.8px;
+}
+
+.kurs>li {
+  padding-top: 87px;
+  list-style-type: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #ffffff31;
+}
+
+.kurs p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+.li-left {
+  text-align: right;
+  width: 228px;
+  height: 58px;
+  padding-left: 76px;
+}
+
+.li-right {
+  text-align: left;
+  width: 228px;
+  height: 58px;
+  padding-left: 446px;
+}
+
+.timeline {
+  position: absolute;
+  top: 439.8px;
+  left: 400px;
 }
