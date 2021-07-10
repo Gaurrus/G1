@@ -88,13 +88,12 @@ a {
 }
 
 header > nav {
-		position: fixed;
-		left: 624px;
-        padding-top: 48px;
-        text-align: center;
-        z-index: 1;
+    position: fixed;
+    left: 624px;
+    padding-top: 48px;
+    text-align: center;
+    z-index: 1;
 }
-
 
 header > div > a.bye {
     display: flex;
@@ -184,17 +183,17 @@ td {
 }
 
 header progress {
-	width: 714px;
-	height: 6px;
-	border-radius: 0px;
+    width: 714px;
+    height: 6px;
+    border-radius: 0px;
 }
 
 header progress::-webkit-progress-bar {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 header progress::-webkit-progress-value {
-	background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
 }
 
 /*main*/
@@ -272,13 +271,11 @@ main > table {
 }
 
 main progress {
-	width: 324px;
-	height: 80px;
-	border-radius: 0px;
-	border: none;
+    width: 324px;
+    height: 80px;
+    border-radius: 0px;
+    border: none;
 }
-
-
 
 .text {
     padding-top: 35px;
@@ -292,4 +289,110 @@ main progress {
     color: #ffffff;
     opacity: 0.5;
     text-align: left;
+}
+
+.sect {
+    position: absolute;
+    width: 1296px;
+    height: 549px;
+    left: 312px;
+    top: 2654px;
+    text-align: center;
+}
+
+.sect > h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+
+    text-align: center;
+
+    /* white */
+
+    color: #ffffff;
+}
+
+.sect h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    
+    text-align: center;
+    
+    /* white */
+    
+    color: #FFFFFF;
+} 
+
+.sect p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+    
+    text-align: center;
+    
+    /* white */
+    
+    color: #FFFFFF;
+    
+    opacity: 0.8;
+}
+
+.icon-left {
+    position: absolute;
+width: 358px;
+
+left: 50px;
+top: 187px;
+
+}
+
+.icon-mid {
+    position: absolute;
+    width: 358px;
+left: 498px;
+top: 187px;
+}
+
+.icon-right {
+    position: absolute;
+    width: 358px;
+left: 938px;
+top: 187px;
+
+}
+
+.partners {
+    position: absolute;
+width: 1315px;
+height: 487px;
+left: 293px;
+top: 3403px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 140%;
+color: #FFFFFF;
+}
+
+.partners>img {
+    margin-right: 51.93px;
+    top: 31px;
+    vertical-align: middle;
+}
+
+.partners>table {
+    position: absolute;
+    left: 19px;
+    top: 187px;
 }
