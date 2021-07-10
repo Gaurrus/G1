@@ -90,7 +90,7 @@ a {
 }
 
 header>nav {
-  position: fixed;
+  position: absolute;
   left: 624px;
   padding-top: 48px;
   text-align: center;
@@ -392,7 +392,9 @@ main progress {
   border-bottom: 1px solid #ffffff21;
 }
 
-.par-1>td,
-.par-2:note-last-child {
+.partners td {
+  text-align: center;
+  width: 337px;
+  height: 150px;
   border-right: 1px solid #ffffff21;
 }
