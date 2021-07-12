@@ -34,3 +34,76 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: "Manrope";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #000000;
+}
+
+/*header styles start*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  padding-top: 22px;
+}
+
+.header-list {
+  margin-left: 32.12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-item {
+  margin-right: 32px;
+}
+
+.header-item:last-child {
+  margin-right: 0;
+}
+
+.header-link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: "liga" off;
+  color: #18191f;
+  text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+  opacity: 0.75;
+  transition: 0.4s;
+}
+
+/*header styles end*/
+
+/*intro styles start*/
+
+.intro {
+  height: 100vh;
+  background: url(../images/bg-intro.jpg) no-repeat;
+  background-size: cover;
+}
+
+/*intro styles end*/
