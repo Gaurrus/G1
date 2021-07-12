@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 10</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form2.js" defer></script>
+</head>
+<body>
+    <h1>Анкета</h1>
+    <form action="" name="anket" autocomplete="off">
+    <table>
+        <tr>
+            <td><label for="fam">Фамилия:</label></td>
+            <td><input type="text" id="fam" name="surname"></td>
+        </tr>
+        <tr>
+            <td><label for="name">Имя:</label></td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td><label for="fname">Отчество:</label></td>
+            <td><input type="text" id="fname" name="middle_name"></td>
+        </tr>
+        <tr>
+            <td colspan="2">О себе сообщаю следующие сведения:</td>
+        </tr>
+        <tr>
+            <td>Пол:</td>
+            <td>
+                <label><input type="radio" name="sex" value="1">Мужской</label> <br>
+                <label><input type="radio" name="sex" value="2">Женский</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="brthd">Дата рождения:</label></td>
+            <td><input type="date" id="brthd" name="date_of_birth"></td>
+        </tr>
+        <tr>
+            <td>Количество полных лет:</td>
+            <td><input type="number" min="18" max="63" name="age"></td>
+        </tr>
+        <tr>
+            <td><label for="adress">Адрес места жительства:</label></td>
+            <td><input type="text" name="adress" id="address"></td>
+        </tr>
+        <tr>
+            <td><label for="tel">Номер контактного телефона:</label></td>
+            <td>+375<input type="tel" name="phone_number" id="tel"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Контактный e-mail:</label></td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Образование:</td>
+            <td>
+                <input type="radio" name="education" value="1">-основное общее средне профессиональное <br>
+                <input type="radio" name="education" value="2">-среднее(полное) общее высшее профессиональное <br>
+                <input type="radio" name="education" value="3">-начальное профессиональное <br>
+                <input type="radio" name="education" value="4">-иное
+            </td>
+        </tr>
+        <tr>
+            <td><label for="prof">Профессия:</label></td>
+            <td><input type="text" name="profession" id="prof"></td>
+        </tr>
+        <tr>
+            <td>Стаж работы по специальности:</td>
+            <td>
+                <select name="experience" id="sel">
+                    <option value="1">Менее года</option>
+                    <option value="2">1-3</option>
+                    <option value="3">4-5</option>
+                    <option value="4">6-15</option>
+                    <option value="5">Более 15</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="rab">Предыдущее место работы:</label></td>
+            <td><input type="text" name="prior_work" id="rab"></td>
+        </tr>
+        <tr>
+            <td>Период работы на предыдущем месте с:</td>
+            <td><input type="date" name="data1"> 
+            по <input type="date" name="data2"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="reset">
+                <input type="button" onclick="checkForm()" value="Отправить">
+            </td>
+            
+  
+    </table>
+</form>
+<section>
+    <h2>Задание №3</h2>
+    <form action="#!" name="form-3">
+    <input type="range"  name="sz"  min="8"  max="50" value="14">
+    <input type="color" name="cl">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque illo explicabo amet ducimus aliquid nostrum possimus accusamus officia iste?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero aspernatur optio veniam id quibusdam ex laudantium consequatur cum iure dolore porro dolor, inventore, rerum modi nesciunt corporis perspiciatis. Id, esse.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel architecto eveniet, blanditiis ipsa, corporis excepturi, corrupti reprehenderit ut deserunt veritatis tempora facilis incidunt fuga quia facere reiciendis suscipit ratione.</p>
+        </form>
+</section>
+</body>
+</html>

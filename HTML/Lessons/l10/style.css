@@ -1,0 +1,14 @@
+body {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+table {
+    width: 400px;
+}
+
+table tr td {
+    text-align: left;
+    border: 1px black solid;
+}
