@@ -1,86 +1,121 @@
 body {
-  position: relative;
-  margin: auto;
-  
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  width: 50%;
+  margin: 0 auto;
   text-align: center;
 }
-table {
-  vertical-align: top;
-}
+
 .table-1 > table {
   border-collapse: collapse;
   vertical-align: top;
 }
 .table-1 caption {
-  font-size: 24px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .table-1 tr > td:nth-child(2),
 td:nth-child(3) {
   text-align: left;
 }
 .table-1 > table th {
-  
+  padding: 5px;
   border: #000000 solid 1px;
-  background-color: #9364c9;
+  background-color: #b2a1c7;
   text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  }
+  height: 45px;
+}
 
 .table-1 th:nth-child(2) {
   text-align: left;
 }
+.table-1 tr {
+  height: 35px;
+}
 
 .table-1 > table td {
-  
-  padding: 10px 10px 10px 10px;
+  padding: 5px;
   border: #000000 solid 1px;
 }
 .col {
-  width: 100px;
+  width: 70px;
 }
 
 .col-2 {
-  width: 130px;
+  text-align: center;
+  width: 160px;
 }
+
+/*таблица 2*/
 
 .table-2 > table {
   border-collapse: collapse;
-  text-align: justify;
 }
 
 .table-2 > table td {
-  width: 100px;
-  height: 40px;
+  padding: 5px;
+  width: 70px;
+  height: 30px;
   border: #000000 solid 1px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Таблица 3*/
+
+.table {
+  border-collapse: collapse;
 }
 
 .table-3 caption {
-  font-family: monospace;
-  font-size: 30px;
+  margin-bottom: 20px;
   font-weight: bold;
 }
-
-.table-3 > table {
-  border-collapse: collapse;
-  text-align: justify;
-}
-.table-3 > table td {
-  padding: 15px 5px 5px 15px;
-  border: #000000 solid 2px;
+.table-3 tr {
+  height: 40px;
 }
 
-.table-4 table{
-  border-collapse: collapse;
-  text-align: justify;}
+.table-3 td {
+  border: #000000 solid 1px;
+}
 
-  .table-4 caption {
-    font-size: 24px;
-    font-weight: bold;
-  }
+/*таблица 4*/
+
+.table-4 table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-4 caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
 .table-4 td {
-  padding: 15px 5px 5px 15px;
+  height: 40px;
   border: #000000 solid 2px;
+}
+
+.col-zna-1 {
+  width: 60px;
+  background-color: #8db3e2;
+}
+.col-zna-2 {
+  width: 120px;
+  background-color: #fbd5b5;
+}
+.col-zna-3 {
+  width: 120px;
+}
+.col-zna-4 {
+  width: 60px;
+  background-color: #8db3e2;
+}
+.col-zna-5 {
+  width: 120px;
+  background-color: #fbd5b5;
+}
+.col-zna-6 {
+  width: 120px;
 }
