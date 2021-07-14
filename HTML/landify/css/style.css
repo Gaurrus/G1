@@ -101,6 +101,9 @@ body {
 /*intro styles start*/
 
 .intro {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
   min-height: 100vh;
   background: url(../images/bg-intro.jpg) no-repeat;
   background-size: cover;
@@ -109,6 +112,7 @@ body {
 
 .intro-title {
   max-width: 730px;
+  margin-right: 45px;
   margin-bottom: 48px;
   font-weight: 800;
   font-size: 72px;
@@ -141,9 +145,9 @@ body {
 }
 
 .intro-image {
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  float: right;
+  margin-right: 180px;
+  margin-top: -56px;
 }
 
 /*intro styles end*/
