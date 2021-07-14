@@ -96,18 +96,39 @@ body {
   transition: 0.4s;
 }
 
+.header-nav {
+  margin-right: 224px;
+}
+
+.header-markets-google {
+  margin-right: 13px;
+}
+
+.header-markets-google,
+.header-markets-apple {
+  text-decoration: none;
+}
+
+.header-markets-google:hover,
+.header-markets-apple:hover,
+.header-markets-google:focus,
+.header-markets-apple:focus,
+.header-markets-google:active,
+.header-markets-apple:active {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 /*header styles end*/
 
 /*intro styles start*/
 
 .intro {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
   min-height: 100vh;
-  background: url(../images/bg-intro.jpg) no-repeat;
+  background: url(../images/bg-intro.png) no-repeat;
   background-size: cover;
   padding-top: 240px;
+  margin-bottom: 16px;
 }
 
 .intro-title {
@@ -146,8 +167,34 @@ body {
 
 .intro-image {
   float: right;
-  margin-right: 180px;
+  margin-right: 360px;
   margin-top: -56px;
 }
 
 /*intro styles end*/
+
+/*intro footer start*/
+
+.intro-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 1110px;
+  height: 108px;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
+
+.intro-footer-link:hover,
+.intro-footer-link:focus,
+.intro-footer-link:active {
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+/*intro footer end*/
