@@ -188,6 +188,7 @@ body {
     rgba(192, 204, 218, 0.6) 50.38%,
     rgba(192, 204, 218, 0.1) 100%
   );
+  margin-bottom: 80px;
 }
 
 .intro-footer-link:hover,
@@ -198,3 +199,60 @@ body {
 }
 
 /*intro footer end*/
+
+/*tailor start*/
+
+.tailor-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tailor-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  color: #18191f;
+  margin-bottom: 8px;
+}
+
+.tailor-subtitle {
+  max-width: 540px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191f;
+  margin-left: 450px;
+  margin-bottom: 50px;
+}
+
+.tailor-cards {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 148px;
+  grid-column-gap: 30px;
+  grid-row-gap: 64px;
+  padding: 0 165px;
+  margin-bottom: 64px;
+}
+
+.grid-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #18191f;
+  margin-bottom: 8px;
+}
+
+.grid-subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #18191f;
+}
+
+.tailor-img {
+  margin-bottom: 24px;
+}
+
+/*tailor end*/
