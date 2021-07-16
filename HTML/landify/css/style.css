@@ -1,0 +1,258 @@
+/* manrope-500 - latin */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/manrope-v4-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/manrope-v4-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* manrope-regular - latin */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/manrope-v4-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/manrope-v4-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* manrope-800 - latin */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../fonts/manrope-v4-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/manrope-v4-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Manrope";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #000000;
+}
+
+/*header styles start*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  padding-top: 22px;
+}
+
+.header-list {
+  margin-left: 32.12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-item {
+  margin-right: 32px;
+}
+
+.header-item:last-child {
+  margin-right: 0;
+}
+
+.header-link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: "liga" off;
+  color: #18191f;
+  text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+  opacity: 0.75;
+  transition: 0.4s;
+}
+
+.header-nav {
+  margin-right: 224px;
+}
+
+.header-markets-google {
+  margin-right: 13px;
+}
+
+.header-markets-google,
+.header-markets-apple {
+  text-decoration: none;
+}
+
+.header-markets-google:hover,
+.header-markets-apple:hover,
+.header-markets-google:focus,
+.header-markets-apple:focus,
+.header-markets-google:active,
+.header-markets-apple:active {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+/*header styles end*/
+
+/*intro styles start*/
+
+.intro {
+  min-height: 100vh;
+  background: url(../images/bg-intro.png) no-repeat;
+  background-size: cover;
+  padding-top: 240px;
+  margin-bottom: 16px;
+}
+
+.intro-title {
+  max-width: 730px;
+  margin-right: 45px;
+  margin-bottom: 48px;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+  color: #18191f;
+}
+
+.intro-button-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  width: 196px;
+  height: 62px;
+  border: unset;
+  background-color: #8c30f5;
+  border-radius: 8px;
+}
+
+.intro-button-link:hover,
+.intro-button-link:focus,
+.intro-button-link:active {
+  opacity: 0.7;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.intro-image {
+  float: right;
+  margin-right: 360px;
+  margin-top: -56px;
+}
+
+/*intro styles end*/
+
+/*intro footer start*/
+
+.intro-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 1110px;
+  height: 108px;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+  margin-bottom: 80px;
+}
+
+.intro-footer-link:hover,
+.intro-footer-link:focus,
+.intro-footer-link:active {
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+/*intro footer end*/
+
+/*tailor start*/
+
+.tailor-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tailor-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  color: #18191f;
+  margin-bottom: 8px;
+}
+
+.tailor-subtitle {
+  max-width: 540px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191f;
+  margin-left: 450px;
+  margin-bottom: 50px;
+}
+
+.tailor-cards {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 148px;
+  grid-column-gap: 30px;
+  grid-row-gap: 64px;
+  padding: 0 165px;
+  margin-bottom: 64px;
+}
+
+.grid-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #18191f;
+  margin-bottom: 8px;
+}
+
+.grid-subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #18191f;
+}
+
+.tailor-img {
+  margin-bottom: 24px;
+}
+
+/*tailor end*/
