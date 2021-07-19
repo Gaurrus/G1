@@ -1,3 +1,12 @@
+body {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+body>img {
+    margin-left: 500px;
+}
+
 h2 {
     color: #3837a0;
     font-family: 'PT Serif', Tahoma, Verdana, sans-serif;
