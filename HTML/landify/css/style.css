@@ -168,7 +168,13 @@ body {
 .intro-grid {
   display: grid;
   grid-template-columns: 730px 200px;
-  }
+  justify-content: center;
+  margin-left: -130px;
+}
+
+.intro-image {
+  margin-top: -80px;
+}
 
 /*intro styles end*/
 
