@@ -165,11 +165,10 @@ body {
   transition: 0.5s;
 }
 
-.intro-image {
-  float: right;
-  margin-right: 360px;
-  margin-top: -56px;
-}
+.intro-grid {
+  display: grid;
+  grid-template-columns: 730px 200px;
+  }
 
 /*intro styles end*/
 
