@@ -1,0 +1,42 @@
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.de {
+  width: 200px;
+  height: 200px;
+}
+
+.d1 {
+  background-color: blue;
+}
+
+.d2 {
+  background-color: blueviolet;
+}
+
+.d3 {
+  background-color: brown;
+  height: 400px;
+}
+
+.d4 {
+  background-color: burlywood;
+}
+
+.d5 {
+  background-color: cadetblue;
+}
+
+.d6 {
+  background-color: chartreuse;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  justify-content: center;
+  text-align: center;
+}
