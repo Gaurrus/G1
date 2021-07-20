@@ -168,7 +168,7 @@ img {
   opacity: 0.7;
   color: #000000;
   width: 30%;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s all;
 }
 
 .intro-grid {
@@ -179,7 +179,7 @@ img {
 
 .intro-image {
   background: url(../images/back-phone-2.jpg) center no-repeat;
-  margin-top: -80px;
+  margin-top: -72px;
 }
 
 /*intro styles end*/
@@ -268,3 +268,18 @@ img {
 }
 
 /*tailor end*/
+
+/*real stories start*/
+.real-stories {
+  height: 896px;
+  background: #d5fafc;
+}
+
+.real-stories-cards {
+  max-width: 1060px;
+  height: 696px;
+  margin: 0 auto;
+  background: url(../images/mark.png) no-repeat top 10% left 10%;
+}
+
+/*real stories end*/
