@@ -44,6 +44,11 @@ body {
   color: #000000;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*header styles start*/
 
 .header {
@@ -93,7 +98,7 @@ body {
 .header-link:focus,
 .header-link:active {
   opacity: 0.75;
-  transition: 0.4s;
+  transition: 0.4s all;
 }
 
 .header-nav {
@@ -116,7 +121,7 @@ body {
 .header-markets-google:active,
 .header-markets-apple:active {
   opacity: 0.5;
-  transition: 0.5s;
+  transition: 0.5s all;
 }
 
 /*header styles end*/
@@ -162,17 +167,18 @@ body {
 .intro-button-link:active {
   opacity: 0.7;
   color: #000000;
-  transition: 0.5s;
+  width: 30%;
+  transition: 0.5s ease-in-out;
 }
 
 .intro-grid {
   display: grid;
-  grid-template-columns: 730px 200px;
+  grid-template-columns: 730px 320px;
   justify-content: center;
-  margin-left: -130px;
 }
 
 .intro-image {
+  background: url(../images/back-phone-2.jpg) center no-repeat;
   margin-top: -80px;
 }
 
@@ -199,7 +205,7 @@ body {
 .intro-footer-link:hover,
 .intro-footer-link:focus,
 .intro-footer-link:active {
-  transition: 0.5s;
+  transition: 0.5s all;
   opacity: 0.5;
 }
 
@@ -237,7 +243,7 @@ body {
   grid-template-rows: 148px;
   grid-column-gap: 30px;
   grid-row-gap: 64px;
-  padding: 0 165px;
+  justify-content: center;
   margin-bottom: 64px;
 }
 
@@ -257,6 +263,7 @@ body {
 }
 
 .tailor-img {
+  display: inline-block;
   margin-bottom: 24px;
 }
 
