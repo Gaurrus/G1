@@ -276,10 +276,171 @@ img {
 }
 
 .real-stories-cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 445px 445px;
+  grid-template-areas:
+    "a a a a 1 1 1 1"
+    "a a a a b b b b"
+    "c c c c b b b b"
+    "c c c c d d d d"
+    "2 2 2 2 d d d d";
+  column-gap: 30px;
+  row-gap: 30px;
   max-width: 1060px;
   height: 696px;
   margin: 0 auto;
   background: url(../images/mark.png) no-repeat top 10% left 10%;
+}
+
+.real-stories-card-1 {
+  grid-area: a;
+  justify-self: end;
+  width: 445px;
+}
+
+.stories-title {
+  width: 445px;
+  font-weight: 800;
+  font-size: 48px;
+  color: #18191f;
+  margin-bottom: 8px;
+}
+
+.stories-subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191f;
+}
+
+.real-stories-card-2 {
+  grid-area: b;
+  justify-self: start;
+  width: 445px;
+  height: 340px;
+  padding-top: 32px;
+  padding-left: 32px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.stories-card-2-img {
+  margin-bottom: 32px;
+}
+
+.stories-card-2-subtitle {
+  width: 381px;
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191f;
+  background: url(../images/small-mark.png) no-repeat top left;
+  padding-left: 32px;
+}
+
+.stories-card-2-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #18191f;
+  padding-left: 32px;
+}
+
+.stories-card-2-name-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #969bab;
+  padding-left: 32px;
+}
+
+.real-stories-card-3 {
+  grid-area: c;
+  justify-self: end;
+  width: 350px;
+  height: 436px;
+  padding-top: 38px;
+  padding-left: 32px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.stories-card-3-img {
+  margin-bottom: 32px;
+}
+
+.stories-card-3-subtitle {
+  width: 286px;
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191f;
+  background: url(../images/small-mark.png) no-repeat top left;
+  padding-left: 32px;
+}
+
+.stories-card-3-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #18191f;
+  padding-left: 32px;
+}
+
+.stories-card-3-name-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #969bab;
+  padding-left: 32px;
+}
+
+.real-stories-card-4 {
+  grid-area: d;
+  justify-self: start;
+  width: 350px;
+  height: 276px;
+  padding-top: 38px;
+  padding-left: 32px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.stories-card-4-img {
+  margin-bottom: 32px;
+}
+
+.stories-card-4-subtitle {
+  width: 286px;
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191f;
+  background: url(../images/small-mark.png) no-repeat top left;
+  padding-left: 32px;
+}
+
+.stories-card-4-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #18191f;
+  padding-left: 32px;
+}
+
+.stories-card-4-name-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #969bab;
+  padding-left: 32px;
 }
 
 /*real stories end*/
