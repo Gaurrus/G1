@@ -277,8 +277,6 @@ img {
 
 .real-stories-cards {
   display: grid;
-  justify-content: center;
-  grid-template-columns: 445px 445px;
   grid-template-areas:
     "a a a a 1 1 1 1"
     "a a a a b b b b"
@@ -286,8 +284,9 @@ img {
     "c c c c d d d d"
     "2 2 2 2 d d d d";
   column-gap: 30px;
-  row-gap: 30px;
   max-width: 1060px;
+  padding-left: 186px;
+  padding-top: 115px;
   height: 696px;
   margin: 0 auto;
   background: url(../images/mark.png) no-repeat top 10% left 10%;
