@@ -1,7 +1,17 @@
-li {
-    font-weight: bold;
+body {
+  width: 1000px;
+  margin: 0 auto;
 }
 
-ol li+li {
-    font-weight: normal;
+ol {
+  font-weight: bold;
+}
+
+li > ol {
+  font-weight: normal;
+}
+
+ul {
+  font-weight: bold;
+  list-style-type: disc;
 }
