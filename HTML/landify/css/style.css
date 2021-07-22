@@ -442,4 +442,11 @@ img {
   padding-left: 32px;
 }
 
+.real-stories-card-4:hover,
+.real-stories-card-4:active,
+.real-stories-card-4:focus {
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
 /*real stories end*/
