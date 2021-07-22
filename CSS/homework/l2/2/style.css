@@ -1,0 +1,7 @@
+li {
+    font-weight: bold;
+}
+
+ol li+li {
+    font-weight: normal;
+}
