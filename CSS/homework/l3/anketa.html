@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета</title>
+  <style>
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    table {
+      font-size: 18px;
+      width: 700px;
+      border-collapse: collapse;
+      border: solid 2px;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px 10px 10px 10px;
+      border: solid 2px;
+    }
+
+    :hover {
+      box-shadow: 0px 0px 10px orange;
+      ;
+    }
+  </style>
+</head>
+<h1>Анкета</h1>
+<form action="#!">
+  <table>
+    <tr>
+      <td>
+        Фамилия
+      </td>
+      <td>
+        <input type="text" name="lastname" id="lastname">
+      </td>
+    </tr>
+    <tr>
+      <td>Имя</td>
+      <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <td>Отчество</td>
+      <td><input type="text" name="surname"></td>
+    </tr>
+    <tr>
+      <td>
+        Пол
+      </td>
+      <td>
+        <input type="radio" name="sex">Мужской <br>
+        <input type="radio" name="sex">Женский
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Дата рождения
+      </td>
+      <td>
+        <input type="date">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Владею языками
+      </td>
+      <td>
+        <input type="checkbox" name="english" checked>Английскай <br>
+        <input type="checkbox" name="вeutsch">Дойч <br>
+        <input type="checkbox" name="blr">Белорусский <br>
+        <input type="checkbox" name="rus">Русский <br>
+        <input type="checkbox" name="rus-mat" checked disabled>Русский-матерный
+      </td>
+    </tr>
+    <tr>
+      <td>Адрес места жительства</td>
+      <td><input type="text" name="adress"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="submit" value="Отправить данные">
+      </td>
+    </tr>
+  </table>
+</form>
+
+<body>
+
+</body>
+
+</html>
