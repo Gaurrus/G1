@@ -1,0 +1,54 @@
+h1 {
+  padding: 20px;
+  background-color: #dddddd;
+  font-size: 28pt;
+}
+
+p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+body > a {
+  font-size: 16pt;
+  font-weight: bold;
+  color: #777777;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+body > a:hover {
+  color: #1d0d77;
+}
+
+h2 {
+  padding: 10px;
+  background-color: #dddddd;
+  font-size: 20pt;
+}
+
+h2:nth-of-type(1) {
+  color: #2d4764;
+  border: 1px dotted #444;
+}
+
+h2:nth-of-type(2) {
+  color: #345375;
+  border: 1px dashed #444;
+}
+
+h2:last-of-type {
+  color: #3e337a;
+  border: 3px double #444;
+}
+
+h3 {
+  margin-left: 40px;
+}
+
+a:nth-of-type(even) {
+  color: #ff4500;
+}
+
+a:nth-of-type(odd) {
+  color: #1ead10;
+}
