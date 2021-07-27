@@ -4,7 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>Чекбоксы и радиокнопки</title>
-    
+    <style>
+        input:nth-of-type(3):indeterminate+label,
+        input:nth-of-type(4):indeterminate+label {
+            color: #0000ff;
+        }
+
+        input:checked+label {
+            color: #ff0000;
+        }
+    </style>
 </head>
 
 <body>
