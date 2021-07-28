@@ -1,0 +1,46 @@
+h1, h2 {
+    font-family: georgia;     
+	color: #9b3402;            
+    text-align: center;      
+    margin-top: 40px;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px #fff, 2px 2px 1px #555;
+}
+
+p {
+    font-family: helvetica, tahoma, verdana;
+    font-size: 14pt;  
+    margin: 15px; 
+
+}
+
+h2 + img {
+    width: 250px;
+    float: left;          
+    margin:10px;   
+    padding: 5px;  
+}
+
+img {
+    width: 480px;
+    display: block;      
+    margin: 15px auto;
+    padding: 10px;        
+    border: 1px solid #777; 
+    background-color: #fff;   
+    box-shadow: 3px 3px 1px #ccc;
+}
+
+h2 + img + p {
+    font-weight: bold;
+    font-style:  italic;  
+}
+
+li a {
+    color: #0254a6;     
+    font-size: 14pt;    
+    font-family: helvetica, tahoma, verdana; 
+    line-height:1.4  
+}

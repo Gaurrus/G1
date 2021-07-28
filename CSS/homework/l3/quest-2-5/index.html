@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета</title>
+  <style>
+    table {
+      width: 700px;
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    td {
+      border: 1px solid #777;
+      padding: 7px;
+      background-color: #f0f8ff;
+    }
+
+    textarea,
+    [type="text"] {
+      width: 450px;
+    }
+
+    :required {
+      border: 1px solid #ff0000;
+      box-shadow: 0px 0px 3px #ff0000;
+    }
+
+    caption {
+      font-size: larger;
+      font-weight: bold;
+    }
+
+    [colspan] {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    tr:last-child {
+      color: red;
+      font-weight: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>
+      Данные о клиенте
+    </caption>
+    <tr>
+      <td colspan="2">
+        Основные данные
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Фамилия
+      </td>
+      <td>
+        <input type="text" name="lastname" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Имя
+      </td>
+      <td>
+        <input type="text" name="name" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Отчество
+      </td>
+      <td>
+        <input type="text" name="surname" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Дата рождения
+      </td>
+      <td>
+        <input type="date" name="birthday">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Комментарий
+      </td>
+      <td>
+        <textarea name="kommebt" cols="20" rows="2">
+
+      </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        Контакты
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Адрес
+      </td>
+      <td>
+        <input type="text" name="adress">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Телефон
+      </td>
+      <td>
+        <input type="tel" name="phone" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        e-mail
+      </td>
+      <td>
+        <input type="email" name="e-mail">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Получать рассылку
+      </td>
+      <td>
+        <input type="radio" name="subscription">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">Обязательные для заполнения поня выделены красным</td>
+    </tr>
+  </table>
+</body>
+
+</html>
