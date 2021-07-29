@@ -1,0 +1,11 @@
+#p_1,
+#p_2 {
+  width: 500px;
+  padding: 1em 1em 1em 1em;
+  margin: 2em 2em 2em 2em;
+  border: 1px solid gray;
+}
+
+p {
+  text-shadow: 2px 2px 2px gray;
+}
