@@ -1,6 +1,6 @@
 @font-face {
   font-family: Monsteral;
-  src: url(fonts/montserrat-alternates.ttf);
+  src: url(./fonts/montserrat-alternates.ttf);
   /*подключаю шрифт из папки*/
 }
 
@@ -13,6 +13,7 @@ body {
 }
 
 .header {
+  
   background-position: center;
   background-size: cover;
   border-radius: 7px;
@@ -22,7 +23,7 @@ body {
  
 }
 
-.header-title {
+/* .header-title {
   padding: 0;
   margin: 0;
   display:inline-block;
@@ -32,12 +33,12 @@ body {
 }
 
 .back{
-  background-image: url(./images/img1.jpg);
+  background-image: url(header-img.gif);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 
-}
+} */
 
 .scale {
   width: 15%;
