@@ -6,6 +6,8 @@
   border: 1px solid gray;
 }
 
-p {
-  text-shadow: 2px 2px 2px gray;
+p:nth-of-type(2) {
+  text-shadow: 1px 1px 2px gray;
+  letter-spacing: 1.3px;
+  white-space: pre;
 }
