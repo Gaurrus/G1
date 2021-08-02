@@ -1,0 +1,43 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid;
+    font-family: 'arial';
+    overflow: hidden;
+}
+
+thead {
+    background-color: #252597;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid;
+}
+
+th {
+    background-color: #0000ff;
+    border: 1px solid;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    width: 60px;
+    border: 1px solid;
+    position: relative;
+}
+
+tr:hover {
+    background-color: rgb(99, 99, 231);
+}
+
+td:hover::after{
+    content: '';
+    background-color: rgba(140, 140, 255, 0.4);
+    position: absolute;
+    height: 2000vh;
+    left: 0;
+    top: -1000vh;
+    width: 100%;
+    z-index: -1;
+}
