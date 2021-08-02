@@ -24,9 +24,9 @@ p:nth-of-type(2) {
 
 .b {
   font-weight: bolder;
-  text-decoration: underline dotted 2px orange;
+  text-decoration: underline dotted orange;
 }
 
-.u {
-  text-decoration: line-through;
+.u::before {
+  content: '\160';
 }

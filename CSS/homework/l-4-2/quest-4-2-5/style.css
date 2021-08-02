@@ -8,10 +8,10 @@ p {
 }
 
 p:nth-of-type(2) {
-  font-style: normal;
   font-style: italic;
 }
 
 p:last-of-type {
+  font-style: oblique;
   font-variant: small-caps;
 }
