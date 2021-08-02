@@ -28,5 +28,5 @@ p:nth-of-type(2) {
 }
 
 .u::before {
-  content: '\160';
+  content: '\00A0';
 }
