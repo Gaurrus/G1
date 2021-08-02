@@ -441,11 +441,12 @@ img {
   padding-left: 32px;
 }
 
-.real-stories-card-4:hover,
-.real-stories-card-4:active,
-.real-stories-card-4:focus {
+.real-stories-card-2:hover,
+.real-stories-card-3:hover,
+.real-stories-card-4:hover {
   transition: 0.5s;
-  opacity: 0.7;
+  background-color: #ffffff63;
+  box-shadow: 0px 0px 15px #000000;
 }
 
 /*real stories end*/
@@ -587,3 +588,19 @@ img {
   background: url(../images/arrow-link.png) no-repeat right center;
 }
 /*headline end*/
+
+/*далее на фигме закрыли доступ к макету*/
+
+.the-end-title {
+  max-width: 1060px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.the-end-title-text {
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 32px;
+  color: #18191f;
+  margin-bottom: 32px;
+}
