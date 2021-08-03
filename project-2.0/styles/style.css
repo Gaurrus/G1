@@ -53,6 +53,7 @@ a:hover, a:active, a:focus {
   margin: 0 auto;
   position: fixed;
   top: 0px;
+  border-radius: 8px;
   transition: 0.5s linear;
   z-index: 999;
 }
@@ -65,6 +66,7 @@ a:hover, a:active, a:focus {
 
 .header_active {
   background-color: #af6a03;
+  border-radius: 8px;
 }
 
 .nav-list {
@@ -83,15 +85,14 @@ a:hover, a:active, a:focus {
 }
 
 .title {
-  height: 100px;
   background: url(../images/header-back.gif) center no-repeat;
   text-align: center;
   vertical-align: middle;
   border-radius: 8px;
   position: relative;
   margin-bottom: 20px;
-  padding-top: 20px;
   margin-top: 60px;
+  padding: 10px 10px 10px 10px;
 }
 
 .title-text {
@@ -115,9 +116,7 @@ a:hover, a:active, a:focus {
 .content {
   max-width: 1200px;
   margin: 0 auto;
-  height: 1500px;
-  /* box-shadow: 0px 0px 5px #000000;
-  border-radius: 8px; */
+  margin-bottom: 20px;
 }
 
 .grid {
@@ -182,3 +181,45 @@ a:hover, a:active, a:focus {
   line-height: 10px;
 }
 
+.footer {
+  width: 100%;
+  background-color: #af6a03;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 15px 15px 15px 15px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+
+.footer-text {
+  font-size: 14px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 10px;
+}
+
+
+/* katal start */
+.duble-grid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.katal-card-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+/* katal end */
