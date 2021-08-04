@@ -332,10 +332,11 @@ a:hover, a:active, a:focus {
 }
 
 .input {
-  width: 200px;
+  width: 400px;
   border: unset;
   border-radius: 5px;
   font-size: 22px;
+  transition: 0.2s all;
 }
 
 .input::placeholder {
@@ -355,5 +356,36 @@ a:hover, a:active, a:focus {
 .point {
   margin-right: 10px;
   margin-left: 10px;
+  transition: 0.2s all;
 }
+
+.point:hover {
+  transform: scale(1.5);
+}
+
+.form-legend {
+  text-indent: 40px;
+}
+
+.button {
+  border: none;
+  background-color: brown;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  transition: 0.2s all;
+}
+
+.input:hover, .input:focus {
+  background-color: rgb(255, 251, 189);
+}
+
+.button:hover, .button:active, .button:focus{
+  transform: scale(1.02);
+}
+
+.map {
+  border-radius: 5px;
+  transition: 0.2s all;
+  }
 /* kont end */
