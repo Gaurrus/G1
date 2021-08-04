@@ -196,8 +196,9 @@ a:hover, a:active, a:focus {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
   }
 
