@@ -59,10 +59,17 @@ a:hover, a:active, a:focus {
   z-index: 999;
 }
 
+.header-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .nav {
   margin-bottom: 20px;
   margin-top: 20px;
-  padding-left: 21%;
 }
 
 .header_active {
@@ -71,18 +78,48 @@ a:hover, a:active, a:focus {
 }
 
 .nav-list {
-  width: 600px;
+  width: 100%;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 18px;
+  margin-right: 40px;
 }
+
 .nav-link {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
   text-shadow: 1px 1px 3px gray;
+}
+.header-burger {
+  width: 40px;
+  height: 28px;
+  position: relative;
+  margin: 0 0 0 auto;
+}
+
+.burger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+}
+
+.burger-line-first {
+  top: 0;
+}
+
+.burger-line-second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-line-third {
+  bottom: 0;
 }
 
 .title {
