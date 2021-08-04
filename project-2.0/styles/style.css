@@ -196,13 +196,15 @@ a:hover, a:active, a:focus {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  text-align: center;
   }
 
 .footer-text {
   font-size: 14px;
-}
+  width: 300px;
+  }
 
 .footer-link {
   text-decoration: none;
@@ -210,6 +212,13 @@ a:hover, a:active, a:focus {
   margin-right: 10px;
 }
 
+.footer-webs {
+  width: 15%;
+}
+
+.insta {
+  width: 22%;
+}
 
 /* katal start */
 .duble-grid {
