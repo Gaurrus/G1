@@ -14,11 +14,15 @@
     <div class="header-wrapper">
       <nav class="nav">
         <ul class="nav-list">
-          <li><a href="./index.html" class="nav-link">Главная</a></li>
-          <li><a href="./katal.html" class="nav-link">Каталог</a></li>
-          <li><a href="./kontakts.html" class="nav-link">Контакты</a></li>
-          <li><a href="./info.html" class="nav-link">Info</a></li>
+          <li class="nav-item"><a href="./index.html" class="nav-link">Главная</a></li>
+          <li class="nav-item"><a href="./katal.html" class="nav-link">Каталог</a></li>
+          <li class="nav-item"><a href="./kontakts.html" class="nav-link">Контакты</a></li>
+          <li class="nav-item"><a href="./info.html" class="nav-link">Info</a></li>
         </ul>
+        <div class="nav-close">
+          <span class="nav-close-line"></span>
+          <span class="nav-close-line"></span>
+        </div>
       </nav>
       <div class="header-burger burger">
         <span class="burger-line burger-line-first"></span>
@@ -89,11 +93,11 @@
               Способ оплаты: (котикам на вкусняшки)
             </p>
             <p class="grid-text">
-              <input class="point" type="radio" name="answer" value="VISA" >
+              <input class="point" type="radio" name="answer" value="VISA" id="visa">
               <label for="visa">VISA</label>
             </p>
             <p class="grid-text">
-              <input class="point" type="radio" name="answer" value="100500 мышиных хвостов">
+              <input class="point" type="radio" name="answer" value="100500 мышиных хвостов" id="mous">
               <label for="mous">100500 мышиных хвостов</label>
             </p>
             <p class="grid-text">
@@ -120,8 +124,11 @@
           e-mail: stidniy_kot@google.com
         </p>
         <p class="grid-text">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d688.5838066635898!2d30.43153488554541!3d54.5139105013584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cfe17e2a5a671b%3A0x49ccf1791ac0d444!2z0YPQuy4g0JvQtdC90LjQvdCwIDM2LCDQntGA0YjQsCAyMTEzOTE!5e0!3m2!1sru!2sby!4v1624304335137!5m2!1sru!2sby"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+          <div class="map-wrap">
+            <div class="map-item"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d688.5838066635898!2d30.43153488554541!3d54.5139105013584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cfe17e2a5a671b%3A0x49ccf1791ac0d444!2z0YPQuy4g0JvQtdC90LjQvdCwIDM2LCDQntGA0YjQsCAyMTEzOTE!5e0!3m2!1sru!2sby!4v1624304335137!5m2!1sru!2sby"
+            style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+          </div>
         </p>
 
       </div>
