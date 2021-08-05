@@ -638,6 +638,10 @@ a:focus {
     line-height: 24px;
   }
 
+  .duble-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
 
 /*medis end*/
