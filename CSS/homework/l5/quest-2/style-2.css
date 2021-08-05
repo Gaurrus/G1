@@ -28,7 +28,7 @@ td {
 }
 
 tr:hover {
-    background-color: rgb(99, 99, 231);
+    background-color: rgba(140, 140, 255, 0.4);
 }
 
 td:hover::after{

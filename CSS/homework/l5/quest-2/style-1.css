@@ -1,14 +1,29 @@
 table {
-    border: solid 1px;
-    border-collapse: collapse;  
+    empty-cells: hide;
+    font-family: 'Arial';
+    border-spacing: 5px;
 }
 
-th {
-    border: solid 1px;
-    
+th {   
+    border-radius: 5px;
+    width: 120px;
+    padding: 15px;
+    background: linear-gradient(to top,  #8af004,#42691e );
+    color: white;
+    font-weight: 700;
+    font-size: larger;
 }
 
 td{
-    border: solid 1px;
-    padding: 5px 5px 5px 5px;
+    
+    border-radius: 5px;
+    width: 120px;
+    padding: 15px;
+    background-color: rgba(128, 255, 0, 0.425);
+    text-align: center;
+    font-size: larger;
+}
+
+th:first-of-type {
+    background: linear-gradient( 45deg,  #8af004,#35501a );
 }

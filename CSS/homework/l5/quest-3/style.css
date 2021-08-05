@@ -1,0 +1,25 @@
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 36px;
+}
+
+.table-collapse {
+  margin-top: 75px;
+  border: solid 1px black;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+  caption-side: top;
+}
+
+.table-separate {
+  border: solid 1px black;
+  border-spacing: 10px;
+  caption-side: bottom;
+  empty-cells: hide;
+}
+
+td {
+  border: solid 1px black;
+  padding: 10px 30px;
+}
