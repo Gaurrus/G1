@@ -1,0 +1,37 @@
+.sub-text {
+  text-align: justify;
+  padding: 5px;
+  font-family: Arial;
+  font-weight: 800;
+  position: relative;
+  top: 69vh;
+  left: 80vw;
+  display: block;
+  transition: 0.2s all;
+  width: 350px;
+  height: 200px;
+  background-color: rgb(110, 216, 110);
+  border: 2px solid green;
+  border-radius: 8px;
+  opacity: 0;
+  z-index: 4;
+}
+
+.sub-text::before {
+  content: '';
+  position: absolute;
+  top: 93.5%;
+  left: 5%;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(110, 216, 110);
+  /* border-right: 2px solid green;
+  border-bottom: 2px solid green; */
+  transform: rotate(45deg);
+  z-index: 1;
+}
+  
+
+.sub:hover + .sub-text {
+  opacity: 1;
+}
