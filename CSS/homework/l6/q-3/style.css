@@ -4,8 +4,8 @@
   font-family: Arial;
   font-weight: 800;
   position: relative;
-  top: 69vh;
-  left: 80vw;
+  top: 50vh;
+  /* left: 80vw; */
   display: block;
   transition: 0.2s all;
   width: 350px;
@@ -20,15 +20,17 @@
 .sub-text::before {
   content: '';
   position: absolute;
-  top: 93.5%;
+  top: 100%;
   left: 5%;
-  width: 30px;
-  height: 30px;
-  background-color: rgb(110, 216, 110);
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid rgb(110, 216, 110);
+  /* background-color: rgb(110, 216, 110); */
   /* border-right: 2px solid green;
   border-bottom: 2px solid green; */
-  transform: rotate(45deg);
-  z-index: 1;
+  /* transform: rotate(45deg);
+  z-index: 1; */
 }
   
 

@@ -1,0 +1,15 @@
+th {
+  background-color: blueviolet;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+.rows:hover + td {
+  box-shadow: 0px 0px 2px black;
+}
