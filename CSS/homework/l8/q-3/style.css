@@ -1,0 +1,21 @@
+.silence {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 200px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: green;
+  text-align: center;
+  box-shadow: 5px 5px 2px brown;
+  margin: 100px auto;
+  cursor: pointer;
+}
+
+.silence:hover {
+  box-shadow: 0px 0px 5px brown;
+}
+
+.silence:active {
+  background-color: rgb(2, 170, 2);
+}

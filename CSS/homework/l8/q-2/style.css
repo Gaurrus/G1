@@ -1,0 +1,28 @@
+.div_1 {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  width: 500px;
+  height: 200px;
+  padding: 15px;
+  border: 4px dashed blue;
+  background-color: yellow;
+}
+
+.div_2 {
+  width: 200px;
+  height: 100px;
+  padding: 5px;
+  border: 2px solid blue;
+  float: left;
+  overflow: scroll;
+}
+
+.div_3 {
+  width: 200px;
+  height: 100px;
+  padding: 5px;
+  border: 2px dotted violet;
+  float: right;
+  overflow: auto;
+}
