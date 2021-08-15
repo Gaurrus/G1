@@ -1,9 +1,13 @@
 (function () {
   const header = document.querySelector('.header');
-  window.onscroll = () => {
+  document.onscroll = () => {
+    if (window.innerWidth < 768) {
+      header.classList.remove('header_active');
+    } else 
     if (window.pageYOffset > 25) {
       header.classList.add('header_active');
-    } else {
+    }
+    else {
       header.classList.remove('header_active');
     }
   };
