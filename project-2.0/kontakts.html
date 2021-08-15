@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пушистые контакты</title>
+  <link rel="stylesheet" href="./styles/style-0.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header-wrapper">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./index.html" class="nav-link">Главная</a></li>
+          <li class="nav-item"><a href="./katal.html" class="nav-link">Каталог</a></li>
+          <li class="nav-item"><a href="./kontakts.html" class="nav-link">Контакты</a></li>
+          <li class="nav-item"><a href="./info.html" class="nav-link">Info</a></li>
+        </ul>
+        <div class="nav-close">
+          <span class="nav-close-line"></span>
+          <span class="nav-close-line"></span>
+        </div>
+      </nav>
+      <div class="header-burger burger">
+        <span class="burger-line burger-line-first"></span>
+        <span class="burger-line burger-line-second"></span>
+        <span class="burger-line burger-line-third"></span>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <div class="title">
+      <a href="./index.html" class="title-link"></a>
+      <h1 class="title-text">
+        Наши пушистики
+      </h1>
+    </div>
+    <section class="grid">
+      <div class="grid-part">
+        <aside class="wiki">
+          <ul class="wiki-list">
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0" class="wiki-link" target="_blank" rel="noopener noreferrer">Про котиков</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BF%D0%BE%D1%80%D0%BE%D0%B4_%D0%BA%D0%BE%D1%88%D0%B5%D0%BA" class="wiki-link" target="_blank" rel="noopener noreferrer">Популярные породы</a></li>
+            <li><a href="https://petsi.net/cat-breeds-redkiye-porody-koshek" class="wiki-link" target="_blank" rel="noopener noreferrer">Самые редкие породы</a></li>
+          </ul>
+        </aside>
+        
+      </div>
+      <div class="grid-part">
+        <h2 class="grid-title">
+          Вы хотите познакомиться с одним из котов поближе?
+        </h2>
+        <p class="grid-text">
+          Свяжитесь с нашими специалистами, и мы можем устроить вам встречу с понравившимся котом.
+        </p>
+        <p class="grid-text">
+          Телефон для справок<span class="red"> 103</span>. Спросить главного психиатра.
+        </p>
+        <form class="kont-form">
+          <fieldset>
+            <legend class="form-legend">Напишите нам</legend>
+            <p class="grid-text">
+              <input placeholder="Имя" name="user" type="text" class="input">
+            
+            </p>
+            <p class="grid-text">
+              <input placeholder="e-mail" name="email" type="email" class="input">
+              
+            </p>
+            <p class="grid-text">
+              <input placeholder="Тема" type="text" name="them" class="input">
+              
+          </p>
+            <p class="grid-text">
+              Письмо писать здесь:
+            </p>
+            <p class="grid-text">
+              <textarea placeholder="Особые пожелания" name="comment" cols="40" rows="5" class="input textarea"></textarea>
+            </p>
+            <p class="grid-text">
+              <select name="Товары" id="tov" class="input select">
+                <option disabled>Выберите кота:</option>
+                <option value="motor">Мотор</option>
+                <option value="morzik">Мурзик</option>
+                <option value="glasha">Глаша</option>
+                <option value="unhome">Бездомный</option>
+              </select>
+            </p>
+            <p class="grid-text">
+              Способ оплаты: (котикам на вкусняшки)
+            </p>
+            <p class="grid-text">
+              <input class="point" type="radio" name="answer" value="VISA" id="visa">
+              <label for="visa">VISA</label>
+            </p>
+            <p class="grid-text">
+              <input class="point" type="radio" name="answer" value="100500 мышиных хвостов" id="mous">
+              <label for="mous">100500 мышиных хвостов</label>
+            </p>
+            <p class="grid-text">
+              Контантный телефон для обратной связи:
+            </p>
+            <p class="grid-text">
+              <input type="tel" class="input">
+            </p>
+            <p class="grid-text">
+              <button type="submit" class="button">Отправить</button>
+            </p>
+          </fieldset>
+        </form>
+        <p class="grid-text">
+          Наши контакты:
+        </p>
+        <p class="grid-text">
+          Телефон: +5 555 555 55 55
+        </p>
+        <p class="grid-text">
+          г.Урюпинск, ул. У черта на куличках, д. 123, за углом у мусорки.
+        </p>
+        <p class="grid-text">
+          e-mail: stidniy_kot@google.com
+        </p>
+        <p class="grid-text">
+          <div class="map-wrap">
+            <div class="map-item"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d688.5838066635898!2d30.43153488554541!3d54.5139105013584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cfe17e2a5a671b%3A0x49ccf1791ac0d444!2z0YPQuy4g0JvQtdC90LjQvdCwIDM2LCDQntGA0YjQsCAyMTEzOTE!5e0!3m2!1sru!2sby!4v1624304335137!5m2!1sru!2sby"
+            style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+          </div>
+        </p>
+
+      </div>
+      <div class="grid-part">
+        <ul class="page-list">
+          <li>
+            <a href="./motor.html" class="page-link">Мотор</a>
+          </li>
+          <li>
+            <a href="./murz.html" class="page-link">Мурзик</a>
+          </li>
+          <li>
+            <a href="./glasha.html" class="page-link">Глаша</a>
+          </li>
+          <li>
+            <a href="./bezdom.html" class="page-link">Бездомный</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="main-text">
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-text">
+        Республика Беларусь, Орша, 2021.
+      </div>
+      <div class="footer-text">
+        <a href="https://vk.com/" class="footer-link"><img src="./images/vk.png" alt="Ico-vkontakte" class="footer-webs"></a>
+        <a href="https://www.instagram.com/?hl=ru" class="footer-link"><img src="./images/insta.png" alt="Ico-instagram" class="insta"></a>
+        <a href="https://www.facebook.com/" class="footer-link"><img src="./images/face.png" alt="Ico-facebook" class="footer-webs"></a>
+    </div>
+      <div class="footer-text">
+        All rights reserved. &#169;
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
