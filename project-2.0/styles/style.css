@@ -72,12 +72,10 @@ a:focus {
 
 .header {
   width: 100%;
-  margin: 0 auto;
   position: fixed;
   top: 0px;
-  border-radius: 8px;
-  transition: 0.5s linear;
   z-index: 999;
+  transition: 0.5s all linear;
 }
 
 .header-wrapper {
@@ -91,11 +89,11 @@ a:focus {
 .nav {
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .header_active {
   background-color: #af6a03;
-  border-radius: 8px;
 }
 
 .nav-list {
@@ -119,7 +117,7 @@ a:focus {
   width: 40px;
   height: 28px;
   position: relative;
-  margin: 15px auto 0 20px;
+  margin: 15px 0 0 10px;
 }
 
 .burger-line {
@@ -148,6 +146,18 @@ a:focus {
 
 .burger-line-third {
   bottom: 0;
+}
+
+.logo {
+  position: relative;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0 20px 0 auto;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #000000;
 }
 
 .title {
@@ -252,7 +262,6 @@ a:focus {
 .footer {
   width: 100%;
   background-color: #af6a03;
-  border-radius: 8px;
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -266,6 +275,7 @@ a:focus {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding: 0 10px;
 }
 
 .footer-text {
@@ -513,21 +523,45 @@ a:focus {
     overflow: hidden;
   }
 
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .content {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    margin-top: 10px;
+  }
+
+  .header {
+    height: 55px;
+  }
+
+  .header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .header-burger {
     display: block;
+    position: relative;
   }
+
   .nav {
     max-width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #916f00;
+    background-color: #ffebcd;
     position: fixed;
     z-index: 10;
     margin: 0;
     padding: 75px 75px;
     transform: translateX(-100%);
-    transition: 0.2s all linear;
+    vertical-align: middle;
   }
 
   .nav-active {
@@ -554,9 +588,9 @@ a:focus {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 15px;
-    left: 20px;
     z-index: 11;
+    top: 10px;
+    left: 10px;
   }
   .nav-close-line {
     display: block;
@@ -625,6 +659,10 @@ a:focus {
     padding: 0 10px;
   }
 
+  .logo {
+    margin-top: 15px;
+  }
+
   .grid-title,
   .pages-title {
     font-size: 16px;
@@ -650,7 +688,9 @@ a:focus {
   .header-burger {
     width: 20px;
     height: 14px;
-    margin: 20px auto 0 20px;
+    position: relative;
+    top: 0px;
+    left: 7px;
   }
 
   .burger-line {
@@ -660,7 +700,12 @@ a:focus {
   .nav-close {
     width: 20px;
     height: 14px;
-    top: 20px;
+    top: 24px;
+    left: 20px;
+  }
+
+  .logo {
+    font-size: 1em;
   }
 
   .nav-close:hover .nav-close-line,
@@ -676,6 +721,12 @@ a:focus {
 
   .duble-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title-text {
+    font-size: 1em;
   }
 }
 
