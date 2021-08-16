@@ -13,7 +13,7 @@
   float: left;
   width: 70px;
   height: 50px;
-  background: linear-gradient(to bottom right, #00ffff, #ffffff);
+  background: radial-gradient(35px 35px at 10px 10px, #00ffff, #ffffff);
   padding: 5px;
   border: 2px solid #ffa500;
 }
