@@ -35,11 +35,12 @@
 }
 
 .title::after {
+  display: block;
   content: "\2BBE";
+  float: right;
   position: absolute;
-  bottom: 50%;
+  bottom: 33%;
   right: 3%;
-  transform: rotate(50%);
 }
 
 /* .close {
