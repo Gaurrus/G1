@@ -59,7 +59,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1060px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -282,13 +282,13 @@ img {
     "c c c c b b b b"
     "c c c c d d d d"
     "2 2 2 2 d d d d";
-  column-gap: 30px;
-  max-width: 1060px;
-  padding-left: 186px;
+  column-gap: 50px;
+  max-width: 1110px;
+
   padding-top: 115px;
   height: 696px;
   margin: 0 auto;
-  background: url(../images/mark.png) no-repeat top 10% left 10%;
+  background: url(../images/mark.png) no-repeat top 10% left 0%;
 }
 
 .real-stories-card-1 {
@@ -461,7 +461,7 @@ img {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  max-width: 1060px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -536,8 +536,13 @@ img {
 }
 
 .headline-flex {
-  padding-left: 165px;
+  max-width: 1110px;
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .headline-img {
@@ -545,9 +550,6 @@ img {
   height: 540px;
   border-radius: 8px;
   background: #f1e4ff url(../images/headline-img.png) bottom no-repeat;
-  margin-left: 165px;
-  margin-top: 64px;
-  margin-right: 78px;
 }
 
 .headline-title {
@@ -569,6 +571,7 @@ img {
   line-height: 32px;
   color: #18191f;
   margin-bottom: 32px;
+  text-align: justify;
 }
 
 .headline-link {
@@ -589,18 +592,33 @@ img {
 }
 /*headline end*/
 
-/*далее на фигме закрыли доступ к макету*/
-
-.the-end-title {
-  max-width: 1060px;
-  margin: 0 auto;
-  text-align: center;
+/*the world start*/
+.world-wrapper {
+  max-width: 1110px;
+  margin: 0 auto 48px auto;
 }
 
-.the-end-title-text {
-  font-weight: normal;
-  font-size: 44px;
-  line-height: 32px;
+.world-title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
   color: #18191f;
-  margin-bottom: 32px;
+  display: block;
+  max-width: 540px;
+  margin-right: 30px;
 }
+
+.world-text {
+  font-size: 18px;
+  line-height: 32px;
+  display: block;
+  width: 540px;
+}
+
+.world-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+/*the world end*/
