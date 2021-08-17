@@ -56,6 +56,8 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  transition: 0.5s all linear;
+  padding-bottom: 16px;
 }
 
 .wrapper {
@@ -123,6 +125,10 @@ img {
   transition: 0.5s all;
 }
 
+.header_active {
+  background-color: #e1d4fd;
+}
+
 /*header styles end*/
 
 /*intro styles start*/
@@ -159,6 +165,7 @@ img {
   border: unset;
   background-color: #8c30f5;
   border-radius: 8px;
+  transition: 0.5s all;
 }
 
 .intro-button-link:hover,
@@ -167,7 +174,6 @@ img {
   opacity: 0.7;
   color: #000000;
   width: 30%;
-  transition: 0.5s all;
 }
 
 .intro-grid {
@@ -284,7 +290,6 @@ img {
     "2 2 2 2 d d d d";
   column-gap: 50px;
   max-width: 1110px;
-
   padding-top: 115px;
   height: 696px;
   margin: 0 auto;
@@ -337,6 +342,7 @@ img {
   color: #18191f;
   background: url(../images/small-mark.png) no-repeat top left;
   padding-left: 32px;
+  text-align: justify;
 }
 
 .stories-card-2-name {
@@ -380,6 +386,7 @@ img {
   color: #18191f;
   background: url(../images/small-mark.png) no-repeat top left;
   padding-left: 32px;
+  text-align: justify;
 }
 
 .stories-card-3-name {
@@ -423,6 +430,7 @@ img {
   color: #18191f;
   background: url(../images/small-mark.png) no-repeat top left;
   padding-left: 32px;
+  text-align: justify;
 }
 
 .stories-card-4-name {
@@ -613,6 +621,7 @@ img {
   line-height: 32px;
   display: block;
   width: 540px;
+  text-align: justify;
 }
 
 .world-flex {
@@ -643,6 +652,7 @@ img {
 
 .manage-text {
   max-width: 540px;
+  margin-right: 74px;
 }
 
 .manage-title {
@@ -693,7 +703,18 @@ img {
 .footer-wrapper {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 56px 0 0 0;
+  padding: 56px 0 56px 0;
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-flex-itm {
+  width: 475px;
 }
 
 .footer-logo {
@@ -704,7 +725,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+}
+
+.downloads-itm {
+  margin-right: 24px;
+}
+
+.downloads-itm:last-of-type {
+  margin-right: 0;
 }
 
 .downloads-itm-link,
@@ -719,6 +747,30 @@ img {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
+.footer-flex-links {
+  width: 165px;
+}
+
+.footer-links-title {
+  margin-bottom: 17px;
+}
+
+.footer-link-img {
+  margin-bottom: 17px;
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.footer-link:active,
+.downloads-itm-link:hover,
+.downloads-itm-link:focus,
+.downloads-itm-link:active,
+.list-itm-link:hover,
+.list-itm-link:focus,
+.list-itm-link:active {
+  opacity: 0.7;
+}
 /* footer end  */
