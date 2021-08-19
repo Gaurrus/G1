@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
   background-color: #095c5c;
   max-width: 100%;
-
-  padding: 20px 20px;
+  padding-top: 20px;
   margin: 0 auto;
 }
 
@@ -23,4 +23,88 @@
   height: 200px;
   text-align: center;
   background-color: #ffa500;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.top-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #010d3f;
+  color: #ffffff;
+}
+
+.main {
+  padding: 10px;
+  max-width: 100%;
+}
+.main-flex-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.art-1 {
+  height: 50px;
+  background-color: #00ffff;
+  text-align: center;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.art-1:last-of-type {
+  margin-right: 0;
+}
+
+.main-flex-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.main-mid {
+  height: 70px;
+  width: 20%;
+  background-color: #8a2be2;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mid-transparent {
+  height: 70px;
+  width: 20%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.main-flex-3 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.art-2 {
+  background-color: #00ffff;
+  height: 70px;
+  text-align: center;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.art-2:last-of-type {
+  margin-right: 0;
+}
+
+.footer {
+  padding-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #010d3f;
+  height: 94px;
 }
