@@ -72,8 +72,6 @@ body {
 }
 
 .main-mid {
-  height: 70px;
-  width: 20%;
   background-color: #8a2be2;
   text-align: center;
   color: #ffffff;
@@ -81,8 +79,6 @@ body {
 }
 
 .mid-transparent {
-  height: 70px;
-  width: 20%;
   background-color: #ffffff;
   text-align: center;
 }
