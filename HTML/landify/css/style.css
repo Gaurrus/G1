@@ -303,7 +303,7 @@ img {
     "c c c c b b b b"
     "c c c c d d d d"
     "2 2 2 2 d d d d";
-  column-gap: 50px;
+  gap: 32px;
   max-width: 1110px;
   padding-top: 115px;
   margin: 0 auto;
@@ -351,7 +351,6 @@ img {
   grid-area: b;
   justify-self: start;
   width: 445px;
-  height: 340px;
   padding-top: 32px;
   padding-left: 32px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -395,7 +394,6 @@ img {
   grid-area: c;
   justify-self: end;
   width: 350px;
-  height: 436px;
   padding-top: 38px;
   padding-left: 32px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -687,6 +685,7 @@ img {
 .manage-text {
   max-width: 540px;
   margin-right: 74px;
+  margin-bottom: 20px;
 }
 
 .manage-title {
@@ -915,8 +914,22 @@ img {
     padding: 0 20px 0 20px;
   }
 
+  .footer {
+    padding: 20px;
+  }
+
   .footer-wrapper {
-    padding: 0 20px 0 20px;
+    padding: 0;
+  }
+
+  .real-stories-card-2,
+  .real-stories-card-3,
+  .real-stories-card-4 {
+    max-width: 445px;
+    width: 100%;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 20px;
   }
 }
 
@@ -930,6 +943,10 @@ img {
 
   .footer-wrapper {
     padding: 20px;
+  }
+
+  .real-stories-cards {
+    padding-left: 0;
   }
 }
 
