@@ -42,6 +42,7 @@ body {
   line-height: 1.2;
   font-weight: normal;
   color: #000000;
+  padding: 0 20px;
 }
 
 img {
@@ -95,7 +96,7 @@ img {
 }
 
 .header-list {
-  margin-left: 32.12px;
+  margin-left: 32px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -124,7 +125,7 @@ img {
 }
 
 .header-nav {
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .header-markets {
@@ -132,7 +133,7 @@ img {
 }
 
 .header-markets-google {
-  margin-right: 13px;
+  margin-right: 12px;
 }
 
 .header-markets-google,
@@ -250,7 +251,7 @@ img {
   justify-content: space-evenly;
   max-width: 1110px;
   width: 100%;
-  padding: 40px 15px 40px 15px;
+  padding: 40px 16px 40px 16px;
   background-color: #ffffff;
   position: relative;
 }
@@ -658,7 +659,7 @@ img {
 
 .headline-title {
   align-self: center;
-  width: 440px;
+  max-width: 440px;
 }
 
 .headline-title-h {
@@ -799,9 +800,8 @@ img {
   background-color: #0b0d17;
   color: #d9dbe1;
   line-height: 26px;
-  max-width: 1110px;
   margin: 0 auto;
-  padding: 56px 10px 56px 10px;
+  padding: 56px 10px;
 }
 
 .footer-flex {
@@ -813,7 +813,7 @@ img {
 }
 
 .footer-flex-itm {
-  width: 475px;
+  flex: 0 1 475px;
 }
 
 .footer-logo {
@@ -850,9 +850,9 @@ img {
   margin-bottom: 24px;
 }
 
-.footer-flex-links {
+/* .footer-flex-links {
   width: 165px;
-}
+} */
 
 .footer-links-title {
   margin-bottom: 17px;
