@@ -192,7 +192,7 @@ img {
 
 .intro {
   background: url(../images/bg-intro.png) no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   padding: 240px 15px 15px 15px;
   margin-bottom: 16px;
 }
@@ -884,6 +884,14 @@ img {
   }
 }
 
+@media screen and (max-width: 1120px) {
+  .world-flex {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .intro-title {
     font-size: 52px;
@@ -937,6 +945,15 @@ img {
   .headline {
     margin-bottom: 20px;
   }
+
+  .headline-flex {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .headline-img {
+    margin-bottom: 20px;
+  }
   .world-flex {
     display: flex;
     flex-wrap: wrap;
@@ -966,9 +983,20 @@ img {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .header {
+    position: relative;
+  }
   .header-nav {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .header-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-markets {
+    margin: 0;
   }
 }
 
@@ -998,63 +1026,6 @@ img {
 @media screen and (max-width: 768px) {
   .header {
     padding: 10px;
-  }
-  .header-burger {
-    display: block;
-    margin: 0 10px 0 auto;
-  }
-
-  .header-nav {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #000000;
-    z-index: 999;
-    padding: 75px;
-    transform: translateX(100%);
-    margin-bottom: 10px;
-  }
-
-  .header-item {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 35px;
-  }
-
-  .header-item:last-of-type {
-    margin-bottom: 0;
-  }
-  .header-link {
-    color: #ffffff;
-    font-size: 52px;
-    line-height: 54px;
-  }
-
-  .header-nav-close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-
-  .header-nav-close-line {
-    width: 100%;
-    height: 4px;
-    background-color: #ffffff;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .header-nav-close-line:first-child {
-    transform: rotate(45deg);
-  }
-
-  .header-nav-close-line:last-child {
-    transform: rotate(-45deg);
   }
 
   .header-markets {
@@ -1099,6 +1070,10 @@ img {
   .manage-wrapper-full {
     padding: 0 20px 0 20px;
   }
+  .manage-link {
+    display: block;
+    margin-bottom: 10px;
+  }
 
   .footer {
     padding: 20px;
@@ -1118,7 +1093,82 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  .maname-links {
+  .header-burger {
+    display: block;
+    margin: 0 25px 0 auto;
+  }
+  .header-nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 999;
+    padding: 75px;
+    transform: translateX(100%);
+    margin-bottom: 10px;
+  }
+
+  .header-wrapper {
+    flex-direction: row;
+  }
+
+  .header-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+
+  .header-item:last-of-type {
+    margin-bottom: 0;
+  }
+  .header-link {
+    color: #ffffff;
+    font-size: 52px;
+    line-height: 54px;
+  }
+
+  .header-nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .header-nav-close-line {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .header-nav-close-line:first-child {
+    transform: rotate(45deg);
+  }
+
+  .header-nav-close-line:last-child {
+    transform: rotate(-45deg);
+  }
+
+  .intro-image-photo {
+    display: none;
+  }
+  .intro-grid-itm-one {
+    grid-column: span 3;
+    padding-top: 52px;
+    text-align: center;
+  }
+
+  .intro-button-link {
+    max-width: 520px;
+    font-size: 52px;
+    line-height: 54px;
+  }
+  .manage-links {
     margin-bottom: 20px;
   }
   .manage-title {
@@ -1130,10 +1180,9 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .manage-link {
-    display: block;
-    margin-bottom: 10px;
+@media screen and (max-width: 545px) {
+  .header-markets {
+    display: none;
   }
 }
 
@@ -1146,16 +1195,6 @@ img {
     padding-top: 24px;
   }
 
-  .intro-button-link {
-    font-size: 12px;
-    line-height: 14px;
-    padding: 10px 22px;
-    border-radius: 5px;
-  }
-
-  .header-markets {
-    display: none;
-  }
   .stats {
     padding: 20px 20px 0 20px;
   }
