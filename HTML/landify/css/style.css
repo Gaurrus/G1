@@ -511,7 +511,6 @@ img {
   grid-area: d;
   justify-self: start;
   max-width: 350px;
-  max-height: 276px;
   padding: 32px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
   border-radius: 8px;
@@ -597,8 +596,7 @@ img {
 .stats-grid {
   display: grid;
   max-width: 540px;
-  grid-template-columns: 255px 255px;
-  grid-template-rows: 66px 66px;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
   row-gap: 30px;
 }
@@ -682,19 +680,23 @@ img {
 
 .headline-link {
   display: inline-block;
-  width: 165px;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
   color: #8c30f5;
   text-decoration: none;
-  background: url(../images/arrow-link.png) no-repeat right 10% center;
 }
 
-.headline-link:hover,
-.headline-link:focus,
-.headline-link:active {
-  background: url(../images/arrow-link.png) no-repeat right center;
+.headline-link::after {
+  content: url(../images/arrow-link.png);
+  padding-left: 10px;
+}
+
+.headline-link:hover::after,
+.headline-link:focus::after,
+.headline-link:active::after {
+  content: url(../images/arrow-link.png);
+  padding-left: 20px;
 }
 /*headline end*/
 
