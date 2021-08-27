@@ -1178,6 +1178,15 @@ img {
   .real-stories-cards {
     padding-left: 0;
   }
+  .real-stories-card-1 {
+    padding-left: 0;
+    justify-self: center;
+    text-align: center;
+  }
+  .real-stories-card-1::before {
+    top: -39px;
+    left: 118px;
+  }
 }
 
 @media screen and (max-width: 545px) {
