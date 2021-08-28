@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.train {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  transform: rotateY(-50%);
+  column-gap: 8px;
+  transition: 10s all;
+  transform: translateX(-99%);
+}
+
+.train:hover {
+  transform: translateX(420%);
+}
+
+.head {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  order: 3;
+}
+
+.wagon-one {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  order: 2;
+}
+
+.wagon-two {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+}
+
+.wheel {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: absolute;
+  top: 85%;
+  left: 90%;
+  border-radius: 50%;
+}
