@@ -11,15 +11,15 @@
   left: 0;
   transform: rotateY(-50%);
   column-gap: 8px;
-  transition: 10s all;
-  transform: translateX(-99%);
-}
-
-.train:hover {
-  transform: translateX(420%);
+  transform: translateX(-100%);
+  animation-duration: 15s;
+  animation-name: opening;
 }
 
 .head {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
   width: 150px;
   height: 50px;
   background-color: black;
@@ -27,6 +27,9 @@
 }
 
 .wagon-one {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
   width: 150px;
   height: 50px;
   background-color: black;
@@ -34,17 +37,54 @@
 }
 
 .wagon-two {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
   width: 150px;
   height: 50px;
   background-color: black;
 }
 
+.duble-wheel {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 .wheel {
   width: 20px;
   height: 20px;
   background-color: blue;
-  position: absolute;
-  top: 85%;
-  left: 90%;
   border-radius: 50%;
+  margin-top: 100%;
+}
+
+.build {
+  position: absolute;
+  height: 200px;
+  width: 150px;
+  background-color: brown;
+  animation-name: build;
+  animation-duration: 15s;
+  top: 75%;
+  right: 0;
+  z-index: -1;
+  transform: translateX(100%);
+}
+
+@keyframes opening {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(420%);
+  }
+}
+
+@keyframes build {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-500%);
+  }
 }
