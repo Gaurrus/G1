@@ -124,6 +124,13 @@ img {
   transition: 0.4s all;
 }
 
+.small-wrapper-on-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  align-items: center;
+}
 .header-nav {
   margin-right: 16px;
 }
@@ -992,7 +999,7 @@ img {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 908px) {
   .intro-logo {
     margin-top: 12px;
     margin-bottom: 12px;
@@ -1119,7 +1126,7 @@ img {
   }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 622px) {
   .small-wrapper-on-header {
     margin: 0 auto;
     justify-content: center;
