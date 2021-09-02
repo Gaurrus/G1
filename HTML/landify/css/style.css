@@ -129,6 +129,13 @@ img {
   transition: 0.4s all;
 }
 
+.small-wrapper-on-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  align-items: center;
+}
 .header-nav {
   display: flex;
   align-items: center;
@@ -999,7 +1006,7 @@ img {
   }
 }
 
-@media screen and (max-width: 906px) {
+@media screen and (max-width: 910px) {
   .header-markets {
     display: none;
   }
