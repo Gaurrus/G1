@@ -1004,6 +1004,9 @@ img {
   .headline-img {
     margin-bottom: 24px;
   }
+  .headline-img-phone {
+    width: 55%;
+  }
 }
 
 @media screen and (max-width: 910px) {
