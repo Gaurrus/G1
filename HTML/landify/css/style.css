@@ -652,9 +652,7 @@ img {
 /*headline start*/
 
 .headline {
-  margin-top: 64px;
-  padding: 0 20px 0 20px;
-  margin-bottom: 128px;
+  padding: 64px 20px 0 20px;
 }
 .headline-flex {
   max-width: 1110px;
@@ -726,6 +724,7 @@ img {
 .world-wrapper {
   max-width: 1110px;
   margin: 0 auto 48px auto;
+  padding-top: 128px;
 }
 
 .world-title {
