@@ -1,0 +1,61 @@
+body {
+  font-size: 54px;
+  font-family: arial;
+  text-transform: uppercase;
+  color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-shadow: 0 0 2px black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.one {
+  padding: 40px;
+  text-align: center;
+  background-color: lightgreen;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.two {
+  padding: 40px;
+  text-align: center;
+  background-color: yellow;
+}
+
+.three {
+  padding: 40px;
+  text-align: center;
+  background-color: lightskyblue;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.four {
+  padding: 40px;
+  text-align: center;
+  background-color: violet;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+
+.five {
+  padding: 40px;
+  text-align: center;
+  background-color: green;
+}
+.six {
+  padding: 40px;
+  text-align: center;
+  background-color: orange;
+}
