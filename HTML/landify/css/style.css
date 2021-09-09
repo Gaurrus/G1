@@ -906,6 +906,15 @@ img {
 }
 /* footer end  */
 
+/*swiper*/
+.adds-swiper .swiper-slide {
+  text-align: center;
+}
+
+.adds-swiper .swiper-pagination-bullet {
+}
+/*swiper*/
+
 @media screen and (max-width: 1120px) {
   .world-flex {
     justify-content: center;
