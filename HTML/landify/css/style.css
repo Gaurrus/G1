@@ -1106,6 +1106,10 @@ img {
 }
 
 @media screen and (max-width: 610px) {
+  .intro-title {
+    margin-right: 0;
+  }
+
   .header-burger {
     display: block;
     margin-left: auto;

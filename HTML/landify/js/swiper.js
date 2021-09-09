@@ -27,7 +27,42 @@ const swiper = new Swiper('.swiper', {
   },
   loop: true,
 
-  slidesPerView: 3,
+  slidesPerView: 4,
 
-  spaceBetween: 32
+  spaceBetween: 8,
+
+  breakpoints: {
+    1600: {
+      slidesPerView: 5,
+      autoplay: false,
+    },
+    769: {
+      slidesPerView: 5,
+      autoplay: false,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+
+    651: {
+      slidesPerView: 3,
+    },
+    610: {
+      slidesPerView: 2,
+    },
+
+    450: {
+      slidesPerView: 2,
+    },
+    420: {
+      slidesPerView: 2,
+    },
+    400: {
+      slidesPerView: 1,
+    },
+
+    320: {
+      slidesPerView: 1,
+    }
+  }
 });
