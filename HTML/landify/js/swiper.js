@@ -1,68 +1,40 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
+function getWindowWidth() {
+  return window.innerWidth || document.body.clientWidth;
+}
+
+if (getWindowWidth() <= 610) {
+  console.log('success');
+  const swiper = new Swiper('.swiper', {
   
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-  simulateTouch: false,
-  keyboard: {
-    enabled: true,
-  },
-
-  autoplay: {
-      delay: 2000,
-  },
-  loop: true,
-
-  slidesPerView: 4,
-
-  spaceBetween: 8,
-
-  breakpoints: {
-    1600: {
-      slidesPerView: 5,
-      autoplay: false,
+    // simulateTouch: false,
+    keyboard: {
+      enabled: true,
     },
-    769: {
-      slidesPerView: 5,
-      autoplay: false,
+  
+    autoplay: {
+        delay: 2000,
     },
-    768: {
-      slidesPerView: 3,
-    },
-
-    651: {
-      slidesPerView: 3,
-    },
-    610: {
-      slidesPerView: 2,
-    },
-
-    450: {
-      slidesPerView: 2,
-    },
-    420: {
-      slidesPerView: 2,
-    },
-    400: {
-      slidesPerView: 1,
-    },
-
-    320: {
-      slidesPerView: 1,
+    loop: true,
+  
+    spaceBetween: 32,
+  
+    // centeredSlides: true,
+  
+    breakpoints: {
+      610: {
+        slidesPerView: 3,
+      },
+       450: {
+        slidesPerView: 2,
+       },
+  
+       401: {
+        slidesPerView: 2,
+      },
+      400: {
+        slidesPerView: 1,
+      },
+       
     }
-  }
-});
+  });
+}

@@ -372,6 +372,7 @@ img {
   font-size: 16px;
   line-height: 26px;
   color: #18191f;
+  text-align: justify;
 }
 
 .tailor-img {
@@ -923,6 +924,9 @@ img {
 }
 
 @media screen and (max-width: 1100px) {
+  .tailor-wrap {
+    padding: 0 8px;
+  }
   .link-to-figma {
     display: none;
   }
@@ -933,11 +937,6 @@ img {
 
   .intro-footer-link {
     margin: 16px;
-  }
-
-  .tailor-cards {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 10px;
   }
 
   .real-stories-cards {
@@ -1282,6 +1281,11 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+  .tailor-card {
+    max-width: 125px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
   .stats {
     padding: 20px 20px 0 20px;
   }
@@ -1376,6 +1380,9 @@ img {
     line-height: 26px;
   }
 
+  .tailor-card {
+    max-width: 125px;
+  }
   .tailor-title {
     font-size: 24px;
     line-height: 26px;
