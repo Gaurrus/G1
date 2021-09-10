@@ -1136,6 +1136,7 @@ img {
 
   .header-nav-active {
     transform: translateX(0%);
+    z-index: 999;
   }
 
   .header-wrapper {
