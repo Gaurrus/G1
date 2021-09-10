@@ -732,7 +732,7 @@ img {
 .world-wrapper {
   max-width: 1110px;
   margin: 0 auto 48px auto;
-  padding-top: 128px;
+  padding-top: 68px;
 }
 
 .world-title {
@@ -1206,7 +1206,7 @@ img {
   }
 
   .real-stories-cards {
-    padding-top: 48px;
+    padding-top: 64px;
     padding-left: 0;
   }
   .real-stories-card-1 {
@@ -1219,7 +1219,7 @@ img {
   }
 
   .tailor-wrap {
-    padding-top: 32px;
+    padding-top: 64px;
   }
   .stats {
     padding: 32px 10px;
