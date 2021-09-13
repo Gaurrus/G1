@@ -37,4 +37,24 @@ if (getWindowWidth() <= 610) {
        
     }
   });
-}
+} 
+else  {
+  console.log('success');
+  const swiper = new Swiper('.swiper', {
+  
+    simulateTouch: false,
+    keyboard: {
+      enabled: true,
+    },
+  
+    // autoplay: {
+    //     delay: 2000,
+    // },
+    loop: true,
+  
+    spaceBetween: 32,
+
+    slidesPerView: 5,
+ 
+  });
+  }
