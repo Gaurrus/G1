@@ -1116,7 +1116,7 @@ img {
   }
 
   .animation {
-    transform: translateX(135%);
+    transform: translateX(-135%);
     transition: all 0.8s ease 0s;
   }
 
