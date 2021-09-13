@@ -9,22 +9,23 @@ function offset(el) {
 }
 
 if (animItems.length > 0) {
-  window.addEventListener ('scroll', animOnScroll());
-  console.log ('anim');
-  function animOnScroll (){
+  document.addEventListener("scroll", () => {
+  console.log ('anim'),  
     animItems.forEach((animItem) => {
       const animItemHeight = animItem.offsetHeight;
       const animItemOffset = offset(animItem).top;
-      const animStart = 4;
+      const animStart = 3;
       let animItemPoint = window.innerHeight - animItemHeight / animStart;
       if (animItemHeight > window.innerHeight ){
           animItemPoint = window.innerHeight - window.innerHeight / animStart;
       }
       if ((window.pageYOffset > animItemOffset - animItemPoint) && window.pageYOffset < (animItemOffset + animItemHeight)) {
-        animItem.classList.add('animation-active');
+        animItem.classList.add('animation-active'); 
+        console.log ('add');
       } else {
         animItem.classList.remove('animation-active');
+        console.log ('remove');
       }}   
     )   
   }
-}
+  )}
