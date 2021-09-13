@@ -1,110 +1,68 @@
-function getWindowWidth() {
-  return window.innerWidth || document.body.clientWidth;
-}
+let catalogSlider = null;
+const mediaQuerySize = 1040;
 
-if (getWindowWidth() <= 610) {
-  console.log('success');
-  const swiper = new Swiper('.adds-swiper', {
-    grabCursor: true,
-    keyboard: {
-      enabled: true,
-    },
-    autoplay: {
+function catalogSliderInit() {
+  if (!catalogSlider) {
+    catalogSlider = new Swiper(".adds-swiper", {
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      keyboard: {
+        enabled: true,
+      },
+      autoplay: {
         delay: 2000,
-    },
-    loop: true,
-    spaceBetween: 32,
-    centeredSlides: true,
-    breakpoints: {
-      610: {
-        slidesPerView: 3,
       },
-       450: {
-        slidesPerView: 2,
-       },
-       401: {
-        slidesPerView: 2,
+      loop: true,
+      spaceBetween: 8,
+      breakpoints: {
+        767: {
+          slidesPerView: 5,
+        },
+        651: {
+          slidesPerView: 3,
+        },
+        420: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        },
       },
-      400: {
-        slidesPerView: 1,
-      },
-    }
-  });
-  const swiperXx = new Swiper('.tailor-cards', {
-    grabCursor: true,
-    keyboard: {
-      enabled: true,
-    },
-    autoplay: {
-        delay: 2500,
-    },
-    loop: true,
-    spaceBetween: 32,
-    breakpoints: {
-      610: {
-        slidesPerView: 3,
-      },
-       450: {
-        slidesPerView: 2,
-       },
-       401: {
-        slidesPerView: 2,
-      },
-      400: {
-        slidesPerView: 1,
-      },
-    }
-  });
-} 
-else if (getWindowWidth() <= 900) {
-  console.log('else');
-  const swiper = new Swiper('.adds-swiper', {
-    slidesPerView: 3,
-    simulateTouch: true,
-    grabCursor: true,
-    keyboard: {
-      enabled: true,
-    },
-    loop: true,
-    autoplay: {
-      delay: 2000,
-  },
-  });
-  const swiperXx = new Swiper('.tailor-cards', {
-    simulateTouch: true,
-    slidesPerView: 4,
-    slidesPerColumn: 2,
-    spaceBetween: 32,
-    grabCursor: true,
-    keyboard: {
-      enabled: true,
-    },
-    loop: true,
-    autoplay: {
-      delay: 2000,
-  },
     });
   }
+}
 
-  else  {
-    console.log('else');
-    const swiper = new Swiper('.adds-swiper', {
-      slidesPerView: 5,
-      simulateTouch: true,
-      grabCursor: true,
-      keyboard: {
-        enabled: true,
-      },
-      loop: true,
-    });
-    const swiperXx = new Swiper('.tailor-cards', {
-      simulateTouch: true,
-      slidesPerView: 6,
-      spaceBetween: 32,
-      grabCursor: true,
-      keyboard: {
-        enabled: true,
-      },
-      loop: true,
-      });
-    }
+const catalogSliderDestroy = () => {
+  if (catalogSlider) {
+    catalogSlider.destroy();
+    catalogSlider = null;
+  }
+};
+
+const getCotalogSlider = () => {
+  // Если ширина экрана меньше или равна mediaQuerySize(1040)
+  if (window.innerWidth <= mediaQuerySize) {
+    // Инициализировать слайдер
+    catalogSliderInit();
+  } else {
+    // Уничтожить слайдер
+    catalogSliderDestroy();
+  }
+};
+
+getCotalogSlider();
+
+window.addEventListener("resize", () => {
+  getCotalogSlider();
+});

@@ -1,35 +1,68 @@
-const swiper = new Swiper('.tailor-cards', {
-  // Optional parameters
-  
+let tailorSlider = null;
+const mediaQuerySize = 1040;
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+function tailorSliderInit() {
+  if (!tailorSlider) {
+    tailorSlider = new Swiper(".tailor-cards", {
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      keyboard: {
+        enabled: true,
+      },
+      autoplay: {
+        delay: 2000,
+      },
+      loop: true,
+      spaceBetween: 8,
+      breakpoints: {
+        767: {
+          slidesPerView: 5,
+        },
+        651: {
+          slidesPerView: 3,
+        },
+        420: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        },
+      },
+    });
+  }
+}
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+const tailorSliderDestroy = () => {
+  if (tailorSlider) {
+    tailorSlider.destroy();
+    tailorSlider = null;
+  }
+};
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-  
-  keyboard: {
-    enabled: true,
-  },
+const getTailorSlider = () => {
+  // Если ширина экрана меньше или равна mediaQuerySize(1040)
+  if (window.innerWidth <= mediaQuerySize) {
+    // Инициализировать слайдер
+    tailorSliderInit();
+  } else {
+    // Уничтожить слайдер
+    tailorSliderDestroy();
+  }
+};
 
-  autoplay: {
-      delay: 1000,
-  },
-  
-  loop: true,
+getTailorSlider();
 
-  slidesPerView: 1,
-
-  spaceBetween: 8,
- 
+window.addEventListener("resize", () => {
+  getTailorSlider();
 });
