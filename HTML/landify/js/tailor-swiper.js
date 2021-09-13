@@ -20,9 +20,9 @@ function tailorSliderInit() {
       keyboard: {
         enabled: true,
       },
-      // autoplay: {
-      //   delay: 2000,
-      // },
+      autoplay: {
+        delay: 2500,
+      },
       loop: true,
       spaceBetween: 16,
       breakpoints: {
