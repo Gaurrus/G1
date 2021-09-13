@@ -1,9 +1,9 @@
-let catalogSlider = null;
-const mediaQuerySize = 1040;
+let tailorSlider = null;
+const mediaQuerrySize = 1040;
 
-function catalogSliderInit() {
-  if (!catalogSlider) {
-    catalogSlider = new Swiper(".adds-swiper", {
+function tailorSliderInit() {
+  if (!tailorSlider) {
+    tailorSlider = new Swiper(".tailor-cards", {
       // Navigation arrows
       navigation: {
         nextEl: ".swiper-button-next",
@@ -20,14 +20,14 @@ function catalogSliderInit() {
       keyboard: {
         enabled: true,
       },
-      autoplay: {
-        delay: 2000,
-      },
+      // autoplay: {
+      //   delay: 2000,
+      // },
       loop: true,
-      spaceBetween: 8,
+      spaceBetween: 16,
       breakpoints: {
         767: {
-          slidesPerView: 5,
+          slidesPerView: 4,
         },
         651: {
           slidesPerView: 3,
@@ -43,26 +43,26 @@ function catalogSliderInit() {
   }
 }
 
-const catalogSliderDestroy = () => {
-  if (catalogSlider) {
-    catalogSlider.destroy();
-    catalogSlider = null;
+const tailorSliderDestroy = () => {
+  if (tailorSlider) {
+    tailorSlider.destroy();
+    tailorSlider = null;
   }
 };
 
-const getCotalogSlider = () => {
+const getTailorSlider = () => {
   // Если ширина экрана меньше или равна mediaQuerySize(1040)
-  if (window.innerWidth <= mediaQuerySize) {
+  if (window.innerWidth <= mediaQuerrySize) {
     // Инициализировать слайдер
-    catalogSliderInit();
+    tailorSliderInit();
   } else {
     // Уничтожить слайдер
-    catalogSliderDestroy();
+    tailorSliderDestroy();
   }
 };
 
-getCotalogSlider();
+getTailorSlider();
 
 window.addEventListener("resize", () => {
-  getCotalogSlider();
+  getTailorSlider();
 });
