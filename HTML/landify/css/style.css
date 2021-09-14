@@ -907,6 +907,68 @@ img {
 
 /*swiper*/
 
+/*animations*/
+.animation {
+  transform: translate(30%, 30%);
+  opacity: 0;
+  transition: all 0.5s ease-out 0s;
+}
+
+.animation-active {
+  transform: translate(0%, 0%);
+  opacity: 1;
+  transition: all 0.5s ease-out 0s;
+}
+
+/* .real-one {
+  transform: translateX(-80%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-one-active {
+  transform: translateX(0%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-two {
+  transform: translateX(80%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-two-active {
+  transform: translateX(0%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-three {
+  transform: translateX(-80%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-three-active {
+  transform: translateX(0%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-four {
+  transform: translateY(80%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-four-active {
+  transform: translateX(0%);
+
+  transition: all 0.4s ease 0s;
+} */
+/*animations*/
+
 @media screen and (max-width: 1120px) {
   .world-flex {
     justify-content: center;
@@ -1117,12 +1179,12 @@ img {
 
   .animation {
     transform: translateX(-135%);
-    transition: all 0.8s ease 0s;
+    transition: all 0.4s ease 0s;
   }
 
   .animation-active {
     transform: translateX(0%);
-    transition: all 0.8s ease 0s;
+    transition: all 0.4s ease 0s;
   }
 }
 

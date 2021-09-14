@@ -1,7 +1,6 @@
 
 const animItems = document.querySelectorAll('.anim-items')
 function offset(el) {
-  console.log(el);
   var rect = el.getBoundingClientRect(),
   scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -9,8 +8,7 @@ function offset(el) {
 }
 
 if (animItems.length > 0) {
-  document.addEventListener("scroll", () => {
-  console.log ('anim'),  
+  document.addEventListener("scroll", () => { 
     animItems.forEach((animItem) => {
       const animItemHeight = animItem.offsetHeight;
       const animItemOffset = offset(animItem).top;
@@ -21,10 +19,8 @@ if (animItems.length > 0) {
       }
       if ((window.pageYOffset > animItemOffset - animItemPoint) && window.pageYOffset < (animItemOffset + animItemHeight)) {
         animItem.classList.add('animation-active'); 
-        console.log ('add');
       } else {
         animItem.classList.remove('animation-active');
-        console.log ('remove');
       }}   
     )   
   }
