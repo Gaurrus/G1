@@ -317,18 +317,24 @@ img {
   margin-bottom: 48px;
 }
 
-.tailor-cards {
+.tailor-cards .swiper-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
   row-gap: 64px;
-  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 64px;
 }
 
 .tailor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tailor-card p {
+  text-align: justify;
   max-width: 350px;
-  justify-self: center;
 }
 
 .grid-title {
@@ -917,9 +923,13 @@ img {
     font-size: 52px;
     line-height: 62px;
   }
-  .tailor-cards {
+
+  .tailor-cards .swiper-wrapper {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 10px;
+  }
+
+  .tailor-cards p {
+    padding: 0 8px;
   }
 
   .real-stories-cards {
@@ -984,6 +994,14 @@ img {
 
 @media screen and (max-width: 1040px) {
   .adds-swiper .swiper-slide {
+    flex: none;
+  }
+
+  .tailor-cards {
+    display: block;
+  }
+
+  .tailor-cards .swiper-slide {
     flex: none;
   }
 
@@ -1259,6 +1277,25 @@ img {
     margin-right: 8px;
     text-align: center;
   }
+  /*swiper*/
+  .tailor-cards .swiper-wrapper {
+    display: flex;
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .tailor-cards .swiper-pagination {
+    bottom: 20px;
+  }
+
+  .tailor-cards .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #8c30f5;
+  }
+  /*swiper*/
 }
 
 @media screen and (max-width: 545px) {
@@ -1268,6 +1305,10 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+  .tailor-card p {
+    max-width: 220px;
+  }
+
   .stats {
     padding: 20px 20px 0 20px;
   }

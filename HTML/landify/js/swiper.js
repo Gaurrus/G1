@@ -3,20 +3,7 @@ const mediaQuerySize = 1040;
 
 function catalogSliderInit() {
   if (!catalogSlider) {
-    catalogSlider = new Swiper(".swiper", {
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      // If we need pagination
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      // And if we need scrollbar
-      scrollbar: {
-        el: ".swiper-scrollbar",
-      },
+    catalogSlider = new Swiper(".adds-swiper", {
       keyboard: {
         enabled: true,
       },
