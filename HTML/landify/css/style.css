@@ -59,7 +59,9 @@ img {
   width: 100%;
   transition: 0.5s all linear;
   padding: 0 10px;
+  z-index: 5;
 }
+
 .link-to-figma {
   display: ruby;
   position: sticky;
@@ -261,35 +263,12 @@ img {
 
 .intro-footer {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  max-width: 1110px;
-  width: 100%;
-  padding: 40px 16px 40px 16px;
+  flex-direction: column;
   background-color: #ffffff;
-  position: relative;
-  z-index: -1;
 }
 
-.intro-footer-top-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(192, 204, 218, 0.1) 0%,
-    rgba(192, 204, 218, 0.6) 50.38%,
-    rgba(192, 204, 218, 0.1) 100%
-  );
-}
-
+.intro-footer-top-line,
 .intro-footer-bottom-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: 1px;
   width: 100%;
   background: linear-gradient(
@@ -298,13 +277,6 @@ img {
     rgba(192, 204, 218, 0.6) 50.38%,
     rgba(192, 204, 218, 0.1) 100%
   );
-}
-
-.intro-footer-link:hover,
-.intro-footer-link:focus,
-.intro-footer-link:active {
-  transition: 0.5s all;
-  opacity: 0.5;
 }
 
 /*intro footer end*/
@@ -907,6 +879,28 @@ img {
 }
 /* footer end  */
 
+/*swiper*/
+
+.adds-swiper {
+  width: 100%;
+}
+
+.adds-swiper .swiper-slide {
+  text-align: center;
+  flex: 1 1 160px;
+  padding: 40px 0;
+}
+
+.adds-swiper .swiper-slide:hover,
+.adds-swiper .swiper-slide:focus,
+.adds-swiper .swiper-slide:active {
+  transition: 0.5s all;
+  opacity: 0.5;
+  background-color: rgb(233, 232, 232);
+}
+
+/*swiper*/
+
 @media screen and (max-width: 1120px) {
   .world-flex {
     justify-content: center;
@@ -923,11 +917,6 @@ img {
     font-size: 52px;
     line-height: 62px;
   }
-
-  .intro-footer-link {
-    margin: 16px;
-  }
-
   .tailor-cards {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 10px;
@@ -994,6 +983,10 @@ img {
 }
 
 @media screen and (max-width: 1040px) {
+  .adds-swiper .swiper-slide {
+    flex: none;
+  }
+
   .headline {
     margin-top: 0;
   }
@@ -1100,6 +1093,10 @@ img {
 }
 
 @media screen and (max-width: 610px) {
+  .intro-title {
+    margin-right: 0;
+  }
+
   .body-unactive {
     overflow: hidden;
   }
@@ -1125,6 +1122,7 @@ img {
 
   .header-nav-active {
     transform: translateX(0%);
+    z-index: 999;
   }
 
   .header-wrapper {
