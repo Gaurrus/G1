@@ -710,7 +710,7 @@ img {
 .world-wrapper {
   max-width: 1110px;
   margin: 0 auto 48px auto;
-  padding-top: 128px;
+  padding-top: 68px;
 }
 
 .world-title {
@@ -906,6 +906,68 @@ img {
 }
 
 /*swiper*/
+
+/*animations*/
+.animation {
+  transform: translate(30%, 30%);
+  opacity: 0;
+  transition: all 0.5s ease-out 0s;
+}
+
+.animation-active {
+  transform: translate(0%, 0%);
+  opacity: 1;
+  transition: all 0.5s ease-out 0s;
+}
+
+/* .real-one {
+  transform: translateX(-80%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-one-active {
+  transform: translateX(0%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-two {
+  transform: translateX(80%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-two-active {
+  transform: translateX(0%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-three {
+  transform: translateX(-80%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-three-active {
+  transform: translateX(0%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-four {
+  transform: translateY(80%);
+
+  transition: all 0.4s ease 0s;
+}
+
+.real-four-active {
+  transform: translateX(0%);
+
+  transition: all 0.4s ease 0s;
+} */
+/*animations*/
 
 @media screen and (max-width: 1120px) {
   .world-flex {
@@ -1108,6 +1170,16 @@ img {
     width: 100%;
     padding: 32px;
   }
+
+  .animation {
+    transform: translateX(-135%);
+    transition: all 0.4s ease 0s;
+  }
+
+  .animation-active {
+    transform: translateX(0%);
+    transition: all 0.4s ease 0s;
+  }
 }
 
 @media screen and (max-width: 610px) {
@@ -1222,7 +1294,7 @@ img {
   }
 
   .real-stories-cards {
-    padding-top: 48px;
+    padding-top: 64px;
     padding-left: 0;
   }
   .real-stories-card-1 {
@@ -1235,7 +1307,7 @@ img {
   }
 
   .tailor-wrap {
-    padding-top: 32px;
+    padding-top: 64px;
   }
   .stats {
     padding: 32px 10px;
