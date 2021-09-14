@@ -1,0 +1,27 @@
+.button {
+  border-radius: 8px;
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+  box-shadow: 8px 8px 1px brown;
+  transition: 0.2s all linear;
+  margin: 20px;
+  padding: 15px 0;
+  flex: 0 1 200px;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 1px brown;
+  opacity: 0.8;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

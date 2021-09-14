@@ -1,0 +1,32 @@
+p {
+  width: 400px;
+  padding: 7px;
+  font-style: normal;
+  font-size: 20px; 
+}
+
+p:first-of-type {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #008000;
+}
+
+p:nth-of-type(2) {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffa500;
+}
+
+.i {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.b {
+  font-weight: bolder;
+  text-decoration: underline dotted orange;
+}
+
+.u::before {
+  content: '\00A0';
+}

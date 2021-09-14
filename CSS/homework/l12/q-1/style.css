@@ -1,0 +1,111 @@
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(74, 65, 150);
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: arial;
+  font-weight: 500;
+  transform: translateX(-90%);
+}
+
+.button:focus,
+.button:hover {
+  color: white;
+  animation-name: hover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateX(-90%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*before and after start*/
+
+.anima {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.button-two {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(74, 65, 150);
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: arial;
+  font-weight: 500;
+  z-index: -1;
+}
+
+.button-two::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+
+  background-color: aqua;
+  left: 0;
+
+  animation-name: flashing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 0.3;
+}
+
+.button-two::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+
+  background-color: aqua;
+  right: 0;
+  opacity: 0.3;
+  animation-name: flashing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 0.3;
+}
+
+@keyframes flashing {
+  0% {
+    width: 0;
+  }
+
+  /* 50% {
+    width: 30%;
+  } */
+
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    width: 50%;
+    opacity: 0;
+  }
+}

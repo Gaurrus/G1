@@ -1,0 +1,18 @@
+p {
+  width: 500px;
+  padding: 1em 1em 1em 1em;
+  margin: 2em 2em 2em 2em;
+  border: 1px solid #000000;
+  font-family: 'times new roman';
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+p:first-of-type {
+  font-style: normal;
+}
+
+p:last-of-type {
+  font-style: normal;
+  font-weight: bold;
+}
