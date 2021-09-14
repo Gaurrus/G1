@@ -1005,12 +1005,6 @@ img {
     flex: none;
   }
 
-  .tailor-cards .swiper-wrapper {
-    display: flex;
-    column-gap: 0;
-    row-gap: 0;
-  }
-
   .headline {
     margin-top: 0;
   }
@@ -1283,6 +1277,25 @@ img {
     margin-right: 8px;
     text-align: center;
   }
+  /*swiper*/
+  .tailor-cards .swiper-wrapper {
+    display: flex;
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .tailor-cards .swiper-pagination {
+    bottom: 20px;
+  }
+
+  .tailor-cards .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #8c30f5;
+  }
+  /*swiper*/
 }
 
 @media screen and (max-width: 545px) {

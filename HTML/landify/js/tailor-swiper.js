@@ -1,39 +1,30 @@
 let tailorSlider = null;
-const mediaQuerrySize = 1040;
+const mediaQuerrySize = 610;
 
 function tailorSliderInit() {
   if (!tailorSlider) {
     tailorSlider = new Swiper(".tailor-cards", {
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      // If we need pagination
+      // pagination
       pagination: {
         el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
       },
-      // And if we need scrollbar
-      scrollbar: {
-        el: ".swiper-scrollbar",
-      },
+      
       keyboard: {
         enabled: true,
       },
-      // autoplay: {
-      //   delay: 2000,
-      // },
+      autoplay: {
+        delay: 2500,
+      },
       loop: true,
       spaceBetween: 16,
       breakpoints: {
-        767: {
-          slidesPerView: 4,
-        },
-        651: {
-          slidesPerView: 3,
+        610: {
+          slidesPerView: 1,
         },
         420: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         320: {
           slidesPerView: 1,
