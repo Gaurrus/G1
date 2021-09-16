@@ -585,7 +585,7 @@ img {
   margin-right: 38px;
 }
 
-.stats-title-h {
+.stats-title-main {
   display: block;
   font-weight: 800;
   font-size: 48px;
@@ -1389,7 +1389,7 @@ img {
     margin-bottom: 24px;
   }
 
-  .stats-title-h {
+  .stats-title-main {
     font-size: 32px;
     line-height: 34px;
   }
@@ -1399,6 +1399,7 @@ img {
     grid-template-rows: repeat(4, 1fr);
   }
   .stats-card {
+    align-items: center;
     justify-content: center;
   }
   .headline {
@@ -1452,7 +1453,7 @@ img {
   }
   .tailor-title,
   .stories-title,
-  .stats-title-h,
+  .stats-title-main,
   .headline-title-h,
   .world-title,
   .manage-title {
@@ -1515,7 +1516,7 @@ img {
     row-gap: 20px;
   }
 
-  .stats-title-h {
+  .stats-title-main {
     font-size: 24px;
     line-height: 26px;
   }
