@@ -8,40 +8,46 @@
   height: 100vh;
   margin: 0 auto;
   background-color: gray;
+  
 }
 
 .flex-images {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 
 .img-container {
+  display: none;
   height: 150px;
   margin: 0;
   background-color: green;
 }
 
 .margin-4 {
-  margin: 0 4px;
+  margin: 4px;
 }
 
 .margin-5 {
-  margin: 0 5px;
+  margin: 5px;
 }
 
 .margin-6 {
-  margin: 0 6px;
+  margin: 6px;
 }
 
 .img-container-200 {
+  display: block;
   width: 200px;
 }
 
 .img-container-250 {
+  display: block;
   width: 250px;
 }
 
 .img-container-300 {
+  display: block;
   width: 300px;
 }
