@@ -7,22 +7,21 @@
   max-width: 1024px;
   height: 100vh;
   margin: 0 auto;
-  background-color: gray;
-  
+    
 }
 
 .flex-images {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+  justify-content: center;
 }
 
 .img-container {
   display: none;
   height: 150px;
   margin: 0;
-  background-color: green;
+  background-color: rgb(92, 0, 121);
 }
 
 .margin-4 {
@@ -35,6 +34,22 @@
 
 .margin-6 {
   margin: 6px;
+}
+
+.margin-7 {
+  margin: 7px;
+}
+
+.margin-8 {
+  margin: 8px;
+}
+
+.margin-9 {
+  margin: 9px;
+}
+
+.margin-10 {
+  margin: 10px;
 }
 
 .img-container-200 {
@@ -50,4 +65,24 @@
 .img-container-300 {
   display: block;
   width: 300px;
+}
+
+.img-container-350 {
+  display: block;
+  width: 350px;
+}
+
+.img-container-400 {
+  display: block;
+  width: 400px;
+}
+
+.img-container-450 {
+  display: block;
+  width: 450px;
+}
+
+.img-container-500 {
+  display: block;
+  width: 500px;
 }
