@@ -1,7 +1,11 @@
-'use strict'
-let i = 0;
+"use strict";
+let i = 1;
 let n = 0;
-for (i = 0; i <= 10; i++) {
-  n = n + +prompt("Введите число");
-  console.log(n);
+let num = null;
+for (i = 1; i <= 10; i++) {
+  num = +prompt("Введите число");
+  if (num != 0) {
+    n = n + num;
+  } else i = 10;
 }
+alert(`Сумма введенных чисел ${n}`);
