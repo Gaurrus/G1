@@ -10,7 +10,6 @@ button.addEventListener("click", () => {
 
 function checkAge(x) {
   if (x <= 16) {
-    body.insertAdjacentHTML('beforeend', `<p>Еще маловат!<\p>`);
-  } else  body.insertAdjacentHTML('beforeend', `<p>Уже можно!<\p>`);
+    body.insertAdjacentHTML("beforeend", `<p>Еще маловат!<\p>`);
+  } else body.insertAdjacentHTML("beforeend", `<p>Уже можно!<\p>`);
 }
-
