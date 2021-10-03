@@ -1,26 +1,20 @@
 "use strict";
 const button = document.getElementById("button");
-const input = document.getElementById("input");
+const input = document.getElementsByTagName("input");
 const body = document.querySelector("body");
 
 button.addEventListener("click", () => {
-  const x = input.value;
-  checkNumbers(x);
+  const divisible = input[0].value;
+  const divider = input[1].value;
+  const resultOfDivision = calcOfNoFullDivision(divisible, divider);
+  body.insertAdjacentHTML(
+    "beforeend",
+    `<h3>Делимое состоит из ${resultOfDivision} цифер<\h3>`
+  );
 });
 
-function checkNumbers(x) {
-  if (x >= 10) {
-    x = x ** 2;
-
-    body.insertAdjacentHTML("beforeend", `<p>Результат равен ${x}<\p>`);
-  }
-  if (x == 8 || x == 9) {
-    x = x - 1;
-    body.insertAdjacentHTML("beforeend", `<p>Результат равен ${x}<\p>`);
-    return x;
-  }
-  if (x <= 7) {
-    body.insertAdjacentHTML("beforeend", `<p>${x} Меньше либо равно 7<\p>`);
-    return x;
-  }
+function calcOfNoFullDivision(aaa, bbb) {
+  const reminder = aaa % bbb;
+  const notFullDivision = (aaa - reminder) / bbb;
+  console.log(notFullDivision);
 }

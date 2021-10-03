@@ -1,26 +1,24 @@
 "use strict";
 const button = document.getElementById("button");
-const input = document.getElementById("input");
+const input = document.getElementsByTagName("input");
 const body = document.querySelector("body");
-
-button.addEventListener("click", () => {
-  const x = input.value;
-  checkNumbers(x);
-});
-
-function checkNumbers(x) {
-  if (x >= 10) {
-    x = x ** 2;
-
-    body.insertAdjacentHTML("beforeend", `<p>Результат равен ${x}<\p>`);
+function calcMin(a, b, c) {
+  let minNum = a;
+  if (minNum > b) {
+    minNum = b;
   }
-  if (x == 8 || x == 9) {
-    x = x - 1;
-    body.insertAdjacentHTML("beforeend", `<p>Результат равен ${x}<\p>`);
-    return x;
+  if (minNum > c) {
+    minNum = c;
   }
-  if (x <= 7) {
-    body.insertAdjacentHTML("beforeend", `<p>${x} Меньше либо равно 7<\p>`);
-    return x;
-  }
+  return minNum;
 }
+button.addEventListener("click", () => {
+  const x1 = input[0].value;
+  const x2 = input[1].value;
+  const x3 = input[2].value;
+  const endsMin = calcMin(x1, x2, x3);
+  body.insertAdjacentHTML(
+    "beforeend",
+    `<h3>Минимальное из введенных - число ${endsMin}<\h3>`
+  );
+});

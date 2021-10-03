@@ -1,26 +1,16 @@
 "use strict";
 const button = document.getElementById("button");
-const input = document.getElementById("input");
+const input = document.getElementsByTagName("input");
 const body = document.querySelector("body");
-
 button.addEventListener("click", () => {
-  const x = input.value;
-  checkNumbers(x);
+  const x = input[0].value;
+  const y = input[1].value;
+  const expOnenta = exponention(x, y);
+  body.insertAdjacentHTML('beforeend', `<h3>Число ${x} в степени ${y} равно ${expOnenta}<\h3>`);
 });
 
-function checkNumbers(x) {
-  if (x >= 10) {
-    x = x ** 2;
 
-    body.insertAdjacentHTML("beforeend", `<p>Результат равен ${x}<\p>`);
-  }
-  if (x == 8 || x == 9) {
-    x = x - 1;
-    body.insertAdjacentHTML("beforeend", `<p>Результат равен ${x}<\p>`);
-    return x;
-  }
-  if (x <= 7) {
-    body.insertAdjacentHTML("beforeend", `<p>${x} Меньше либо равно 7<\p>`);
-    return x;
-  }
+function exponention(ex, igrek) {
+ const exponent = ex ** igrek;
+ return exponent;
 }
