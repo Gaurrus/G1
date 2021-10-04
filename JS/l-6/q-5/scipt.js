@@ -7,7 +7,7 @@ button.addEventListener("click", () => {
   const calcLenghtOfCircle = calcCircleLenght(radius);
   body.insertAdjacentHTML(
     "beforeend",
-    `<h3>Длинна окружности радиусом ${radius} равна ${calcLenghtOfCircle}<\h3>`
+    `<h3>Длинна окружности радиусом ${radius} равна ${calcLenghtOfCircle}</h3>`
   );
 });
 

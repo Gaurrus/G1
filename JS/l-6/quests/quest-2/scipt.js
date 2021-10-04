@@ -5,12 +5,12 @@ const body = document.querySelector("body");
 button.addEventListener("click", () => {
   const x = input[0].value;
   const y = input[1].value;
-  const expOnenta = exponention(x, y);
-  body.insertAdjacentHTML('beforeend', `<h3>Число ${x} в степени ${y} равно ${expOnenta}</h3>`);
+  const multy = multipler(x, y);
+  body.insertAdjacentHTML('beforeend', `<h3>Произведение ${x} и ${y} равно ${multy}</h3>`);
 });
 
 
-function exponention(ex, igrek) {
- const exponent = ex ** igrek;
- return exponent;
+function multipler(ex, igrek) {
+ const mUlt = ex * igrek;
+ return mUlt;
 }

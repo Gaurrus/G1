@@ -9,7 +9,7 @@ button.addEventListener("click", () => {
   const resultOfDivision = calcOfNoFullDivision(divisible, divider);
   body.insertAdjacentHTML(
     "beforeend",
-    `<h3>Делимое состоит из ${resultOfDivision} цифер<\h3>`
+    `<h3>Делимое состоит из ${resultOfDivision} цифер</h3>`
   );
 });
 

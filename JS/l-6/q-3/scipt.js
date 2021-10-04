@@ -19,6 +19,6 @@ button.addEventListener("click", () => {
   const endsMin = calcMin(x1, x2, x3);
   body.insertAdjacentHTML(
     "beforeend",
-    `<h3>Минимальное из введенных - число ${endsMin}<\h3>`
+    `<h3>Минимальное из введенных - число ${endsMin}</h3>`
   );
 });
