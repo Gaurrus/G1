@@ -1,11 +1,13 @@
 "use strict";
 
-function Viechle() {
-  this.model = "Тесла";
-  this.engineVolume = "3000";
-  this.year = "2007";
+function Viechle(model, engineVolume, year) {
+  this.model = model;
+  this.engineVolume = engineVolume;
+  this.year = year;
 }
 
-const redViechle = new Viechle("Red");
+const bmwViechle = new Viechle('BMW', 3000, 2007);
+const teslaViechle = new Viechle('Tesla', 'элкетро', 2015);
 
-console.log(redViechle);
+console.log(bmwViechle);
+console.log(teslaViechle);
