@@ -16,6 +16,7 @@ let sum = 0;
 let srZp = 0;
 let keySum = 0;
 for (let key in salary) {
+  console.log(key);
   sum = sum + salary[key];
   keySum++;
   srZp = sum / keySum;
