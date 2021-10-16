@@ -1,78 +1,35 @@
 "use strict";
 
-let salary = {
-  petrov: 500,
-  ivanov: 600,
-  sidorov: 450,
-  sokolov: 550,
-  petuhov: 800,
-  kurochkin: 720,
-  sobachkin: 650,
-  koshechkin: 480,
-  pupkin: 590,
-  kirkorov: 1000,
+const textarea = document.getElementById("textarea");
+const button = document.getElementById("button");
+const body = document.querySelector("body");
 
-  calcMidSalary() {
-    let sum = 0;
-    let salaryMid = 0;
-    let workers = 0;
-    for (let key in this) {
-      if (
-        this[key] != this.calcMidSalary &&
-        this[key] != this.calcMinSalary &&
-        this[key] != this.calcMaxSalary
-      ) {
-        sum = sum + this[key];
-        workers++;
-        salaryMid = sum / workers;
-      }
-    }
-    return salaryMid;
-  },
+button.addEventListener("click", () => {
+  const heading = document.querySelector("h2");
+  if (heading) heading.remove();
+  const bigText = textarea.value;
+  if (bigText != 0) {
+    let result = countWords(bigText);
+    body.insertAdjacentHTML(
+      "beforeend",
+      `<h2>Количество слов во введенном тексте равно ${result}</h2>`
+    );
+  } else body.insertAdjacentHTML("beforeend", `<h2>Вы ничего не ввели!</h2>`);
+});
 
-  calcMinSalary() {
-    let min;
-    for (let key in this) {
-      if (
-        this[key] != this.calcMinSalary &&
-        this[key] != this.calcMidSalary &&
-        this[key] != this.calcMaxSalary
-      ) {
-        min = this[key];
-        for (key in this) {
-          if (min >= this[key]) min = this[key];
-        }
-      }
-    }
-    return min;
-  },
+// это простой способ, от колчества пробелов с минимум защит от дурака
 
-  calcMaxSalary() {
-    let max;
-    for (let key in this) {
-      if (
-        this[key] != this.calcMinSalary &&
-        this[key] != this.calcMidSalary &&
-        this[key] != this.calcMaxSalary
-      ) {
-        max = this[key];
-        for (key in this) {
-          if (max <= this[key]) max = this[key];
-        }
-      }
-    }
-    return max;
-  },
-};
+// let checkNumberOfWords = (bigText) => {
+//   let wordNumber = 0;
+//   for (let char of bigText.trim())
+//     if (char == " ") {
+//       wordNumber++;
+//     }
+//   return wordNumber = wordNumber + 1;
+// };
 
-salary.globalSalaryMid = salary.calcMidSalary();
+function countWords(bigText) {
+  return bigText.trim().split(/\s+/).length; // /\s+/ регулярное выражение ult /s символ соответствующий одиночному пустому символу, а + соответствует предыдущему повторенному 1 и более раз
+}
 
-console.log(`Средняя зараплата ${salary.globalSalaryMid}`);
-
-salary.globalMin = salary.calcMinSalary();
-
-console.log(`Минимальная закрплата ${salary.globalMin}`);
-
-salary.globalMax = salary.calcMaxSalary();
-
-console.log(`Максимальная зарплата ${salary.globalMax}`);
+// таким способом считает правильно слова, но если остается например запятая между пробелами " , ", то ее тоже посчитает как отдельное слово
