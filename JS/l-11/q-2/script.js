@@ -1,27 +1,49 @@
 "use strict";
 
-const input = document.getElementById("input");
-const button = document.getElementById("button");
-const body = document.querySelector("body");
-
-button.addEventListener("click", () => {
-  const heading = document.querySelector("h2");
-  if (heading) heading.remove();
-  const str = input.value;
-  if (str != 0) {
-    let result = checkPolindromus(str);
-    body.insertAdjacentHTML("beforeend", `<h2>${result}</h2>`);
-  } else body.insertAdjacentHTML("beforeend", `<h2>Вы ничего не ввели!</h2>`);
+const arr = ["2", "-15", "12", "83", "-29", "111", "-6", "22"];
+console.log(arr);
+arr.forEach((item, index) => {
+  if (item.length === 3) console.log(index);
 });
 
-let checkPolindromus = (str) => {
-  let resultOfCheck;
-  for (let i = 0; i <= str.length - 1; i++) {
-    if (str[i] == str[str.length - (i + 1)]) {
-      resultOfCheck = 1;
-    } else return `Введенное слово НЕ палиндром`;
+arr.forEach((item, index) => {
+  if (item % 5 === 0)
+    console.log(`на ${index} позиции кратный 5 элементы равный ${item}`);
+});
+
+const positives = [];
+const findPositives = arr.forEach((item) => {
+  if (item > 0) {
+    positives.push(item);
   }
-  if (resultOfCheck == 1) {
-    return `Введенное слово палиндром`;
-  }
-};
+});
+console.log(positives, `все положительные числа из массива arr`);
+
+const arrSortedUp = arr.sort((a, b) => a - b);
+console.log(arrSortedUp, `сортировка по возрастанию`);
+
+const goodArr = [];
+
+const chengeArr = arr.forEach((item) => {
+  if (item < 0) {
+    goodArr.push(Math.abs(item));
+  } else goodArr.push(item * 2);
+});
+console.log(goodArr, `преобразованный arr`);
+
+const arrSortedDown = arr.sort((a, b) => b - a);
+console.log(arrSortedUp, `сортировка по убыванию`);
+
+console.log(arr.reverse(), `реверс`);
+
+let prod = 1;
+const findProd = arr.forEach((item) => (prod *= item));
+console.log(prod, `произведение всех элементов`);
+
+let mid = 0;
+let summ = 0;
+const calcMid = arr.forEach((item) => {
+  summ = summ + +item;
+});
+mid = summ / arr.length;
+console.log(mid, `среднее арифметическое`);
