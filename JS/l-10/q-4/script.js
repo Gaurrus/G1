@@ -20,13 +20,10 @@ button.addEventListener("click", () => {
 let calcDubleMoney = (money) => {
   for (let char of money) {
     if (money.includes("$")) {
-      let positionOfСurrency = money.indexOf("$", 0);
-      let number = +money.slice(0, positionOfСurrency);
+      let number = +parseInt(money);
       return (number = `${number * 2} $`);
     } else if (money.includes("руб.") || money.includes("руб")) {
-      let positionOfСurrency = money.indexOf("р", 0);
-      console.log(positionOfСurrency);
-      let number = +money.slice(0, positionOfСurrency);
+      let number = +parseInt(money);
       return (number = `${number * 2} руб.`);
     }
   }
