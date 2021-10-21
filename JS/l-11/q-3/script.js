@@ -12,14 +12,8 @@ button.addEventListener("click", () => {
       "beforeend",
       `<h2>Результат преобразования: ${operationsWisStr(str)}</h2>`
     );
-  } else
-    body.insertAdjacentHTML(
-      "beforeend",
-      `<h2>Вы ничего не ввели!</h2>`
-    );
+  } else body.insertAdjacentHTML("beforeend", `<h2>Вы ничего не ввели!</h2>`);
 });
-
-
 
 let operationsWisStr = (str) => {
   let operStr = str.split(" ");

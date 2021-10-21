@@ -1,33 +1,34 @@
 "use strict";
 
-const arr = ["2", "-15", "12", "83", "-29", "111", "-6", "22"];
+const arr = ["2", "-15", "12", "83", "-29", "-111", "-6", "22"];
 console.log(arr);
 arr.forEach((item, index) => {
   if (item.length === 3) console.log(index);
 });
+console.log(
+  arr.indexOf(
+    arr.find(
+      (item) => (item > 99 && item < 1000) || (item > -1000 && item < -99)
+    )
+  ),
+  `трехзначное число`
+);
 
 arr.forEach((item, index) => {
   if (item % 5 === 0)
     console.log(`на ${index} позиции кратный 5 элементы равный ${item}`);
 });
 
-const positives = [];
-const findPositives = arr.forEach((item) => {
-  if (item > 0) {
-    positives.push(item);
-  }
-});
+let positives = arr.filter((item) => item > 0);
 console.log(positives, `все положительные числа из массива arr`);
 
 const arrSortedUp = arr.sort((a, b) => a - b);
 console.log(arrSortedUp, `сортировка по возрастанию`);
 
-const goodArr = [];
-
-const chengeArr = arr.forEach((item) => {
+let goodArr = arr.map(function (item) {
   if (item < 0) {
-    goodArr.push(Math.abs(item));
-  } else goodArr.push(item * 2);
+    return Math.abs(item);
+  } else return item * 2;
 });
 console.log(goodArr, `преобразованный arr`);
 
