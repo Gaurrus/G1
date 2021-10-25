@@ -1,5 +1,5 @@
 "use strict";
 
-const date = new Date();
+const result = new Date();
 
-console.log(` ${date.getHours()}:${date.getMinutes()} ${date.getDate()} ${date.getMonth() + 1} ${date.getFullYear()}`);
+console.log(` ${result.getHours()}:${result.getMinutes()} ${result.getDate()} ${result.getMonth() + 1} ${result.getFullYear()}`);
