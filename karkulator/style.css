@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1400px;
+  background-color: lightgrey;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: lightslategray;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+}
+
+.input {
+  margin: 20px 0;
+  height: 40px;
+}
