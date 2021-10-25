@@ -1,0 +1,32 @@
+.div_1 {
+  position: fixed;
+  top: 30px;
+  left: 35px;
+  width: 300px;
+  height: 400px;
+  padding: 15px;
+  text-align: justify;
+  border: 4px dashed greenyellow;
+}
+
+.div_2 {
+  float: left;
+  width: 70px;
+  height: 50px;
+  background: radial-gradient(35px 35px at 10px 10px, #00ffff, #ffffff);
+  padding: 5px;
+  border: 2px solid #ffa500;
+}
+
+.div_3 {
+  float: right;
+  width: 70px;
+  height: 50px;
+  background: linear-gradient(45deg, #0000ff, #ffffff);
+  border: 2px dotted violet;
+  padding: 5px;
+}
+
+.div_3:hover {
+  opacity: 0.5;
+}

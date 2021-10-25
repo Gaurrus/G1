@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title-cont {
+  position: relative;
+  background-color: aquamarine;
+  border-radius: 3px;
+}
+
+.title {
+  display: block;
+  font-family: arial;
+  color: #008000;
+  padding: 10px;
+}
+
+.title::first-line {
+  font-size: large;
+  font-weight: 700;
+  color: blue;
+}
+
+.title::before {
+  content: "\1F512";
+  font-size: 30px;
+  color: green;
+  margin-right: 20px;
+  float: left;
+}
+
+.title::after {
+  display: block;
+  content: "\2BBE";
+  float: right;
+  position: absolute;
+  bottom: 33%;
+  right: 3%;
+}
+
+/* .close {
+  float: right;
+  border: unset;
+  background: transparent;
+}
+
+.close:hover {
+  transform: scale(1.2);
+} */

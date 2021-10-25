@@ -1,0 +1,25 @@
+.title {
+  font-weight: bold;
+  text-indent: 15px;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 0px;
+}
+
+li:before {
+  content: counter(item) ') ';
+  counter-increment: item;
+}
+
+.sup {
+  font-size: 10px;
+  vertical-align: super;
+}
+
+.sub {
+  font-size: 10px;
+  vertical-align: sub;
+}
