@@ -6,17 +6,24 @@
 body {
   max-width: 1400px;
   background-color: lightgrey;
+  margin: 0 auto;
+}
+
+h2 {
+  display: block;
+  padding: 10px 20px;
+  background-color: wheat;
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 400px;
   background-color: lightslategray;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
@@ -26,6 +33,6 @@ body {
 }
 
 .input {
-  margin: 20px 0;
+  width: 60%;
   height: 40px;
 }
