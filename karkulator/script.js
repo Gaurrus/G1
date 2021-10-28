@@ -1,10 +1,11 @@
 "use strict";
 
-const inputFirst = document.getElementById("input-first");
+let inputFirst = document.getElementById("input-first");
 const inputSecond = document.getElementById("input-second");
 const buttonReset = document.getElementById("button-reset");
 const div = document.querySelector("div");
-const arrButtons = document.getElementsByTagName("button");
+const arrButtonsOperation = document.getElementsByClassName("button-operation");
+const arrButtonsNumberred = document.getElementsByClassName("number-button");
 
 const removeHeading = () => {
   const heading = document.querySelector("h2");
@@ -36,14 +37,26 @@ const calcOnClick = (operation) => {
     div.insertAdjacentHTML("beforeend", `<h2>${result}</h2>`);
   }
 };
+
 const operationButtonClick = () => {
   const clickedButton = event.currentTarget;
   const operation = clickedButton.innerHTML;
   calcOnClick(operation);
 };
 
-for (let i = 0; i <= arrButtons.length - 1; i++) {
-  arrButtons[i].addEventListener("click", operationButtonClick);
+for (let i = 0; i <= arrButtonsOperation.length - 1; i++) {
+  arrButtonsOperation[i].addEventListener("click", operationButtonClick);
+}
+
+const numberedButtonClick = () => {
+  const clickedNumButton = event.currentTarget;
+  const numberClicked = clickedNumButton.innerHTML;
+  arrButtonsNumberred.textContent = +numberClicked;
+  console.log(numberClicked);
+};
+
+for (let i = 0; i <= arrButtonsNumberred.length - 1; i++) {
+  arrButtonsNumberred[i].addEventListener("click", numberedButtonClick);
 }
 
 buttonReset.addEventListener("click", () => {
