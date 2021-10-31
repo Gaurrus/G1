@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.table {
+  
+  border-collapse: collapse;
+  margin: 100px auto 0 auto ;
+}
+
+.table-item {
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+  text-align: center;
+}
