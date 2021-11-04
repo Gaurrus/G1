@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор v0.1</title>
+    <link rel="stylesheet" href=".//css/style.css" />
+    <script src=".//js/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Калькулятор v0.1</title>
-  <link rel="stylesheet" href=".//css/style.css">
-  <script src=".//js/script.js" defer></script>
-</head>
-
-<body>
-  <div class="wrapper">
-    <div class="calkulator-body">
-
-      <input type="text" class="calc-area">
-      <div class="num-panel_wrapper">
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="number">0</button>
-        <button class="number">
-          < </button>
-            <button class="number">C</button>
-      </div>
-      <div class="operations-wrapper">
-        <button class="number">+</button>
-        <button class="number">-</button>
-        <button class="number">*</button>
-        <button class="number">/</button>
-        <button class="number">=</button>
+  <body>
+    <div class="wrapper">
+      <div class="calkulator-body">
+        <input type="text" class="calc-area" />
+        <div class="num-panel_wrapper">
+          <button class="button number-button">1</button>
+          <button class="button number-button">2</button>
+          <button class="button number-button">3</button>
+          <button class="button number-button">4</button>
+          <button class="button number-button">5</button>
+          <button class="button number-button">6</button>
+          <button class="button number-button">7</button>
+          <button class="button number-button">8</button>
+          <button class="button number-button">9</button>
+          <button class="button number-button">0</button>
+          <button class="button undo-button"><</button>
+          <button class="button reset-button">C</button>
+        </div>
+        <div class="operations-wrapper">
+          <button class="button operation-button">+</button>
+          <button class="button operation-button">-</button>
+          <button class="button operation-button">*</button>
+          <button class="button operation-button">/</button>
+          <button class="button result">=</button>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

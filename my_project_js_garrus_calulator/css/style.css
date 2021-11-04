@@ -32,12 +32,18 @@
   padding: 5% 30%;
 }
 
-.operations-wrapper .number:last-of-type {
+.operations-wrapper .button:last-of-type {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row: 2;
+  height: 40px;
+}
+
+.button {
+  height: 30px;
 }
 
 .calc-area {
   margin: 5% 30%;
+  height: 40px;
 }
