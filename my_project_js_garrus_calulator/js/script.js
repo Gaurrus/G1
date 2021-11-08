@@ -16,12 +16,13 @@ for (let i = 0; i <= numberButtons.length - 1; i++) {
 }
 
 const getOperation = () => {
-  const clickedOperButton = event.currentTarget;
+  const clickedOperButton = event.target;
   const operationClicked = clickedOperButton.innerHTML;
   operationButtons.textContent = operationClicked;
   inputValue.push(+calcArea.value);
   calcArea.value = ``;
   console.log(inputValue);
+  console.log(operationClicked);
   return operationClicked;
 };
 
