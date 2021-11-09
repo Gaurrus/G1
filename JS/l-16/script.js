@@ -1,13 +1,18 @@
 "use strict";
 
-const input = document.querySelector(`.input`);
+const workers = [
+  [1, `Огурцов`, `электрик`],
+  [2, `Помидоров`, `сантехник`],
+  [3, `Баклажанов`, `слесарь`],
+  [4, `Перцев`, `механик`],
+];
+console.log(workers);
 
-const inputValue = () => {
-  input.value = +input.value + 1;
-  if (input.value == 1000) {
-    clearInterval(intervalId);
-    input.value = `Stopped`;
-  }
-};
+const workersMap = new Map(workers);
+console.log(workersMap);
 
-const intervalId = setInterval(inputValue, 1000);
+workersMap.forEach((keys, value) => {
+  console.log(`${keys} - ${value}`);
+});
+
+console.log(workersMap.get(1))
