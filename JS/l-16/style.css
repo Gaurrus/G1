@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440;
+  background-color: blanchedalmond;
+}
+
+.clock-wrapper {
+  width: 400px;
+  height: 400px;
+  border: solid 1px black;
+  margin: 10% auto;
+  position: relative;
+}
+
+.seconds-0 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+}
+
+.seconds-6 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(6deg);
+}
+
+.seconds-12 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(12deg);
+}
+
+.seconds-18 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(18deg);
+}
+
+.seconds-24 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(24deg);
+}
+.seconds-30 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(30deg);
+}
+.seconds-36 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(36deg);
+}
+.seconds-42 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(42deg);
+}
+.seconds-48 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(48deg);
+}
+.seconds-54 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(54deg);
+}
+.seconds-60 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(60deg);
+}
+.seconds-66 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(66deg);
+}
+.seconds-72 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(72deg);
+}
+.seconds-78 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(78deg);
+}
+.seconds-84 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(84deg);
+}
+.seconds-90 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(90deg);
+}
+.seconds-96 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(96deg);
+}
+.seconds-102 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(102deg);
+}
+.seconds-108 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(108deg);
+}
+.seconds-114 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(114deg);
+}
+.seconds-120 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(120deg);
+}
+.seconds-126 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(126deg);
+}
+.seconds-132 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(132deg);
+}
+.seconds-138 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(138deg);
+}
+.seconds-144 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(144deg);
+}
+.seconds-150 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(150deg);
+}
+.seconds-156 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(156deg);
+}
+.seconds-162 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(162deg);
+}
+.seconds-168 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(168deg);
+}
+.seconds-174 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(174deg);
+}
+.seconds-180 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(180deg);
+}
+.seconds-186 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(186deg);
+}
+.seconds-192 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(192deg);
+}
+.seconds-198 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(198deg);
+}
+.seconds-204 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(204deg);
+}
+.seconds-210 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(210deg);
+}
+.seconds-216 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(216deg);
+}
+.seconds-222 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(222deg);
+}
+.seconds-228 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(228deg);
+}
+.seconds-234 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(234deg);
+}
+.seconds-240 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(240deg);
+}
+.seconds-246 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(246deg);
+}
+.seconds-252 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(252deg);
+}
+.seconds-258 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(258deg);
+}
+.seconds-264 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(264deg);
+}
+.seconds-270 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(270deg);
+}
+.seconds-276 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(276deg);
+}
+.seconds-282 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(282deg);
+}
+.seconds-288 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(288deg);
+}
+.seconds-294 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(294deg);
+}
+.seconds-300 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(300deg);
+}
+.seconds-306 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(306deg);
+}
+.seconds-312 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(312deg);
+}
+.seconds-318 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(318deg);
+}
+.seconds-324 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(324deg);
+}
+.seconds-330 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(330deg);
+}
+.seconds-336 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(336deg);
+}
+.seconds-342 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(342deg);
+}
+.seconds-348 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(348deg);
+}
+.seconds-354 {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+  transform: rotate(354deg);
+}
