@@ -561,3 +561,87 @@ body {
   transform-origin: bottom;
   transform: rotate(354deg);
 }
+
+.num12 {
+  position: absolute;
+  font-size: 24px;
+  top: 1%;
+  left: 47%;
+}
+
+.num1 {
+  position: absolute;
+  font-size: 24px;
+  top: 1%;
+  left: 75%;
+}
+
+.num2 {
+  position: absolute;
+  font-size: 24px;
+  top: 20%;
+  left: 96%;
+}
+
+.num3 {
+  position: absolute;
+  font-size: 24px;
+  top: 47%;
+  left: 96%;
+}
+
+.num4 {
+  position: absolute;
+  font-size: 24px;
+  top: 73%;
+  left: 96%;
+}
+
+.num5 {
+  position: absolute;
+  font-size: 24px;
+  top: 93%;
+  left: 75%;
+}
+
+.num6 {
+  position: absolute;
+  font-size: 24px;
+  top: 93%;
+  left: 48%;
+}
+
+.num7 {
+  position: absolute;
+  font-size: 24px;
+  top: 93%;
+  left: 20%;
+}
+
+.num8 {
+  position: absolute;
+  font-size: 24px;
+  top: 73%;
+  left: 1%;
+}
+
+.num9 {
+  position: absolute;
+  font-size: 24px;
+  top: 47%;
+  left: 1%;
+}
+
+.num10 {
+  position: absolute;
+  font-size: 24px;
+  top: 20%;
+  left: 1%;
+}
+
+.num11 {
+  position: absolute;
+  font-size: 24px;
+  top: 1%;
+  left: 20%;
+}
