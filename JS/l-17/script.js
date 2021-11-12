@@ -3,35 +3,46 @@
 const input = document.querySelectorAll(`.input`);
 const button = document.querySelector(`.button`);
 
-const counter = () => {
-  const from = +input[0].value;
-  const to = +input[1].value;
+const counter = (from, to) => {
   let count = from;
-  checkNumbers(from, to);
-  checkIsNums(from, to);
-
   const timerId = setInterval(() => {
-    if (count >= to + 1) {
-      count--;
+    if (count >= to && button.textContent == "Stop") {
       printTimer(count);
-    } else clearInterval(timerId);
-  }, 500);
+      count--;
+    } else {
+      printTimer(count + 1);
+      clearInterval(timerId);
+    }
+  }, 250);
 };
 
-button.addEventListener(`click`, counter);
+button.addEventListener(`click`, () => {
+  const from = +input[0].value;
+  const to = +input[1].value;
+  checkNumbers(from, to);
+  checkIsNums(from, to);
+  if (button.textContent == "Stop") {
+    changeButtonStart();
+  } else {
+    changeButtonStop();
+    counter(from, to);
+  }
+});
 
 const printTimer = (count) => {
   if (document.querySelector("h1")) {
     document.querySelector("h1").remove();
   }
   document.body.insertAdjacentHTML("beforeend", `<h1>${count}</h1>`);
+  return count;
 };
+
 
 const checkNumbers = (from, to) => {
   if (to > from) {
     return document.body.insertAdjacentHTML(
       "beforeend",
-      `<h1>Второе число больше первого, такой счетчик невозможен!</h1>`
+      `<h1>Второе число больше первого, такой отсчет невозможен!</h1>`
     );
   }
 };
@@ -52,4 +63,12 @@ const checkIsNums = (from, to) => {
       `<h1>Второе не число!</h1>`
     );
   }
+};
+
+const changeButtonStart = () => {
+  button.textContent = "Start";
+};
+
+const changeButtonStop = () => {
+  button.textContent = "Stop";
 };
