@@ -1,73 +1,65 @@
 const calcArea = document.querySelector(`input`);
-const numberButtons = document.querySelectorAll(`.number-button`);
-const operationButtons = document.querySelectorAll(`.operation-button`);
-const resultButton = document.querySelector(`.result`);
-const inputValue = [];
+const buttonPanel = document.querySelector(".num-panel_wrapper");
+let operationClicked;
+let firstNumber;
+let secondNumber;
 
-const getNumber = () => {
-  const clickedNumButton = event.currentTarget;
-  const numberClicked = +clickedNumButton.innerHTML;
-  numberButtons.textContent = numberClicked;
-  calcArea.value = calcArea.value + numberClicked;
+const getSymbol = (event) => {
+  let symbol = event.target;
+  if (symbol.tagName != "BUTTON") {
+    return;
+  }
+  let operation = symbol.innerHTML;
+  calckuletion(operation);
 };
 
-for (let i = 0; i <= numberButtons.length - 1; i++) {
-  numberButtons[i].addEventListener("click", getNumber);
-}
+buttonPanel.addEventListener("click", getSymbol);
 
-const getOperation = () => {
-  const clickedOperButton = event.target;
-  const operationClicked = clickedOperButton.innerHTML;
-  operationButtons.textContent = operationClicked;
-  inputValue.push(+calcArea.value);
-  calcArea.value = ``;
-  console.log(inputValue);
-  console.log(operationClicked);
-  return operationClicked;
+const calckuletion = (operation) => {
+  if (!isNaN(operation)) {
+    calcArea.value = calcArea.value + +operation;
+  }
+  if (operation == "C") {
+    calcArea.value = "";
+  }
+  if (operation == "+") {
+    firstNumber = calcArea.value;
+    operationClicked = operation;
+    calcArea.value = "";
+  }
+  if (operation == "-") {
+    firstNumber = calcArea.value;
+    operationClicked = operation;
+    calcArea.value = "";
+  }
+  if (operation == "*") {
+    firstNumber = calcArea.value;
+    operationClicked = operation;
+    calcArea.value = "";
+  }
+  if (operation == "/") {
+    firstNumber = calcArea.value;
+    operationClicked = operation;
+    calcArea.value = "";
+  }
+  if (operation == "=") {
+    secondNumber = calcArea.value;
+    if (operationClicked == "+") {
+      calcArea.value = +firstNumber + +secondNumber;
+    }
+    if (operationClicked == "-") {
+      calcArea.value = +firstNumber - +secondNumber;
+    }
+    if (operationClicked == "*") {
+      calcArea.value = +firstNumber * +secondNumber;
+    }
+    if (operationClicked == "/") {
+      calcArea.value = +firstNumber / +secondNumber;
+    }
+  }
+  // if (operation === "delete") {
+  //   calcArea.value =
+  //     calcArea.value -
+  //     calcArea.value[calcArea.value[calcArea.value.length]];
+  // }
 };
-
-for (let i = 0; i <= operationButtons.length - 1; i++) {
-  operationButtons[i].addEventListener("click", getOperation);
-}
-
-// function calcResult(operationClicked) {
-//   inputValue.push(+calcArea.value);
-//   if (operationClicked == `+`) {
-//     result = inputValue[0] + inputValue[1];
-//     console.log(result);
-//   }
-//   if (operationClicked === `-`) {
-//     const result = numOne - numTwo;
-//     console.log(result);
-//   }
-//   if (operationClicked === `*`) {
-//     const result = numOne * numTwo;
-//     console.log(result);
-//   }
-//   if (operationClicked === `/`) {
-//     const result = numOne / numTwo;
-//     console.log(result);
-//   }
-// }
-
-resultButton.addEventListener("click", (operationClicked) => {
-  inputValue.push(+calcArea.value);
-  console.log(inputValue);
-  console.log(operationClicked, `operation`);
-  if (operationClicked === `+`) {
-    const result = inputValue[0] + inputValue[1];
-    console.log(result);
-  }
-  if (operationClicked === `-`) {
-    const result = inputValue[0] - inputValue[1];
-    console.log(result);
-  }
-  if (operationClicked === `*`) {
-    const result = inputValue[0] * inputValue[1];
-    console.log(result);
-  }
-  if (operationClicked === `/`) {
-    const result = inputValue[0] / inputValue[1];
-    console.log(result);
-  }
-});
