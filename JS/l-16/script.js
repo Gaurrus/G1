@@ -109,12 +109,13 @@ const getMinutes = () => {
 
 const getHours = () => {
   let time = new Date();
-  let seconds = time.getHours();
-  for (let i = 0; i <= 59; i++) {
-    if (i == seconds) {
+  let huors = time.getHours();
+  for (let i = 0; i < 12; i++) {
+    if (i == huors || i == huors - 12) {
+      let n = 5 * i;
       huorArrow.classList.remove(arrStyles[59]);
-      huorArrow.classList.add(arrStyles[5 + i]);
-      huorArrow.classList.remove(arrStyles[i - 1]);
+      huorArrow.classList.add(arrStyles[n]);
+      huorArrow.classList.remove(arrStyles[n - 5]);
     }
   }
 };
