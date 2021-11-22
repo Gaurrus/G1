@@ -5,6 +5,7 @@ const button = document.querySelector("button");
 let max;
 let arrOfnumberOne = [];
 let arrOfnumberTwo = [];
+let arrOfMaxDivider = [];
 const checkNumbers = (numberOne, numberTwo) => {
   if (isNaN(numberOne) || isNaN(numberTwo)) {
     inputs.forEach((item) => {
@@ -44,22 +45,39 @@ const compareArraysOfNum = () => {
   let arrLengthMax;
   if (arrOfnumberOne.length > arrOfnumberTwo.length) {
     arrLengthMax = arrOfnumberOne.length;
+    arrOfnumberOne.forEach((item) => {
+      for (let i = 0; i < arrLengthMax; i++) {
+        if (arrOfnumberTwo[i] == item) {
+          document.body.insertAdjacentHTML("beforeend", `<h2>${item}</h2>`);
+          arrOfMaxDivider.push(item);
+        }
+      }
+    });
   } else {
     arrLengthMax = arrOfnumberTwo.length;
+    arrOfnumberTwo.forEach((item) => {
+      for (let i = 0; i < arrLengthMax; i++) {
+        if (arrOfnumberOne[i] == item) {
+          document.body.insertAdjacentHTML("beforeend", `<h2>${item}</h2>`);
+          arrOfMaxDivider.push(item);
+        }
+      }
+    });
   }
-  for (let i = 0; i <= arrLengthMax - 1; i++) {
-    if (arrOfnumberOne[i] == arrOfnumberTwo[i]) {
-      document.body.insertAdjacentHTML(
-        "beforeend",
-        `<h2>${arrOfnumberOne[i]}</h2>`
-      );
+  console.log(arrOfMaxDivider);
+  let maxDivider = arrOfMaxDivider[0];
+  for (let i = 0; i < arrOfMaxDivider.length; i++) {
+    if (arrOfMaxDivider[i] > maxDivider) {
+      maxDivider = arrOfMaxDivider[i];
     }
   }
+  document.body.insertAdjacentHTML("beforeend", `<h2>НОД = ${maxDivider}</h2>`);
 };
 
-button.addEventListener("click", () => {
+const doOnEvent = () => {
   arrOfnumberOne = [];
   arrOfnumberTwo = [];
+  arrOfMaxDivider = [];
   removeText();
   const numberOne = +inputs[0].value;
   const numberTwo = +inputs[1].value;
@@ -68,11 +86,11 @@ button.addEventListener("click", () => {
   } else {
     findDividersOfOne(numberOne, numberTwo);
     findDividersOfTwo(numberOne, numberTwo);
-    console.log(arrOfnumberOne);
-    console.log(arrOfnumberTwo);
     compareArraysOfNum();
   }
-});
+};
+
+button.addEventListener("click", doOnEvent);
 
 inputs.forEach((item) => {
   item.addEventListener("focus", () => {
