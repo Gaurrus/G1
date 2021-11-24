@@ -4,23 +4,36 @@ const formElem = document.querySelector(`.form`);
 const onSubmit = async (e) => {
   e.preventDefault();
   const formData = new FormData(formElem);
-  const data = Array.from(
-    formData.entries().reduce((prev, [name, value]) => ({
+
+  const formDataAll = Array.from(formData.entries()).reduce(
+    (prev, [name, value]) => ({
       ...prev,
       [name]: value,
-    }))
+    }),
+    {}
   );
 
-  const formDataJson = JSON.stringify(formData);
+  const formDataJson = JSON.stringify(formDataAll);
   const response = await fetch(`https://httpbin.org/post`, {
     method: "POST",
     body: formDataJson,
   });
 
-  if (response.status === 200) {
+  if (response.ok) {
     const result = await response.json();
-    console.log(response);
-  } else console.log(`error`);
+    removeText();
+    console.log(result);
+    document.body.insertAdjacentHTML(
+      "beforeend",
+      `<h3>Форма успешно отправлена!</h3>`
+    );
+  } else
+    document.body.insertAdjacentHTML("beforeend", `<h3>Ошибка отправки!</h3>`);
 };
 
 formElem.addEventListener("submit", onSubmit);
+
+const removeText = () => {
+  const message = document.querySelector("h3");
+  if (message) message.remove();
+};
