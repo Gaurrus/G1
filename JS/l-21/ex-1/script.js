@@ -40,16 +40,18 @@ const removeText = () => {
   if (message) message.remove();
 };
 
-inputs.forEach((input) => {
-  let n = 0;
-  input.addEventListener("blur", () => {
-    if (!input.value) {
+for (let i = 0; i <= inputs.length - 1; i++) {
+  inputs[i].addEventListener("blur", () => {
+    if (!inputs[i].value) {
       button.setAttribute("disabled", true);
     } else {
-      n++;
-      if (button.hasAttribute("disabled") && n == inputs.length) {
+      if (
+        button.hasAttribute("disabled") &&
+        i == inputs.length - 1 &&
+        inputs[i - 1].value
+      ) {
         button.removeAttribute("disabled", true);
       }
     }
   });
-});
+}
