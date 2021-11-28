@@ -37,3 +37,7 @@ const removeText = () => {
   const message = document.querySelector("h3");
   if (message) message.remove();
 };
+<<<<<<< HEAD
+=======
+
+>>>>>>> d148dd05282202d30d735d15a32d76280301479f

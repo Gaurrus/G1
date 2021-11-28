@@ -1,0 +1,89 @@
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.de {
+  width: 200px;
+  height: 200px;
+}
+
+.d1 {
+  background-color: blue;
+}
+
+.d2 {
+  background-color: blueviolet;
+}
+
+.d3 {
+  background-color: brown;
+  height: 400px;
+}
+
+.d4 {
+  background-color: burlywood;
+}
+
+.d5 {
+  background-color: cadetblue;
+}
+
+.d6 {
+  background-color: chartreuse;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1110px;
+  width: 100%;
+  padding: 40px 16px 40px 16px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.intro-footer-top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
+
+.intro-footer-bottom-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
+
+.intro-footer-link:hover,
+.intro-footer-link:focus,
+.intro-footer-link:active {
+  transition: 0.5s all;
+  opacity: 0.5;
+}

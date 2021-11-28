@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1400px;
+  background-color: lightgrey;
+  margin: 0 auto;
+}
+
+h2 {
+  display: block;
+  padding: 10px 20px;
+  background-color: wheat;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 400px;
+  background-color: lightslategray;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+}
+
+.input {
+  width: 60%;
+  height: 40px;
+}
