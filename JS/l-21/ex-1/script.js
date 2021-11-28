@@ -1,6 +1,8 @@
 "use strict";
 const formElem = document.querySelector(`.form`);
-
+const inputs = document.querySelectorAll(`.input`);
+const button = document.querySelector(`.button`);
+button.setAttribute("disabled", true);
 const onSubmit = async (e) => {
   e.preventDefault();
   const formData = new FormData(formElem);
@@ -37,7 +39,19 @@ const removeText = () => {
   const message = document.querySelector("h3");
   if (message) message.remove();
 };
-<<<<<<< HEAD
-=======
 
->>>>>>> d148dd05282202d30d735d15a32d76280301479f
+for (let i = 0; i <= inputs.length - 1; i++) {
+  inputs[i].addEventListener("blur", () => {
+    if (!inputs[i].value) {
+      button.setAttribute("disabled", true);
+    } else {
+      if (
+        button.hasAttribute("disabled") &&
+        i == inputs.length - 1 &&
+        inputs[i - 1].value
+      ) {
+        button.removeAttribute("disabled", true);
+      }
+    }
+  });
+}
