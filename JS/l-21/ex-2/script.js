@@ -1,39 +1,81 @@
 "use strict";
-const formElem = document.querySelector(`.form`);
 
-const onSubmit = async (e) => {
-  e.preventDefault();
-  const formData = new FormData(formElem);
+const button = document.querySelector("button");
 
-  const formDataAll = Array.from(formData.entries()).reduce(
-    (prev, [name, value]) => ({
-      ...prev,
-      [name]: value,
-    }),
-    {}
-  );
+const setTr = (post) => {
+  const tr = document.createElement("tr");
+  Object.values(post).forEach((item) => {
+    tr.insertAdjacentHTML("beforeend", `<td>${item}</td>`);
+  });
+  return tr;
+};
 
-  const formDataJson = JSON.stringify(formDataAll);
-  const response = await fetch(`https://httpbin.org/post`, {
-    method: "POST",
-    body: formDataJson,
+const insertTable = (posts) => {
+  const table = document.createElement("table");
+  const tr = document.createElement("tr");
+
+  Object.keys(posts[0]).forEach((item) => {
+    tr.insertAdjacentHTML("beforeend", `<th>${item}</th>`);
+  });
+  table.append(tr);
+  posts.forEach((post) => {
+    table.append(setTr(post));
   });
 
-  if (response.ok) {
-    const result = await response.json();
-    removeText();
-    console.log(result);
-    document.body.insertAdjacentHTML(
-      "beforeend",
-      `<h3>Форма успешно отправлена!</h3>`
-    );
-  } else
-    document.body.insertAdjacentHTML("beforeend", `<h3>Ошибка отправки!</h3>`);
+  document.body.append(table);
 };
 
-formElem.addEventListener("submit", onSubmit);
+// const getTableData = async (e) => {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const result = await response.json();
+//     insertTable(result);
+//   } catch {
+//     // removeText();
+//     document.body.insertAdjacentHTML("beforeend", `<h2>Ошибка!</h2>`);
+//   }
+// };
+
+const getTableData = async (e) => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const reader = response.body.getReader();
+
+  let receivedLength = 0;
+  let chunks = [];
+  while (true) {
+    button.textContent = "Загрузка...";
+    const { done, value } = await reader.read();
+
+    if (done) {
+      button.textContent = "Перезагрузить";
+      break;
+    }
+    chunks.push(value);
+    receivedLength += value.length;
+  }
+  let chunksAll = new Uint8Array(receivedLength);
+  let position = 0;
+  for (let chunk of chunks) {
+    chunksAll.set(chunk, position);
+    position += chunk.length;
+  }
+  let resultOne = new TextDecoder("utf-8").decode(chunksAll);
+  let result = JSON.parse(resultOne);
+  insertTable(result);
+};
 
 const removeText = () => {
-  const message = document.querySelector("h3");
-  if (message) message.remove();
+  const removableText = document.querySelector("h2");
+  const removableTable = document.querySelector("table");
+  if (removableText) {
+    removableText.remove();
+  }
+  if (removableTable) {
+    removableTable.remove();
+  }
 };
+
+button.addEventListener("click", () => {
+  removeText();
+  getTableData();
+});

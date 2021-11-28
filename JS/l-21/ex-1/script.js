@@ -63,3 +63,9 @@ for (let i = 0; i <= inputs.length - 1; i++) {
     }
   });
 }
+
+for (let i = 0; i <= inputs.length - 1; i++) {
+  inputs[i].addEventListener("focus", () => {
+    removeText();
+  });
+}
