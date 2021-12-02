@@ -3,6 +3,8 @@
 const button = document.querySelector("button");
 const form = document.createElement("form");
 const submit = document.createElement("input");
+let focusInValue;
+let focusOutValue;
 
 const setTr = (post) => {
   const tr = document.createElement("tr");
@@ -49,6 +51,7 @@ const getTableData = (e) => {
       .then((result) => {
         setLoading();
         insertTable(result);
+        focusInValue = result;
         button.innerHTML = "Данные загружены";
         button.setAttribute("disabled", true);
       });
@@ -98,12 +101,20 @@ button.addEventListener("click", () => {
 
 form.addEventListener("submit", onSubmit);
 
-let focusInValue;
-let focusOutValue;
-
 const onChange = (e) => {
   e.preventDefault();
   submit.removeAttribute("disabled", true);
 };
+
+// const onChange = (e) => {
+//   e.preventDefault();
+//   const tableForm = document.querySelector("form");
+//   focusOutValue = new FormData(tableForm);
+//   console.log(focusInValue, `focus IN`);
+//   console.log(focusOutValue, `focus OUT`);
+//   if (focusInValue != focusOutValue) {
+//     submit.removeAttribute("disabled", true);
+//   }
+// };
 
 form.addEventListener("change", onChange);
