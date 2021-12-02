@@ -17,11 +17,10 @@ const setTr = (post) => {
 
 const insertTable = (posts) => {
   const table = document.createElement("table");
-
   form.setAttribute("class", "form");
-
   submit.setAttribute("type", "submit");
   submit.setAttribute("class", "button");
+  submit.setAttribute("disabled", true);
   const tr = document.createElement("tr");
 
   Object.keys(posts[0]).forEach((item) => {
@@ -107,3 +106,13 @@ button.addEventListener("click", () => {
 });
 
 form.addEventListener("submit", onSubmit);
+
+let focusInValue;
+let focusOutValue;
+
+const onChange = (e) => {
+  e.preventDefault();
+  submit.removeAttribute("disabled", true);
+};
+
+form.addEventListener("change", onChange);
