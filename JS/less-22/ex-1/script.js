@@ -3,6 +3,12 @@
 const button = document.querySelector("button");
 const form = document.createElement("form");
 const submit = document.createElement("input");
+const table = document.createElement("table");
+form.setAttribute("class", "form");
+submit.setAttribute("type", "submit");
+submit.setAttribute("class", "button");
+submit.setAttribute("disabled", true);
+const tr = document.createElement("tr");
 let focusInValue;
 let focusOutValue;
 
@@ -88,6 +94,8 @@ const onSubmit = async (e) => {
     const result = await response.json();
     console.log(result);
     submitInput.value = "Форма успешно отправлена";
+    form.remove();
+    button.removeAttribute("disabled");
   } catch {
     const submitInput = document.querySelector("input");
     submitInput.value = "Ошибка отправки!";
