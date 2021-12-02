@@ -5,23 +5,23 @@ const button = document.querySelector(`.button`);
 button.setAttribute("disabled", true);
 const onSubmit = async (e) => {
   e.preventDefault();
-  const formData = new FormData(formElem);
+  try {
+    const formData = new FormData(formElem);
 
-  const formDataAll = Array.from(formData.entries()).reduce(
-    (prev, [name, value]) => ({
-      ...prev,
-      [name]: value,
-    }),
-    {}
-  );
+    const formDataAll = Array.from(formData.entries()).reduce(
+      (prev, [name, value]) => ({
+        ...prev,
+        [name]: value,
+      }),
+      {}
+    );
 
-  const formDataJson = JSON.stringify(formDataAll);
-  const response = await fetch(`https://httpbin.org/post`, {
-    method: "POST",
-    body: formDataJson,
-  });
+    const formDataJson = JSON.stringify(formDataAll);
+    const response = await fetch(`https://httpbin.org/post`, {
+      method: "POST",
+      body: formDataJson,
+    });
 
-  if (response.ok) {
     const result = await response.json();
     removeText();
     console.log(result);
@@ -29,8 +29,16 @@ const onSubmit = async (e) => {
       "beforeend",
       `<h3>Форма успешно отправлена!</h3>`
     );
-  } else
+    cleanForm();
+  } catch {
     document.body.insertAdjacentHTML("beforeend", `<h3>Ошибка отправки!</h3>`);
+  }
+};
+
+const cleanForm = () => {
+  inputs.forEach((input) => {
+    input.value = "";
+  });
 };
 
 formElem.addEventListener("submit", onSubmit);
@@ -53,5 +61,11 @@ for (let i = 0; i <= inputs.length - 1; i++) {
         button.removeAttribute("disabled", true);
       }
     }
+  });
+}
+
+for (let i = 0; i <= inputs.length - 1; i++) {
+  inputs[i].addEventListener("focus", () => {
+    removeText();
   });
 }

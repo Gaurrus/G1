@@ -10,15 +10,17 @@ body {
   align-items: center;
   flex-direction: column;
   row-gap: 50px;
+  padding-bottom: 20px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  align-items: center;
 }
 
-button {
+.button {
   padding: 10px 20px;
   background-color: #492549;
   color: #ffffff;
@@ -29,7 +31,7 @@ button {
   box-shadow: black 4px 4px 10px;
 }
 
-button:hover {
+.button:hover {
   background-color: white;
   color: black;
 }
