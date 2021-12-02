@@ -6,10 +6,10 @@ const submit = document.createElement("input");
 
 const setTr = (post) => {
   const tr = document.createElement("tr");
-  Object.values(post).forEach((item) => {
+  Object.values(post).forEach((item, index) => {
     tr.insertAdjacentHTML(
       "beforeend",
-      `<td><textarea name="form-elem">${item}</textarea></td>`
+      `<td><textarea name="form-elem-${index}">${item}</textarea></td>`
     );
   });
   return tr;
@@ -23,10 +23,10 @@ const insertTable = (posts) => {
   submit.setAttribute("disabled", true);
   const tr = document.createElement("tr");
 
-  Object.keys(posts[0]).forEach((item) => {
+  Object.keys(posts[0]).forEach((item, index) => {
     tr.insertAdjacentHTML(
       "beforeend",
-      `<th><textarea name="form-elem">${item}</textarea></th>`
+      `<th><textarea name='form-elem-${index}'>${item}</textarea></th>`
     );
   });
   table.append(tr);
@@ -76,20 +76,11 @@ const removeText = () => {
 const onSubmit = async (e) => {
   e.preventDefault();
   try {
-    const tableForm = document.querySelector("form");
     const submitInput = document.querySelector("input");
-    const formData = new FormData(tableForm);
-    const formDataAll = Array.from(formData.entries()).reduce(
-      (prev, [name, value]) => ({
-        ...prev,
-        [name]: value,
-      }),
-      {}
-    );
-    const formDataJson = JSON.stringify(formDataAll);
+    const tableForm = document.querySelector("form");
     const response = await fetch(`https://httpbin.org/post`, {
       method: "POST",
-      body: formDataJson,
+      body: new FormData(tableForm),
     });
     const result = await response.json();
     console.log(result);
