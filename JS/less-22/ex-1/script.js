@@ -12,12 +12,12 @@ const tr = document.createElement("tr");
 let focusInValue;
 let focusOutValue;
 
-const setTr = (post) => {
+const setTr = (post, indexTD) => {
   const tr = document.createElement("tr");
-  Object.values(post).forEach((item, index) => {
+  Object.values(post).forEach((item, indexTR) => {
     tr.insertAdjacentHTML(
       "beforeend",
-      `<td><textarea name="form-elem-${index}">${item}</textarea></td>`
+      `<td><textarea name=${`row-${indexTD}-coll-${indexTR}`}>${item}</textarea></td>`
     );
   });
   return tr;
@@ -34,12 +34,12 @@ const insertTable = (posts) => {
   Object.keys(posts[0]).forEach((item, index) => {
     tr.insertAdjacentHTML(
       "beforeend",
-      `<th><textarea name='form-elem-${index}'>${item}</textarea></th>`
+      `<th><textarea name=head-${index}>${item}</textarea></th>`
     );
   });
   table.append(tr);
-  posts.forEach((post) => {
-    table.append(setTr(post));
+  posts.forEach((post, indexTD) => {
+    table.append(setTr(post, indexTD));
   });
   form.append(table);
   form.append(submit);
@@ -87,15 +87,28 @@ const onSubmit = async (e) => {
   try {
     const submitInput = document.querySelector("input");
     const tableForm = document.querySelector("form");
+
+    const formData = new FormData(tableForm);
+
+    const formDataAll = Array.from(formData.entries()).reduce(
+      (prev, [name, value]) => ({
+        ...prev,
+        [name]: value,
+      }),
+      {}
+    );
+    const formDataJson = JSON.stringify(formDataAll);
     const response = await fetch(`https://httpbin.org/post`, {
       method: "POST",
-      body: new FormData(tableForm),
+      body: formDataJson,
     });
+
     const result = await response.json();
     console.log(result);
     submitInput.value = "Форма успешно отправлена";
     form.remove();
     button.removeAttribute("disabled");
+    button.innerHTML = "Данные успешно отправлены";
   } catch {
     const submitInput = document.querySelector("input");
     submitInput.value = "Ошибка отправки!";
