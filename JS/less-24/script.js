@@ -3,13 +3,21 @@
 const button = document.querySelector("button");
 const form = document.createElement("form");
 const submit = document.createElement("input");
+const table = document.createElement("table");
+form.setAttribute("class", "form");
+submit.setAttribute("type", "submit");
+submit.setAttribute("class", "button");
+submit.setAttribute("disabled", true);
+const tr = document.createElement("tr");
+let focusInValue;
+let focusOutValue;
 
-const setTr = (post) => {
+const setTr = (post, indexTD) => {
   const tr = document.createElement("tr");
-  Object.values(post).forEach((item) => {
+  Object.values(post).forEach((item, indexTR) => {
     tr.insertAdjacentHTML(
       "beforeend",
-      `<td><textarea name="form-elem">${item}</textarea></td>`
+      `<td><textarea name=${`row-${indexTD}-coll-${indexTR}`}>${item}</textarea></td>`
     );
   });
   return tr;
@@ -17,22 +25,21 @@ const setTr = (post) => {
 
 const insertTable = (posts) => {
   const table = document.createElement("table");
-
   form.setAttribute("class", "form");
-
   submit.setAttribute("type", "submit");
   submit.setAttribute("class", "button");
+  submit.setAttribute("disabled", true);
   const tr = document.createElement("tr");
 
-  Object.keys(posts[0]).forEach((item) => {
+  Object.keys(posts[0]).forEach((item, index) => {
     tr.insertAdjacentHTML(
       "beforeend",
-      `<th><textarea name="form-elem">${item}</textarea></th>`
+      `<th><textarea name=head-${index}>${item}</textarea></th>`
     );
   });
   table.append(tr);
-  posts.forEach((post) => {
-    table.append(setTr(post));
+  posts.forEach((post, indexTD) => {
+    table.append(setTr(post, indexTD));
   });
   form.append(table);
   form.append(submit);
@@ -50,6 +57,7 @@ const getTableData = (e) => {
       .then((result) => {
         setLoading();
         insertTable(result);
+        focusInValue = result;
         button.innerHTML = "Данные загружены";
         button.setAttribute("disabled", true);
       });
@@ -77,9 +85,11 @@ const removeText = () => {
 const onSubmit = async (e) => {
   e.preventDefault();
   try {
-    const tableForm = document.querySelector("form");
     const submitInput = document.querySelector("input");
+    const tableForm = document.querySelector("form");
+
     const formData = new FormData(tableForm);
+
     const formDataAll = Array.from(formData.entries()).reduce(
       (prev, [name, value]) => ({
         ...prev,
@@ -92,9 +102,13 @@ const onSubmit = async (e) => {
       method: "POST",
       body: formDataJson,
     });
+
     const result = await response.json();
     console.log(result);
     submitInput.value = "Форма успешно отправлена";
+    form.remove();
+    button.removeAttribute("disabled");
+    button.innerHTML = "Данные успешно отправлены";
   } catch {
     const submitInput = document.querySelector("input");
     submitInput.value = "Ошибка отправки!";
@@ -107,3 +121,21 @@ button.addEventListener("click", () => {
 });
 
 form.addEventListener("submit", onSubmit);
+
+const onChange = (e) => {
+  e.preventDefault();
+  submit.removeAttribute("disabled", true);
+};
+
+// const onChange = (e) => {
+//   e.preventDefault();
+//   const tableForm = document.querySelector("form");
+//   focusOutValue = new FormData(tableForm);
+//   console.log(focusInValue, `focus IN`);
+//   console.log(focusOutValue, `focus OUT`);
+//   if (focusInValue != focusOutValue) {
+//     submit.removeAttribute("disabled", true);
+//   }
+// };
+
+form.addEventListener("change", onChange);
